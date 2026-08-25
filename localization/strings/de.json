@@ -1,0 +1,986 @@
+{
+  "app": {
+    "name": "Merlin"
+  },
+  "common": {
+    "cancel": "Abbrechen",
+    "done": "Fertig",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "ok": "OK",
+    "error": "Fehler",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "add": "Hinzufügen",
+    "share": "Teilen",
+    "refresh": "Aktualisieren",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "settings": "Einstellungen"
+  },
+  "navigationMenu": {
+    "tagsHeader": "Tags",
+    "clearTagFilter": "Tag-Filter aufheben",
+    "listView": "Listenansicht",
+    "cardView": "Kartenansicht",
+    "appTour": "App Tour",
+    "filterWithCount": "{label} ({count})"
+  },
+  "articleList": {
+    "searchPlaceholder": "Artikel suchen",
+    "filter": {
+      "unread": "Ungelesen",
+      "favorites": "Favoriten",
+      "archive": "Archiv",
+      "videos": "Videos"
+    },
+    "emptyState": {
+      "title": "Noch nichts hier",
+      "allMessage": "Keine Artikel gespeichert. Tippe auf +, um einen hinzuzufügen.",
+      "favoritesMessage": "Noch keine Favoriten. Markiere Artikel mit einem Stern, um sie hier zu finden.",
+      "archiveMessage": "Dein Archiv ist leer.",
+      "videosMessage": "Noch keine Videos gespeichert. Füge einen YouTube- oder Video-Link hinzu, um ihn hier zu sehen.",
+      "refreshButton": "Aktualisieren",
+      "taggedMessage": "Keine Artikel mit Tag \"{tag}\"."
+    },
+    "unconfigured": {
+      "title": "Nicht verbunden",
+      "message": "Öffne die Einstellungen und gib deine Nextcloud-URL, deinen Benutzernamen und dein App-Passwort ein.",
+      "openSettingsButton": "Einstellungen öffnen"
+    },
+    "miniPlayer": {
+      "fallbackTitle": "Vorlesen"
+    },
+    "undo": {
+      "unfavorite": "Favorit entfernen rückgängig",
+      "favorite": "Zu Favoriten hinzufügen rückgängig",
+      "unarchive": "Aus Archiv entfernen rückgängig",
+      "archive": "Archivieren rückgängig"
+    }
+  },
+  "articleActions": {
+    "share": "Teilen",
+    "shareEllipsis": "Teilen…",
+    "favoriteAdd": "Favorit",
+    "favoriteRemove": "Entfernen",
+    "archiveAdd": "Archiv",
+    "archiveRemove": "Unarchiv",
+    "menu": {
+      "addToFavorites": "Zu Favoriten hinzufügen",
+      "removeFromFavorites": "Aus Favoriten entfernen",
+      "markAsUnread": "Als ungelesen markieren",
+      "archive": "Archivieren",
+      "editTags": "Tags bearbeiten…",
+      "share": "Teilen…",
+      "copyLink": "Link kopieren"
+    }
+  },
+  "articleReader": {
+    "labels": {
+      "author": "VON",
+      "readingTime": "LESEZEIT",
+      "published": "ERSCHIENEN",
+      "saved": "GESPEICHERT"
+    },
+    "sideMenu": {
+      "addFavorite": "Als Favorit markieren",
+      "removeFavorite": "Aus Favoriten entfernen",
+      "startReadAloud": "Vorlesen",
+      "stopReadAloud": "Vorlesen stoppen",
+      "appearance": "Erscheinungsbild",
+      "share": "Teilen…",
+      "openInBrowser": "Im Browser öffnen",
+      "openViaArchive": "Via archive.ph öffnen",
+      "copyLink": "Link kopieren",
+      "moveToReadingList": "In Leseliste verschieben",
+      "archive": "Archivieren",
+      "editTags": "Tags bearbeiten…",
+      "editReminder": "Erinnerung ändern…",
+      "setReminder": "Erinnern…",
+      "reportArticle": "Artikel melden…"
+    },
+    "ttsPanel": {
+      "preparing": "Audio wird vorbereitet …"
+    },
+    "appearance": {
+      "fontSize": "Schriftgröße",
+      "theme": "Design",
+      "font": "Schriftart",
+      "lineSpacing": "Zeilenabstand",
+      "accentColor": "Akzentfarbe",
+      "progressAndHighlights": "Fortschrittsbalken & Hervorhebungen"
+    },
+    "tagSheet": {
+      "title": "Tags bearbeiten",
+      "newTagPlaceholder": "Neuen Tag erstellen…"
+    },
+    "noContent": {
+      "title": "Kein Inhalt verfügbar"
+    },
+    "linkDialog": {
+      "addToReadingList": "Zur Leseliste hinzufügen"
+    }
+  },
+  "addArticle": {
+    "title": "Artikel hinzufügen",
+    "urlSectionHeader": "Artikel-URL",
+    "urlPlaceholder": "https://example.com/article",
+    "urlFooter": "Füge die URL des Artikels ein, den du speichern möchtest.",
+    "tagsSectionHeader": "Tags (optional)",
+    "tagsPlaceholder": "Tag suchen oder erstellen…"
+  },
+  "reminders": {
+    "list": {
+      "title": "Erinnerungen",
+      "emptyTitle": "Keine Erinnerungen",
+      "emptyMessage": "Tippe im Artikelmenü auf \"Erinnern\", um eine Erinnerung zu setzen."
+    },
+    "sheet": {
+      "dateTimeLabel": "Datum & Uhrzeit",
+      "removeButton": "Erinnerung entfernen",
+      "titleSet": "Erinnerung setzen",
+      "titleEdit": "Erinnerung ändern"
+    }
+  },
+  "tagFilterSheet": {
+    "title": "Tag-Filter",
+    "clearAll": "Alle einblenden",
+    "emptyTitle": "Keine Tags vorhanden",
+    "emptyMessage": "Füge Artikeln Tags hinzu, um sie hier filtern zu können.",
+    "hiddenSummary": {
+      "one": "{count} Tag ausgeblendet",
+      "other": "{count} Tags ausgeblendet"
+    }
+  },
+  "report": {
+    "title": "Artikel melden",
+    "articleLabel": "Artikel",
+    "commentLabel": "Kommentar (optional)",
+    "commentPlaceholder": "Was stimmt nicht?",
+    "successMessage": "Danke – Artikel wurde gemeldet.",
+    "submitButton": "Melden"
+  },
+  "settings": {
+    "account": {
+      "sectionHeader": "Nextcloud-Konto",
+      "footer": "Tippe auf \"Mit Nextcloud anmelden\", um dich über deinen Browser zu authentifizieren.",
+      "urlLabel": "URL",
+      "urlPlaceholder": "https://cloud.example.com",
+      "loginButton": "Mit Nextcloud anmelden",
+      "waitingForBrowser": "Warte auf Anmeldung im Browser…",
+      "loggedInSuccess": "Erfolgreich angemeldet!",
+      "logoutDialogTitle": "Abmelden?",
+      "logoutDialogMessage": "Deine Nextcloud-Zugangsdaten werden von diesem Gerät entfernt. Zwischengespeicherte Artikel und Lesepositionen bleiben erhalten."
+    },
+    "testConnection": {
+      "button": "Verbindung testen"
+    },
+    "preferences": {
+      "sectionHeader": "Einstellungen",
+      "footer": "Einstellungen werden automatisch mit deinem Nextcloud-Konto synchronisiert.",
+      "defaultViewLabel": "Standardansicht",
+      "progressBarLabel": "Fortschrittsanzeige",
+      "saveProgressLabel": "Leseposition speichern",
+      "resumeOnOpenLabel": "Beim Öffnen fortsetzen"
+    },
+    "cache": {
+      "sectionHeader": "Zwischenspeicher",
+      "footer": "Entfernt alle zwischengespeicherten Artikel, Bilder, Lesepositionen, den Web-Cache des Readers, deine Nextcloud-Zugangsdaten und alle MerlinShare-Daten.",
+      "wifiOnlyToggle": "Bilder nur im WLAN vorab laden",
+      "clearButton": "Cache leeren",
+      "clearDialogTitle": "Cache leeren?",
+      "clearDialogMessage": "Alle zwischengespeicherten Artikel, Bilder, Lesepositionen, der Web-Cache des Readers und deine Nextcloud-Zugangsdaten werden gelöscht. MerlinShare-Daten werden ebenfalls gelöscht. Du wirst abgemeldet.",
+      "clearDialogConfirm": "Leeren",
+      "clearedSuccess": "Cache erfolgreich geleert."
+    },
+    "about": {
+      "sectionHeader": "Über",
+      "versionLabel": "Version"
+    },
+    "developer": {
+      "sectionHeader": "Entwickler",
+      "modeToggle": "Entwicklermodus"
+    }
+  },
+  "share": {
+    "extracting": {
+      "subtitle": "Geteilten Inhalt wird gelesen…"
+    },
+    "settings": {
+      "subtitle": "Einrichtung erforderlich",
+      "urlPlaceholder": "https://cloud.example.com",
+      "usernamePlaceholder": "Benutzername",
+      "passwordPlaceholder": "App-Passwort",
+      "saveButton": "Speichern & Weiter",
+      "missingFieldsTitle": "Fehlende Angaben",
+      "missingFieldsMessage": "Bitte fülle alle Felder aus."
+    },
+    "staging": {
+      "subtitle": "Zur Leseliste hinzufügen",
+      "loadingTags": "Tags werden geladen…",
+      "newTagPlaceholder": "Neuer Tag (optional)",
+      "saveButton": "In Merlin speichern",
+      "noTags": "Noch keine Tags"
+    },
+    "saving": {
+      "subtitle": "Wird zur Leseliste hinzugefügt…"
+    },
+    "result": {
+      "successTitle": "In Merlin gespeichert!",
+      "errorTitle": "Konnte nicht gespeichert werden",
+      "errorReadContent": "Geteilter Inhalt konnte nicht gelesen werden.",
+      "errorNoUrl": "Keine URL im geteilten Inhalt gefunden.",
+      "errorNoResponse": "Keine Antwort vom Server.",
+      "errorAuthFailed": "Authentifizierung fehlgeschlagen.\nÜberprüfe deine Zugangsdaten in der Merlin-App.",
+      "errorAppNotFound": "Merlin-App auf diesem Server nicht gefunden.",
+      "errorRateLimited": "Der Server begrenzt aktuell die Anfragen.\nBitte warte einen Moment und versuche es erneut.",
+      "errorServerCode": "Serverfehler (HTTP {code}).",
+      "errorNetwork": "Netzwerkfehler: {error}"
+    },
+    "rateLimited": {
+      "subtitle": "Rate-Limit erreicht"
+    }
+  },
+  "onboarding": {
+    "step1": {
+      "title": "Willkommen bei Merlin!",
+      "body": "Eine kurze Tour durch die wichtigsten Funktionen."
+    },
+    "step2": {
+      "title": "Artikel hinzufügen",
+      "body": "Tippe auf +, um eine beliebige URL zu speichern, oder teile Links aus deinem Browser, Messenger oder anderen Apps über den Teilen-Dialog."
+    },
+    "step3": {
+      "title": "Navigationsmenü",
+      "body": "Wische vom linken Rand, um Artikel zu filtern, Tags zu durchsuchen und die Einstellungen zu öffnen."
+    },
+    "step4": {
+      "title": "Ansicht wechseln",
+      "body": "Bevorzugst du eine kompakte Liste oder Karten? Wechsle jederzeit über das Navigationsmenü zwischen Listen- und Kartenansicht."
+    },
+    "step5": {
+      "title": "Schnellaktionen",
+      "body": "Wische einen Artikel nach links, um ihn zu archivieren, als Favorit zu markieren oder zu löschen."
+    },
+    "step6": {
+      "title": "Artikel teilen",
+      "body": "Wische einen Artikel nach rechts, um ihn schnell mit Freunden zu teilen oder an eine andere App zu senden."
+    },
+    "step7": {
+      "title": "Lesemenü",
+      "body": "Wische beim Lesen vom rechten Rand, um zu teilen, Tags zu bearbeiten, Erinnerungen zu setzen und mehr."
+    },
+    "step8": {
+      "title": "Erscheinungsbild",
+      "body": "Passe Schriftart, -größe, Design und Zeilenabstand an deine Lesevorlieben an."
+    },
+    "step9": {
+      "title": "Tags",
+      "body": "Organisiere deine Leseliste mit Tags. Füge sie jederzeit über das Lesemenü hinzu oder entferne sie."
+    },
+    "step10": {
+      "title": "Erinnerungen",
+      "body": "Setze eine Erinnerung, damit du nicht vergisst, einen Artikel zu lesen. Alle Erinnerungen findest du im Navigationsmenü."
+    },
+    "step11": {
+      "title": "Artikel melden",
+      "body": "Fehlerhafte Formatierung gefunden? Melde den Artikel, damit wir das beheben können."
+    },
+    "step12": {
+      "title": "Hervorhebungen",
+      "body": "Markiere beim Lesen Text, um ihn in einer von fünf Farben hervorzuheben. Hervorhebungen werden mit deinem Konto synchronisiert."
+    },
+    "step13": {
+      "title": "Schütteln zum Rückgängigmachen",
+      "body": "Versehentlich etwas archiviert oder gelöscht? Schüttle einfach dein Telefon, um die letzte Aktion rückgängig zu machen."
+    },
+    "buttons": {
+      "getStarted": "Los geht's"
+    },
+    "demo": {
+      "leftFlyout": {
+        "unread": "Ungelesen (12)",
+        "favorites": "Favoriten (3)",
+        "archive": "Archiv (47)",
+        "tags": "Tags",
+        "cardView": "Kartenansicht",
+        "reminders": "Erinnerungen",
+        "settings": "Einstellungen"
+      },
+      "sampleArticle": {
+        "title": "Fischotter könnte in Berlin wieder heimisch werden",
+        "meta": "rbb|24 · 8 Min.",
+        "byline": "Von Julian von Bülow · rbb|24 · 8 Min. · Mai 2026",
+        "body": "Schlechte Wasserqualität und dicht bebaute Ufer: Lange galten Fischotter in Berlin als ausgerottet, seit den 60ern stehen sie unter strengem Schutz, in den 90er Jahren nehmen die Bestände wieder zu. Ebenso wurden die Tiere im 18. und 19. Jahrhundert intensiv bejagt, da sie als Nahrungskonkurrent zum Menschen gesehen wurden und ihr Fell begehrt war. In den vergangenen Jahren konnte sich ihre Population dank Tier- und Naturschutz wieder erholen und wurde vor allem im Ostteil Berlins gesichtet. Der moderne urbane Raum birgt allerdings für Fischotter auch viele Gefahren."
+      },
+      "sampleHighlight": "In einer Zeit endlosen Scrollens wirkt langsames Lesen fast schon radikal. Doch eine wachsende Zahl an Studien legt nahe, dass tiefes, bewusstes Lesen eine der wertvollsten Fähigkeiten sein könnte, die wir kultivieren können.",
+      "readerMenu": {
+        "close": "Schließen"
+      }
+    }
+  },
+  "webext": {
+    "extName": "Merlin",
+    "extDescription": "Speichere jeden Link mit einem einzigen Rechtsklick in deiner Merlin-App.",
+    "actionTitle": "Merlin-Einstellungen",
+    "contextMenu": {
+      "saveLink": "Link speichern",
+      "saveLinkWithTags": "Link mit Tags speichern…",
+      "sendLink": "Link an Merlin senden",
+      "savePage": "HTML an Merlin senden",
+      "savePageWithTags": "Seite mit Tags speichern…",
+      "saveMail": "Mail an Merlin senden"
+    },
+    "notification": {
+      "defaultTitle": "Merlin",
+      "savedTitle": "Merlin",
+      "errorTitle": "Fehler",
+      "loadingTitle": "Merlin…",
+      "authFailedTitle": "Merlin: Anmeldung fehlgeschlagen",
+      "authFailedMessage": "Merlin: Anmeldung fehlgeschlagen – bitte erneut einloggen",
+      "configureCredentials": "Bitte zuerst Nextcloud-Zugangsdaten konfigurieren.",
+      "needsPermission": "Merlin braucht eine Berechtigung für diesen Server — bitte in den Einstellungen erneut einloggen."
+    },
+    "flyout": {
+      "articleAdded": "Artikel gespeichert",
+      "articleAddedWithTags": "Artikel gespeichert mit [{tags}]",
+      "authFailed": "Authentifizierung fehlgeschlagen — App-Passwort prüfen.",
+      "connectionFailed": "Verbindung fehlgeschlagen: {error}",
+      "serverError": "Serverfehler: HTTP {code}",
+      "saving": "Wird an Merlin geschickt…",
+      "addedToReadingList": "Zur Leseliste hinzugefügt."
+    },
+    "options": {
+      "pageTitle": "Merlin — Add-on-Einstellungen",
+      "headerSubtitle": "Nextcloud-Add-on-Einstellungen",
+      "urlLabel": "Nextcloud-URL",
+      "urlPlaceholder": "cloud.beispiel.de",
+      "urlHint": "Die Basis-URL deiner Nextcloud-Instanz — HTTPS ist erforderlich und wird automatisch ergänzt (kein abschließender Schrägstrich nötig)",
+      "loginButton": "Mit Nextcloud anmelden",
+      "cancelLogin": "Anmeldung abbrechen…",
+      "testButton": "Verbindung testen",
+      "logoutButton": "Verbindung trennen",
+      "closeTab": "Tab schließen",
+      "loginCancelled": "Anmeldung abgebrochen.",
+      "enterUrlFirst": "Bitte zuerst deine Nextcloud-URL eingeben.",
+      "connecting": "Verbinde mit Nextcloud…",
+      "needsPermission": "Merlin braucht die Berechtigung für den Zugriff auf diesen Server, um fortzufahren.",
+      "cannotReach": "Nextcloud nicht erreichbar: {error}",
+      "cannotOpenLogin": "Anmeldeseite konnte nicht geöffnet werden: {error}",
+      "completeLogin": "Schließe die Nextcloud-Anmeldung im neuen Tab ab…",
+      "cannotStartPolling": "Hintergrund-Abfrage konnte nicht gestartet werden: {error}",
+      "loginTimeout": "Anmeldung nach 5 Minuten abgelaufen. Bitte erneut versuchen.",
+      "loggedInAs": "Angemeldet als {name}. Einstellungen gespeichert.",
+      "disconnected": "Verbindung getrennt. Bitte erneut einloggen.",
+      "welcome": "Willkommen! Gib deine Nextcloud-URL ein und klicke auf „Mit Nextcloud anmelden“, um loszulegen.",
+      "loginFirst": "Bitte zuerst mit Nextcloud anmelden.",
+      "testing": "Teste…",
+      "connectingShort": "Verbinde…",
+      "testSuccess": "Verbindung erfolgreich! Die Merlin-App ist erreichbar.",
+      "testAuthFailed": "Authentifizierung fehlgeschlagen. Bitte erneut über „Mit Nextcloud anmelden“ einloggen.",
+      "testNotFound": "Merlin-App nicht gefunden. Ist sie installiert und die URL korrekt?",
+      "testServerError": "Server hat HTTP {code} zurückgegeben.",
+      "testTimeout": "Zeitüberschreitung der Verbindung. Prüfe die URL und dein Netzwerk.",
+      "testFailed": "Verbindung fehlgeschlagen: {error}",
+      "pageTitleExtension": "Merlin — Erweiterungs-Einstellungen",
+      "headerSubtitleExtension": "Nextcloud-Erweiterungs-Einstellungen",
+      "logoutButtonShort": "Abmelden",
+      "loggedOut": "Abgemeldet. Zugangsdaten von diesem Gerät entfernt.",
+      "loggedOutWelcome": "Abgemeldet. Gib deine Nextcloud-URL ein und klicke auf „Mit Nextcloud anmelden“, um loszulegen.",
+      "securityHint": "App-Passwörter in Nextcloud verwalten →",
+      "securityLink": "Einstellungen → Sicherheit → App-Passwörter",
+      "securityEnterUrl": "Gib zuerst deine Nextcloud-URL ein.",
+      "saveSettingsButton": "Einstellungen speichern",
+      "enterUrlPlain": "Bitte gib deine Nextcloud-URL ein.",
+      "urlSaved": "URL gespeichert. Nutze „Mit Nextcloud anmelden“, um dich zu authentifizieren.",
+      "couldNotSave": "Konnte nicht gespeichert werden: {error}",
+      "urlPlaceholderFull": "https://cloud.beispiel.de",
+      "urlHintShort": "Die Basis-URL deiner Nextcloud-Instanz (kein abschließender Schrägstrich nötig)"
+    },
+    "passphrase": {
+      "label": "Verschlüsselungs-Passphrase",
+      "placeholder": "Passphrase",
+      "applyButton": "Anwenden",
+      "unlockButton": "Entsperren",
+      "unlockHint": "Über Sync wurde ein verschlüsselter Login gefunden. Gib die Passphrase ein, um ihn auf diesem Gerät zu nutzen.",
+      "enableButton": "Verschlüsselten Sync aktivieren",
+      "enableHint": "Lege eine Passphrase fest, damit dein Login (verschlüsselt) zwischen deinen Geräten synchronisiert wird.",
+      "setPlaceholder": "•••••••• (gesetzt — neue eingeben zum Ändern)",
+      "changeButton": "Passphrase ändern",
+      "activeHint": "Verschlüsselter Sync ist aktiv.",
+      "tooShort": "Bitte gib eine Passphrase mit mindestens 8 Zeichen ein.",
+      "loginFirst": "Bitte zuerst anmelden.",
+      "enabled": "Verschlüsselter Sync ist jetzt aktiv.",
+      "enableError": "Sync konnte nicht aktiviert werden: {error}",
+      "enterPassphrase": "Bitte gib die Passphrase ein.",
+      "syncUnavailable": "Sync nicht verfügbar: {error}",
+      "noSyncedLogin": "Kein synchronisierter Login gefunden.",
+      "unlockedAs": "Entsperrt als {name}.",
+      "wrongPassphrase": "Falsche Passphrase oder die synchronisierten Daten sind beschädigt."
+    },
+    "saveDialog": {
+      "pageTitle": "Merlin — Artikel speichern",
+      "subtitle": "Artikel zur Leseliste hinzufügen",
+      "tagsLabel": "Tags",
+      "optional": "(optional)",
+      "tagsPlaceholder": "z.B. tech, news, lesen",
+      "tagsHint": "Mehrere Tags mit Komma trennen",
+      "existingTags": "Vorhandene Tags",
+      "cancel": "Abbrechen",
+      "save": "Speichern",
+      "noCredentials": "Keine Zugangsdaten verfügbar",
+      "authFailed": "Anmeldung fehlgeschlagen — bitte erneut einloggen",
+      "tagsLoadError": "Tags konnten nicht geladen werden (HTTP {code})",
+      "noTags": "Noch keine Tags vorhanden",
+      "tagsTimeout": "Zeitüberschreitung beim Laden der Tags"
+    }
+  },
+  "nextcloudWeb": {
+    "common": {
+      "addArticle": "Artikel hinzufügen",
+      "cancel": "Abbrechen",
+      "delete": "Löschen",
+      "settings": "Einstellungen",
+      "tags": "Tags",
+      "share": "Teilen",
+      "shareEllipsis": "Teilen…",
+      "archive": "Archivieren",
+      "archived": "Archiviert",
+      "restore": "Wiederherstellen",
+      "copyLink": "Link kopieren",
+      "sendByEmail": "Per E-Mail senden",
+      "shareToBluesky": "Auf Bluesky teilen",
+      "shareToMastodon": "Auf Mastodon teilen",
+      "report": "Melden",
+      "reportFaultyRenderedArticle": "Fehlerhaft dargestellten Artikel melden",
+      "newTagPlaceholder": "Neuer Tag…",
+      "noTagsDefinedYet": "Noch keine Tags vorhanden",
+      "linkCopiedToClipboard": "Link in Zwischenablage kopiert",
+      "confirmDeleteArticle": "Diesen Artikel wirklich löschen?",
+      "mastodonInstancePrompt": "Deine Mastodon-Instanz (z.B. mastodon.social):",
+      "favorites": "Favoriten",
+      "unread": "Ungelesen",
+      "default": "Standard",
+      "addToFavorites": "Zu Favoriten hinzufügen",
+      "removeFromFavorites": "Aus Favoriten entfernen",
+      "articleDeleted": "Artikel gelöscht"
+    },
+    "addArticle": {
+      "enterUrl": "Gib die URL des Artikels ein, den du speichern möchtest:",
+      "urlPlaceholder": "https://example.com/article",
+      "addedSuccessfully": "Artikel erfolgreich hinzugefügt",
+      "failedToAdd": "Artikel konnte nicht hinzugefügt werden: {error}"
+    },
+    "articleList": {
+      "noVideosYet": "Noch keine Videos",
+      "noArticlesYet": "Noch keine Artikel",
+      "saveVideoLinksHint": "Speichere Video-Links, um sie hier anzusehen",
+      "addFirstArticleHint": "Füge deinen ersten Artikel hinzu, um loszulegen"
+    },
+    "articleCard": {
+      "loading": "Lädt…",
+      "open": "Öffnen",
+      "whatIsWrongPlaceholder": "Was stimmt nicht? (optional)",
+      "noReportBackendConfigured": "Kein Meldungs-Backend konfiguriert. Lege die URL in den Einstellungen fest.",
+      "reported": "Artikel gemeldet",
+      "couldNotSendReport": "Meldung konnte nicht gesendet werden — bitte versuche es erneut.",
+      "minutesShort": "{minutes} Min."
+    },
+    "articleReader": {
+      "backToList": "Zurück zur Liste",
+      "archiveAndReturnToList": "Archivieren und zur Liste zurückkehren",
+      "switchToLightMode": "Zum hellen Modus wechseln",
+      "switchToDarkMode": "Zum dunklen Modus wechseln",
+      "decreaseFontSize": "Schrift verkleinern",
+      "increaseFontSize": "Schrift vergrößern",
+      "shareArticle": "Artikel teilen",
+      "manageTags": "Tags verwalten",
+      "exportArticle": "Artikel exportieren",
+      "exportAsHtml": "Als HTML exportieren",
+      "deleteArticle": "Artikel löschen",
+      "moreOptions": "Weitere Optionen",
+      "adjustAppearance": "Erscheinungsbild anpassen",
+      "archiveAndReturn": "Archivieren und zurück",
+      "archiveAndGoToNext": "Archivieren und weiter zum nächsten",
+      "markedAsRead": "Als gelesen markiert",
+      "markedAsUnread": "Als ungelesen markiert",
+      "htmlExportedSuccessfully": "HTML erfolgreich exportiert",
+      "failedToExportHtml": "HTML-Export fehlgeschlagen",
+      "dayArticleAdded": "Der Tag, an dem der Artikel zu deiner Liste hinzugefügt wurde"
+    },
+    "settingsPreview": {
+      "livePreview": "Live-Vorschau",
+      "readerHint": "Lesemodus",
+      "demoTitle": "Die stille Kunst des guten Lesens",
+      "demoReadingTime": "6 Min. Lesezeit",
+      "demoByline": "von Anya Mehra",
+      "demoParagraph1": "In einer Zeit endloser Feeds ist es fast ein kleiner Akt der Rebellion geworden, einen Artikel zu Ende zu lesen. Etwas für später zu speichern ist eine Wette darauf, dass die ruhigere Version von dir zurückkehrt, um es zu lesen.",
+      "demoParagraph2": "Die meisten tun es nie. Die Liste wächst, das schlechte Gewissen wächst mit. Der Trick ist nicht Disziplin, sondern Gestaltung: ein Ort, der nicht schreit, eine Schrift, die atmet, ein Rand, der breit genug zum Nachdenken ist.",
+      "demoParagraph3": "Stelle deine Spalte auf ein angenehmes Maß ein — irgendwo zwischen sechzig und fünfundsiebzig Zeichen. Wähle eine Schrift, der du vertraust. Der Rest ist einfach stillsitzen.",
+      "demoProgressLegend": "38 % · noch etwa 4 Min."
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "saved": "Gespeichert",
+      "intro": "Passe an, wie Merlin deine Leseliste darstellt. Änderungen werden automatisch gespeichert.",
+      "readingSectionTitle": "Lesen",
+      "readingSectionDesc": "Typografie und Layout für den Artikel-Reader.",
+      "theme": "Design",
+      "themeHint": "Hell, dunkel oder dem System folgen.",
+      "fontFamily": "Schriftart",
+      "fontFamilyHint": "Standard nutzt Lora — entworfen für längeres Lesen.",
+      "fontSize": "Schriftgröße",
+      "fontSizeHint": "Größe in Pixeln für den Artikeltext.",
+      "small": "Klein",
+      "large": "Groß",
+      "lineHeight": "Zeilenhöhe",
+      "lineHeightHint": "Lockerere Zeilen wirken ruhiger, engere wirken dichter.",
+      "tight": "Eng",
+      "airy": "Luftig",
+      "readingProgressSectionTitle": "Lesefortschritt",
+      "readingProgressSectionDesc": "Automatisch dort weitermachen, wo du aufgehört hast.",
+      "saveReadingPosition": "Leseposition speichern",
+      "saveReadingPositionHint": "Merkt sich deine Scroll-Position in jedem Artikel, damit du später weiterlesen kannst.",
+      "resumeWhenOpening": "Beim Öffnen fortsetzen",
+      "resumeWhenOpeningHint": "Wenn du einen Artikel erneut öffnest, springt Merlin zurück an die Stelle, an der du aufgehört hast.",
+      "progressBarPosition": "Position des Fortschrittsbalkens",
+      "progressBarPositionHint": "Wo der Lesefortschrittsbalken angezeigt wird. „Aus“ blendet ihn vollständig aus.",
+      "accentColor": "Akzentfarbe",
+      "accentColorHint": "Farbe des Lesefortschrittsbalkens, geteilt mit iOS und Android.",
+      "custom": "Benutzerdefiniert",
+      "librarySectionTitle": "Bibliothek",
+      "librarySectionDesc": "Was du siehst, wenn du Merlin öffnest.",
+      "defaultView": "Standardansicht",
+      "defaultViewHint": "Wo die App landet, wenn du sie öffnest.",
+      "tagsSectionTitle": "Tags",
+      "tagsSectionDesc": "Blendet Artikel mit diesen Tags aus deiner Leseliste aus.",
+      "excludedTags": "Ausgeschlossene Tags",
+      "excludedTagsHint": "Artikel mit einem ausgeschlossenen Tag werden überall ausgeblendet, außer wenn direkt nach diesem Tag gefiltert wird.",
+      "reportingSectionTitle": "Meldungen",
+      "reportingSectionDesc": "Wohin gemeldete Artikel gesendet werden.",
+      "reportBackendUrl": "Meldungs-Backend-URL",
+      "reportBackendUrlHint": "URL deiner merlin-reports-Installation, z.B. https://cloud.example.com/merlin-reports/",
+      "reportBackendUrlPlaceholder": "https://…/merlin-reports/",
+      "checking": "Wird geprüft…",
+      "reachable": "Erreichbar",
+      "notReachable": "Nicht erreichbar",
+      "resetAllToDefaults": "Alles auf Standard zurücksetzen",
+      "syncFooter": "Einstellungen werden automatisch zwischen deinen Geräten synchronisiert.",
+      "themeLight": "Hell",
+      "themeDark": "Dunkel",
+      "themeAuto": "Automatisch",
+      "themeSepia": "Sepia",
+      "fontSerif": "Serif",
+      "fontSans": "Sans",
+      "fontMono": "Mono",
+      "positionLeft": "Links",
+      "positionRight": "Rechts",
+      "positionTop": "Oben",
+      "positionBottom": "Unten",
+      "positionOff": "Aus",
+      "colorRed": "Rot",
+      "colorOrange": "Orange",
+      "colorYellow": "Gelb",
+      "colorGreen": "Grün",
+      "colorBlue": "Blau",
+      "colorPurple": "Lila",
+      "paywall": {
+        "sectionTitle": "Abos",
+        "sectionDesc": "Für Websites mit Paywall (z. B. Tagesspiegel Plus): eigene Zugangsdaten hinterlegen, damit Merlin auch bezahlpflichtige Artikel vollständig speichern kann. Das Passwort wird verschlüsselt gespeichert und nur zum Einloggen verwendet.",
+        "updateLogin": "Login aktualisieren",
+        "connect": "Verbinden",
+        "remove": "Entfernen",
+        "usernameLabel": "E-Mail oder Benutzername",
+        "passwordLabel": "Passwort",
+        "saveAndLogin": "Speichern und einloggen",
+        "notConnected": "Nicht verbunden",
+        "connected": "Verbunden",
+        "loginFailed": "Login fehlgeschlagen – Passwort prüfen",
+        "loginUnavailable": "Login ist vorübergehend nicht verfügbar",
+        "notCheckedYet": "Noch nicht geprüft",
+        "connectedNotice": "Verbunden. Merlin nutzt diesen Login ab jetzt für {domain}.",
+        "removedNotice": "Login entfernt."
+      },
+      "about": {
+        "sectionTitle": "Über Merlin",
+        "sectionDesc": "App-Version, Entwickler und nützliche Links.",
+        "version": "Version",
+        "developer": "Entwickler",
+        "license": "Lizenz",
+        "sourceCodeLink": "Quellcode auf GitHub",
+        "reportBugLink": "Fehler melden",
+        "donateLink": "Spenden"
+      }
+    },
+    "sidebar": {
+      "video": "Video",
+      "filterTagsPlaceholder": "Tags filtern…",
+      "clearSearch": "Suche leeren",
+      "pinned": "Angeheftet",
+      "pin": "Anheften",
+      "unpin": "Lösen",
+      "deleteTag": "Tag löschen",
+      "showLess": "Weniger anzeigen",
+      "noTagsMatching": "Keine Tags passend zu „{query}“",
+      "showAllTags": {
+        "one": "Alle {count} Tag anzeigen",
+        "other": "Alle {count} Tags anzeigen"
+      }
+    },
+    "contentFilters": {
+      "myContentFilters": "Meine Content-Filter",
+      "intro": "Content-Filter bereinigen gespeicherte Artikel pro Website. Regeln von der App und deinem Administrator gelten für alle; hier kannst du deine eigenen privaten Regeln hinzufügen — nur du wirst sie sehen und sie haben Vorrang vor allen anderen.",
+      "selectWebsiteHint": "Wähle eine Website auf der linken Seite oder füge eine neue hinzu.",
+      "filterSaved": "Dein Filter wurde gespeichert.",
+      "rulesDeleted": "Deine Regeln wurden gelöscht.",
+      "builtinAdminRulesPresent": "Vordefinierte/Admin-Regeln vorhanden",
+      "noBuiltinOrAdminRules": "Keine vordefinierten oder Admin-Regeln",
+      "yourOwnRulesPresent": "deine eigenen Regeln vorhanden",
+      "noOwnRulesYet": "noch keine eigenen Regeln",
+      "save": "Speichern",
+      "discard": "Verwerfen",
+      "deleteMyRules": "Meine Regeln löschen",
+      "mergedFilterError": "Der zusammengeführte Filter konnte nicht erstellt werden:",
+      "rulesHint": "Regeln unten, die als vordefiniert markiert sind, stammen von der App oder deinem Administrator und sind hier schreibgeschützt. Füge deine eigenen Regeln hinzu, um sie zu erweitern oder zu überschreiben — nur du siehst sie.",
+      "noteLabel": "Notiz (für deine eigenen Notizen gespeichert)",
+      "fixedCategoryHint": "Feste Kategorie für alle deine Artikel dieser Website",
+      "currentValue": "Aktueller Wert:",
+      "ignore": "ignorieren",
+      "categoryPlaceholder": "z.B. Nachrichten",
+      "showXmlSource": "XML-Quelle anzeigen",
+      "builtinAdminReference": "Vordefiniert + Admin (Referenz)",
+      "yourOwn": "Deine eigenen",
+      "mergedForYou": "Zusammengeführt (was der Extraktor für dich sieht)",
+      "testRun": "Testlauf",
+      "testRunHint": "Ruft einen Artikel dieser Website mit den aktuell angezeigten Regeln ab — einschließlich deiner ungespeicherten Änderungen — und meldet, wie viele Elemente jede Regel gefunden hat. Nichts wird gespeichert.",
+      "testing": "Wird getestet…",
+      "test": "Test",
+      "unsavedState": "ungespeicherter Zustand",
+      "section": "Sektion",
+      "rule": "Regel",
+      "origin": "Herkunft",
+      "matches": "Treffer",
+      "emptyPlaceholder": "— leer —",
+      "showExtractedArticle": "Extrahierten Artikel anzeigen",
+      "title": "Titel",
+      "author": "Autor",
+      "date": "Datum",
+      "teaser": "Vorschau",
+      "category": "Kategorie",
+      "image": "Bild",
+      "yours": "deine",
+      "adminDefault": "Admin-Standard",
+      "builtin": "vordefiniert",
+      "line": "Zeile",
+      "searchWebsite": "Website suchen…",
+      "shippedWithApp": "Mit der App ausgeliefert",
+      "own": "eigene",
+      "hasOwnRules": "Hat eigene Regeln",
+      "userOverrideHint": "Nutzer mit eigenen privaten Regeln für diese Website (Inhalt für Admins nicht sichtbar)",
+      "userOverrideCount": {
+        "one": "%n Nutzer-Override",
+        "other": "%n Nutzer-Overrides"
+      },
+      "noMatch": "Keine Treffer.",
+      "addWebsite": "Website hinzufügen",
+      "importXmlFile": "XML-Datei importieren",
+      "adminHint": "Als Administrator kannst du außerdem instanzweite Filter verwalten.",
+      "openAdminSettings": "Verwaltungseinstellungen öffnen",
+      "saving": "Wird gespeichert…",
+      "deleteOwnRulesConfirm": "Deine eigenen Regeln für {domain} löschen? Vordefinierte und Admin-Regeln bleiben bestehen.",
+      "ignoreBuiltinRule": "Diese vordefinierte Regel ignorieren",
+      "off": "aus",
+      "deleteRule": "Regel löschen",
+      "ignoreSectionBuiltinRules": "Alle vordefinierten Regeln dieser Sektion ignorieren",
+      "sectionIgnoredNote": "Diese ganze Sektion wird ignoriert. Regeln, die du unten hinzufügst, ersetzen sie.",
+      "addRule": "Regel hinzufügen",
+      "sectionDescFetch": "HTTP-Header zum Abrufen der Seite (z. B. Consent-Cookie)",
+      "sectionDescPreFilter": "Wird auf die Rohseite angewendet, bevor der Artikel extrahiert wird",
+      "sectionDescPostFilter": "Wird auf den bereits extrahierten Artikeltext angewendet",
+      "sectionDescImages": "Verpackt Bild und Bildunterschrift neu in figure/figcaption",
+      "sectionDescQuotes": "Wandelt seitenspezifisches Zitat-Markup in Blockquotes um",
+      "sectionDescJson": "Benannte JSON-Quellen, auf die Metadatenfelder verweisen können",
+      "sectionDescMetadata": "Überschreibt Titel, Autor, Datum usw.; mehrere Regeln je Feld bilden eine Fallback-Kette",
+      "adminTitle": "Content-Filter",
+      "adminIntro": "Content-Filter bereinigen gespeicherte Artikel pro Website: Sie entfernen Werbung und Navigation, bevor der Artikel extrahiert wird, und können Titel, Autor oder Datum korrigieren. Mit der App ausgelieferte Filter lassen sich hier erweitern; deine eigenen Regeln werden mit ihnen zusammengeführt.",
+      "adminFilterSaved": "Filter gespeichert.",
+      "adminRulesDeleted": "Deine eigenen Regeln wurden gelöscht.",
+      "filterImported": "Filter importiert.",
+      "importCancelled": "Import abgebrochen.",
+      "adminBuiltinFilterPresent": "Vordefinierter Filter vorhanden",
+      "adminNoBuiltinFilter": "Kein vordefinierter Filter",
+      "adminOwnRulesPresent": "eigene Regeln vorhanden",
+      "downloadXml": "XML herunterladen",
+      "adminDeleteOwnRules": "Eigene Regeln löschen",
+      "adminNoteLabel": "Notiz (in der Datei gespeichert, zur eigenen Referenz)",
+      "adminFixedCategoryHint": "Feste Kategorie für alle Artikel dieser Website",
+      "adminBuiltinValue": "Vordefinierter Wert:",
+      "adminBuiltinLabel": "Vordefiniert",
+      "adminMerged": "Zusammengeführt (was der Extraktor sieht)",
+      "adminDeleteOwnRulesConfirm": "Deine eigenen Regeln für {domain} löschen? Der vordefinierte Filter bleibt bestehen.",
+      "ruleCount": {
+        "one": "%n Regel",
+        "other": "%n Regeln"
+      },
+      "ruleWithoutMatch": {
+        "one": "%n ohne Treffer",
+        "other": "%n ohne Treffer"
+      },
+      "ruleFaulty": {
+        "one": "%n fehlerhaft",
+        "other": "%n fehlerhaft"
+      }
+    }
+  },
+  "merlinServer": {
+    "common": {
+      "username": "Benutzername",
+      "password": "Passwort",
+      "email": "E-Mail",
+      "backToLogin": "Zurück zur Anmeldung"
+    },
+    "login": {
+      "pageTitle": "Anmelden – Merlin",
+      "heading": "Anmelden",
+      "submit": "Anmelden",
+      "forgotPassword": "Passwort vergessen?",
+      "createAccount": "Konto erstellen",
+      "invalidCredentials": "Benutzername oder Passwort ist falsch.",
+      "accountDisabled": "Dieses Konto ist deaktiviert."
+    },
+    "register": {
+      "pageTitle": "Registrieren – Merlin",
+      "heading": "Konto erstellen",
+      "submit": "Konto erstellen",
+      "fillAllFields": "Bitte alle Felder ausfüllen (Passwort mindestens 8 Zeichen).",
+      "usernameTaken": "Dieser Benutzername ist bereits vergeben.",
+      "emailTaken": "Diese E-Mail-Adresse wird bereits verwendet."
+    },
+    "passwordForgot": {
+      "pageTitle": "Passwort vergessen – Merlin",
+      "heading": "Passwort vergessen",
+      "submit": "Link zusenden",
+      "sentIfKnown": "Falls diese E-Mail-Adresse bekannt ist, wurde ein Link zum Zurücksetzen verschickt."
+    },
+    "passwordReset": {
+      "pageTitle": "Passwort zurücksetzen – Merlin",
+      "heading": "Neues Passwort setzen",
+      "newPassword": "Neues Passwort",
+      "submit": "Passwort setzen",
+      "tooShort": "Das Passwort muss mindestens 8 Zeichen lang sein.",
+      "invalidToken": "Der Link ist ungültig oder abgelaufen."
+    },
+    "loginFlow": {
+      "invalidHeading": "Link ungültig",
+      "invalidBody": "Dieser Anmelde-Link ist abgelaufen oder wurde bereits verwendet. Bitte den Anmeldevorgang in der App bzw. Erweiterung erneut starten.",
+      "doneHeading": "Erfolgreich verbunden",
+      "doneBody": "Merlin ist jetzt mit deinem Konto verbunden. Du kannst dieses Fenster jetzt schließen.",
+      "heading": "Bei Merlin anmelden",
+      "hint": "Diese Anmeldung verbindet eine App oder Erweiterung mit deinem Merlin-Konto.",
+      "submit": "Verbinden"
+    },
+    "account": {
+      "pageTitle": "Konto – Merlin",
+      "heading": "Konto: {username}",
+      "navLibrary": "Meine Leseliste",
+      "navContentFilters": "Content-Filter",
+      "navLogout": "Abmelden",
+      "navAdmin": "Admin-Bereich",
+      "apiTokensHeading": "API-Tokens",
+      "apiTokensHint": "Für iOS/Android/Browser-Erweiterungen: Benutzername + Token statt Passwort verwenden.",
+      "deviceNameLabel": "Gerätename",
+      "deviceNamePlaceholder": "z.B. iPhone von Julian",
+      "createTokenSubmit": "Token erzeugen",
+      "newTokenPrefix": "Neues Token (nur jetzt sichtbar): {token}",
+      "neverUsed": "nie benutzt",
+      "revoke": "Widerrufen",
+      "paywallHeading": "Abos",
+      "paywallHint": "Für Websites mit Paywall (z. B. Tagesspiegel Plus): eigene Zugangsdaten hinterlegen, damit Merlin auch bezahlpflichtige Artikel vollständig speichern kann. Das Passwort wird verschlüsselt gespeichert und nur zum Einloggen verwendet.",
+      "cipherNotConfigured": "Der Server ist für Abo-Logins noch nicht eingerichtet (<code>credential_cipher_key</code> fehlt in <code>config.php</code>). Bitte den Administrator kontaktieren.",
+      "noPaywallSites": "Keine Websites mit Abo-Login-Unterstützung verfügbar.",
+      "emailOrUsernamePlaceholder": "E-Mail oder Benutzername",
+      "emailOrUsernameForLabel": "E-Mail oder Benutzername für {domain}",
+      "saveAndLogin": "Speichern und einloggen",
+      "cancel": "Abbrechen",
+      "statusOk": "Verbunden",
+      "statusInvalidCredentials": "Login fehlgeschlagen – Passwort prüfen",
+      "statusLoginFlowBroken": "Login vorübergehend nicht verfügbar",
+      "statusPending": "Noch nicht geprüft",
+      "statusNotConnected": "Nicht verbunden",
+      "updateLogin": "Login aktualisieren",
+      "connect": "Verbinden",
+      "remove": "Entfernen",
+      "connectedNotice": "Verbunden. Merlin verwendet diesen Login ab jetzt für {domain}.",
+      "loginFailedGeneric": "Login fehlgeschlagen."
+    },
+    "adminUsers": {
+      "pageTitle": "Admin – Merlin",
+      "heading": "Benutzerverwaltung",
+      "navLibrary": "Leseliste",
+      "navMyAccount": "Mein Konto",
+      "navContentFilters": "Content-Filter",
+      "allowSelfRegistration": "Offene Self-Registrierung erlauben",
+      "createUserHeading": "Neuen Benutzer anlegen",
+      "initialPassword": "Initialpasswort",
+      "role": "Rolle",
+      "roleUser": "Normaler Benutzer",
+      "roleAdmin": "Admin",
+      "createSubmit": "Anlegen",
+      "statusActive": "aktiv",
+      "statusDisabled": "deaktiviert",
+      "disable": "Deaktivieren",
+      "enable": "Aktivieren",
+      "delete": "Löschen",
+      "confirmDeleteUser": "Benutzer wirklich löschen? Alle Artikel gehen verloren."
+    },
+    "contentFilters": {
+      "pageTitle": "Content-Filter – Merlin",
+      "editButton": "Bearbeiten",
+      "domainPlaceholder": "z.B. example.com",
+      "save": "Speichern",
+      "delete": "Löschen",
+      "testRunHeading": "Testlauf",
+      "testSubmit": "Testen (ungespeicherter Stand)",
+      "testError": "Fehler beim Testlauf",
+      "noTitle": "(kein Titel)",
+      "badgeBundle": "Bundle",
+      "badgeAdmin": "Admin",
+      "lineLabel": "Zeile",
+      "testSummary": "{rules} Regeln, {misses} ohne Treffer, {errors} Fehler",
+      "colSection": "Sektion",
+      "colElement": "Element",
+      "colOrigin": "Herkunft",
+      "colAttributes": "Attribute",
+      "colMatches": "Treffer",
+      "colError": "Fehler"
+    },
+    "personalCf": {
+      "heading": "Content-Filter (persönlich)",
+      "navMyAccount": "Mein Konto",
+      "navLibrary": "Leseliste",
+      "intro": "Eigene, private Regeln oben auf Bundle- und (falls vorhanden) instanzweiten Admin-Regeln je Domain. Diese Overrides sind nur für dein eigenes Konto wirksam.",
+      "badgeOwnOverride": "Eigener Override",
+      "referenceLabel": "Referenz (Bundle + instanzweite Admin-Regeln, read-only)",
+      "noReference": "(kein Bundle-/Admin-Filter für diese Domain)",
+      "ownRulesLabel": "Eigene Regeln (nur für dich, überschreibt/ergänzt die Referenz)",
+      "confirmDeleteOwn": "Eigenen Override für \"{domain}\" wirklich löschen?"
+    },
+    "adminCf": {
+      "heading": "Content-Filter (Admin)",
+      "navUserManagement": "Benutzerverwaltung",
+      "navLibrary": "Leseliste",
+      "intro": "Instanzweite Custom-Regeln oben auf dem mitgelieferten Bundle-Filter je Domain. Persönliche Overrides pro Nutzer werden unter „Mein Konto“ verwaltet.",
+      "bundleLabel": "Bundle (read-only, mitgeliefert)",
+      "noBundle": "(kein Bundle-Filter für diese Domain)",
+      "customRulesLabel": "Eigene Regeln (Admin-Custom, überschreibt/ergänzt das Bundle)",
+      "exportLink": "Exportieren",
+      "badgeCustom": "Custom",
+      "userOverrideBadge": "{count} Nutzer",
+      "confirmDeleteCustom": "Admin-Custom-Filter für \"{domain}\" wirklich löschen?"
+    },
+    "publicShare": {
+      "pageTitle": "Geteilter Artikel – Merlin",
+      "listen": "Vorlesen",
+      "loading": "Lädt…",
+      "passwordRequiredHeading": "Passwort erforderlich",
+      "passwordProtectedHint": "Dieser Artikel ist passwortgeschützt.",
+      "unlockSubmit": "Entsperren",
+      "linkExpired": "Dieser Link ist abgelaufen.",
+      "articleNotFound": "Artikel nicht gefunden.",
+      "wrongPassword": "Falsches Passwort.",
+      "untitledArticle": "Artikel",
+      "minutesShort": "{minutes} Min."
+    },
+    "library": {
+      "pageTitle": "Leseliste – Merlin",
+      "brand": "Leseliste",
+      "searchPlaceholder": "Suchen…",
+      "searchAriaLabel": "Artikel suchen",
+      "addArticle": "Artikel hinzufügen",
+      "navMyAccount": "Mein Konto",
+      "navAdmin": "Admin",
+      "navLogout": "Abmelden",
+      "urlPlaceholder": "Artikel-URL einfügen…",
+      "addSubmit": "Hinzufügen",
+      "cancel": "Abbrechen",
+      "continueReading": "Weiterlesen",
+      "viewLabel": "Ansicht",
+      "viewUnread": "Ungelesen",
+      "viewFavorites": "Favoriten",
+      "viewArchive": "Archiv",
+      "viewAll": "Alle",
+      "tagsLabel": "Tags",
+      "sortNewest": "Neueste",
+      "sortShortest": "Kürzeste",
+      "sortStarted": "Angefangen",
+      "emptyState": "Keine Artikel in dieser Ansicht.",
+      "loadMore": "Mehr laden",
+      "removeFavorite": "Favorit entfernen",
+      "addFavorite": "Als Favorit merken",
+      "restore": "Wiederherstellen",
+      "archive": "Archivieren",
+      "delete": "Löschen",
+      "confirmDeleteArticle": "Artikel wirklich löschen?",
+      "minutesShort": "{minutes} min",
+      "remainingMinutes": "noch ca. {minutes} min",
+      "lastRead": "zuletzt {when}",
+      "today": "heute",
+      "yesterday": "gestern",
+      "processing": "wird geladen…",
+      "addedMinutesAgo": "vor {minutes} Min. hinzugefügt",
+      "addedHoursAgo": "vor {hours} Std. hinzugefügt",
+      "addedOn": "{when} hinzugefügt",
+      "startedCount": "{count} angefangen",
+      "addArticleFailed": "Artikel konnte nicht hinzugefügt werden."
+    },
+    "articleReader": {
+      "pageTitle": "Artikel – Merlin",
+      "backToLibrary": "Zurück zur Leseliste",
+      "archive": "Archivieren",
+      "addFavorite": "Zu Favoriten hinzufügen",
+      "share": "Teilen",
+      "loading": "Lädt…",
+      "copy": "Kopieren",
+      "passwordNoProtectionPlaceholder": "Passwort (leer = kein Schutz)",
+      "set": "Setzen",
+      "regenerate": "Regenerieren",
+      "revoke": "Widerrufen",
+      "createLink": "Link erstellen",
+      "more": "Mehr",
+      "tags": "Tags",
+      "changeFontSize": "Textgröße ändern",
+      "listen": "Vorlesen",
+      "export": "Exportieren",
+      "delete": "Löschen",
+      "newTagPlaceholder": "Neuer Tag…",
+      "highlightHint": "Text markieren, um eine Farbe für die Hervorhebung auszuwählen. Klick auf eine Markierung entfernt sie wieder.",
+      "removeHighlight": "Markierung entfernen",
+      "untitledArticle": "Artikel",
+      "minutesShort": "{minutes} min",
+      "markAsUnread": "Als ungelesen markieren",
+      "markAsRead": "Als gelesen markieren",
+      "removeFavorite": "Aus Favoriten entfernen",
+      "restore": "Wiederherstellen",
+      "confirmDeleteArticle": "Artikel wirklich löschen?",
+      "noTagsYet": "Noch keine Tags angelegt.",
+      "passwordChangePlaceholder": "Neues Passwort (leer = entfernen)",
+      "confirmRevokeLink": "Link wirklich widerrufen?",
+      "notFoundOrForbidden": "Artikel nicht gefunden oder keine Berechtigung."
+    },
+    "cfApi": {
+      "invalidDomain": "Ungültiger Domainname.",
+      "noFilterForDomain": "Für diese Domain existiert kein Filter.",
+      "filterInvalid": "Der Filter ist ungültig.",
+      "noTestUrl": "Es wurde keine Test-URL übergeben.",
+      "urlNoHostname": "Die URL enthält keinen Hostnamen.",
+      "urlDomainMismatch": "Die URL gehört zu \"{urlDomain}\", getestet wird der Filter für \"{domain}\".",
+      "testFilterInvalid": "Der zu testende Filter ist ungültig."
+    },
+    "siteCredentialsApi": {
+      "usernamePasswordRequired": "Benutzername und Passwort sind erforderlich.",
+      "cipherNotConfigured": "Der Server ist für Abo-Logins noch nicht eingerichtet (credential_cipher_key fehlt in config.php). Bitte den Administrator kontaktieren."
+    }
+  }
+}
