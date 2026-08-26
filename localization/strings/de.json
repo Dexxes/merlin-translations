@@ -58,6 +58,11 @@
       "favorite": "Zu Favoriten hinzufügen rückgängig",
       "unarchive": "Aus Archiv entfernen rückgängig",
       "archive": "Archivieren rückgängig"
+    },
+    "archiveToast": {
+      "archived": "Archiviert",
+      "unarchived": "Aus dem Archiv entfernt",
+      "undoButton": "Rückgängig"
     }
   },
   "articleActions": {
@@ -99,7 +104,8 @@
       "editTags": "Tags bearbeiten…",
       "editReminder": "Erinnerung ändern…",
       "setReminder": "Erinnern…",
-      "reportArticle": "Artikel melden…"
+      "reportArticle": "Artikel melden…",
+      "publicLink": "Öffentlichen Link erstellen"
     },
     "ttsPanel": {
       "preparing": "Audio wird vorbereitet …"
@@ -117,10 +123,36 @@
       "newTagPlaceholder": "Neuen Tag erstellen…"
     },
     "noContent": {
-      "title": "Kein Inhalt verfügbar"
+      "title": "Kein Inhalt verfügbar",
+      "processing": "Artikel wird geladen…",
+      "retry": "Erneut versuchen"
     },
     "linkDialog": {
       "addToReadingList": "Zur Leseliste hinzufügen"
+    },
+    "highlightToolbar": {
+      "title": "Markierungsfarbe"
+    },
+    "paywallBanner": {
+      "connectButton": "Verbinden",
+      "message": "Dieser Artikel könnte auf {domain} hinter einer Paywall liegen. Verbinde dein Abo, um ihn freizuschalten.",
+      "retryButton": "Erneut versuchen"
+    },
+    "shareLink": {
+      "title": "Freigabelink",
+      "explainer": "Erstelle einen öffentlichen Link, um diesen Artikel mit anderen zu teilen – auch ohne Merlin-Konto.",
+      "password": "Passwort",
+      "protectWithPassword": "Mit Passwort schützen",
+      "setExpiry": "Ablaufdatum festlegen",
+      "expiresOn": "Läuft ab am",
+      "createButton": "Freigabelink erstellen",
+      "shareButton": "Teilen",
+      "newPassword": "Neues Passwort",
+      "regenerateButton": "Link erneuern",
+      "revokeButton": "Link widerrufen"
+    },
+    "video": {
+      "variant": "Fassung"
     }
   },
   "addArticle": {
@@ -193,15 +225,23 @@
       "clearDialogTitle": "Cache leeren?",
       "clearDialogMessage": "Alle zwischengespeicherten Artikel, Bilder, Lesepositionen, der Web-Cache des Readers und deine Nextcloud-Zugangsdaten werden gelöscht. MerlinShare-Daten werden ebenfalls gelöscht. Du wirst abgemeldet.",
       "clearDialogConfirm": "Leeren",
-      "clearedSuccess": "Cache erfolgreich geleert."
+      "clearedSuccess": "Cache erfolgreich geleert.",
+      "retentionLabel": "Aufbewahrungsdauer",
+      "retentionOff": "Unbegrenzt aufbewahren",
+      "retentionDaysFormat": "{count} Tage aufbewahren"
     },
     "about": {
       "sectionHeader": "Über",
-      "versionLabel": "Version"
+      "versionLabel": "Version",
+      "commitLabel": "Commit"
     },
     "developer": {
       "sectionHeader": "Entwickler",
       "modeToggle": "Entwicklermodus"
+    },
+    "paywall": {
+      "rowTitle": "Zugangsdaten für Websites",
+      "footer": "Verwalte Zugangsdaten für Seiten mit Paywall, damit Merlin den vollständigen Artikelinhalt abrufen kann."
     }
   },
   "share": {
@@ -981,6 +1021,21 @@
     "siteCredentialsApi": {
       "usernamePasswordRequired": "Benutzername und Passwort sind erforderlich.",
       "cipherNotConfigured": "Der Server ist für Abo-Logins noch nicht eingerichtet (credential_cipher_key fehlt in config.php). Bitte den Administrator kontaktieren."
+    }
+  },
+  "siteCredentials": {
+    "title": "Zugangsdaten für Websites",
+    "connectedSection": "Verbunden",
+    "addSection": "Hinzufügen",
+    "noneYet": "Noch keine Zugangsdaten vorhanden.",
+    "usernamePlaceholder": "Benutzername",
+    "passwordPlaceholder": "Passwort",
+    "savedHint": "Erfolgreich gespeichert.",
+    "status": {
+      "ok": "Verbunden",
+      "pending": "Ausstehend",
+      "invalidCredentials": "Ungültige Zugangsdaten",
+      "loginFlowBroken": "Login fehlgeschlagen"
     }
   }
 }
