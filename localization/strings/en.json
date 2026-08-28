@@ -197,6 +197,7 @@
   "settings": {
     "account": {
       "sectionHeader": "Nextcloud Account",
+      "connectHeadline": "Connect to Merlin",
       "footer": "Tap \"Login with Nextcloud\" to authenticate via your browser.",
       "urlLabel": "URL",
       "urlPlaceholder": "https://cloud.example.com",
@@ -204,6 +205,7 @@
       "loginButtonStandalone": "Log in",
       "waitingForBrowser": "Waiting for browser login…",
       "loggedInSuccess": "Logged in successfully!",
+      "loggedInAs": "Logged in as {username}",
       "logoutDialogTitle": "Logout?",
       "logoutDialogMessage": "Your Nextcloud credentials will be removed from this device. Cached articles and reading positions are kept."
     },
