@@ -7,6 +7,13 @@ daraus native Lokalisierungsformate je Plattform.
 
 Aktuell implementiert:
   - iOS / iPadOS: klassische .strings/.stringsdict in <lang>.lproj-Ordnern.
+  - android: res/values(-de)/strings_i18n.xml (<string>/<plurals>) für
+    merlin-android. Wie iOS werden webext.*/nextcloudWeb.*/merlinServer.*
+    herausgefiltert (siehe without_prefix in export_android) - Android ist
+    wie iOS ein nativer Client, der dieselben generischen Namespaces
+    (common, onboarding, articleReader, ...) nutzt. Eigene generierte Datei
+    statt Einträge in der bestehenden strings.xml, damit die dort von Hand
+    gepflegten Ressourcen (z.B. app_name) unangetastet bleiben.
   - webext (Thunderbird): _locales/<lang>/messages.json für browser.i18n.
     Nur die Keys unter dem `webext.`-Namespace werden hier exportiert; iOS
     überspringt diese umgekehrt (siehe without_prefix in export_ios).
@@ -33,9 +40,10 @@ finalen Laufzeitformat - SwiftPM kopiert sie unverändert in die
 Resource-Bundles, ganz ohne Kompilierschritt. Siehe tasks/lessons.md.
 
 Aufruf:
-    python3 export.py                          # alle Plattformen (ios + webext + nextcloud + merlin-server)
+    python3 export.py                          # alle Plattformen (ios + android + webext + nextcloud + merlin-server)
     python3 export.py --platform webext        # nur die WebExtension-_locales
     python3 export.py --platform ios
+    python3 export.py --platform android       # nur merlin-android/.../res/values(-de)/strings_i18n.xml
     python3 export.py --platform nextcloud     # nur merlin-nextcloud/l10n
     python3 export.py --platform merlin-server  # nur merlin-server/src/I18n/lang
     python3 export.py --check                   # nur Key-Paritätscheck, kein Schreiben
@@ -84,6 +92,29 @@ IOS_RESOURCE_DIRS = [
 # werden beim Export entfernt, damit kein toter/widersprüchlicher Stand
 # im Resources-Ordner liegen bleibt.
 OBSOLETE_IOS_FILES = ["Localizable.xcstrings"]
+
+# Ressourcen-Wurzelordner von merlin-android. Jede unterstützte Sprache
+# bekommt einen eigenen values(-<lang>)-Ordner; "en" ist die Quellsprache
+# und landet daher im Default-Ordner "values" (Android-Konvention).
+ANDROID_RES_DIR = REPO_ROOT / "merlin-android" / "app" / "src" / "main" / "res"
+ANDROID_VALUES_DIRS = {"en": "values", "de": "values-de"}
+
+# Eigene generierte Datei statt Einträge in der bestehenden strings.xml -
+# dort liegt bislang nur app_name (von Hand gepflegt), das beim Re-Export
+# nicht überschrieben werden soll.
+ANDROID_GENERATED_FILENAME = "strings_i18n.xml"
+
+# Platzhalter-Konvention analog IOS_PLACEHOLDER_FORMATS (siehe schema.md):
+# {count}/{code} sind immer Integer -> %d, alles andere -> %s. Android
+# braucht zusätzlich einen 1-basierten Positions-Index (%1$s, %2$d, ...),
+# da mehrere Platzhalter in einem String sonst nicht eindeutig sind.
+ANDROID_INT_PLACEHOLDER_NAMES = {"count", "code"}
+
+# "app.name" -> Ressourcenname "app_name" würde mit dem bereits von Hand
+# gepflegten android:label-Eintrag in res/values/strings.xml kollidieren
+# (doppelte Ressourcendefinition = Build-Fehler) - hier ausgeklammert statt
+# die bestehende Datei zu berühren.
+ANDROID_SKIP_KEYS = {"app.name"}
 
 # Namespace-Präfix für reine WebExtension-Strings (Thunderbird/Chrome/Firefox).
 # Diese Keys gehören NICHT in die iOS-Bundles - sie werden dort
@@ -327,6 +358,106 @@ def export_ios(flat_by_lang: dict[str, dict[str, Any]], dry_run: bool) -> None:
                     print(f"gelöscht (veraltet): {obsolete_path}")
 
 
+# ─── Android (merlin-android, res/values(-de)/strings_i18n.xml) ───────────────
+#
+# Wie iOS ein nativer Client der generischen Namespaces (common, onboarding,
+# articleReader, ...) - webext.*/nextcloudWeb.*/merlinServer.* gehören nicht
+# ins App-Bundle und werden herausgefiltert (ungenutzte Strings würden sonst
+# unnötig die APK vergrößern).
+
+
+def android_resource_name(dot_key: str) -> str:
+    """Dot-Key in einen gültigen Android-Ressourcennamen wandeln (Punkt -> _)."""
+    return dot_key.replace(".", "_")
+
+
+def android_convert_placeholders(value: str) -> str:
+    """`{name}` -> positionelles `%1$s`/`%1$d` (Reihenfolge des ersten Auftretens).
+
+    Android verlangt bei mehreren Platzhaltern in einem String zwingend eine
+    Positionsangabe (sonst schlägt aapt beim Build fehl), anders als iOS'
+    einfaches %@/%lld.
+    """
+    order: list[str] = []
+
+    def repl(match: "re.Match[str]") -> str:
+        name = match.group(1)
+        if name not in order:
+            order.append(name)
+        index = order.index(name) + 1
+        fmt = "d" if name in ANDROID_INT_PLACEHOLDER_NAMES else "s"
+        return f"%{index}${fmt}"
+
+    return re.sub(r"\{(\w+)\}", repl, value)
+
+
+def android_escape(value: str) -> str:
+    """Escaping für strings.xml, Wert in Anführungszeichen gesetzt.
+
+    Reihenfolge wichtig: Backslash zuerst (sonst werden frisch eingefügte
+    Escapes doppelt escaped), XML-Entities vor dem Anführungszeichen-Escaping.
+    In Anführungszeichen gesetzte Werte lässt aapt wortwörtlich stehen (die
+    Quotes selbst werden entfernt) - erspart das sonst nötige Escaping von
+    Apostrophen, das in unformatierten strings.xml-Werten sonst einen Build-
+    Fehler auslöst.
+    """
+    escaped = (
+        value.replace("\\", "\\\\")
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', '\\"')
+        .replace("\n", "\\n")
+    )
+    return f'"{escaped}"'
+
+
+def build_android_xml(flat: dict[str, Any]) -> str:
+    """Baut den Inhalt einer strings_i18n.xml (<string>/<plurals>)."""
+    bare = without_prefix(
+        without_prefix(without_prefix(flat, WEBEXT_PREFIX), NEXTCLOUD_PREFIX),
+        MERLIN_SERVER_PREFIX,
+    )
+    bare = {k: v for k, v in bare.items() if k not in ANDROID_SKIP_KEYS}
+    lines = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        "<!-- Automatisch generiert von tools/i18n/export.py --platform android. -->",
+        "<!-- Nicht direkt editieren - Änderungen gehen beim nächsten Export verloren. -->",
+        "<resources>",
+    ]
+    for dot_key in sorted(bare.keys()):
+        value = bare[dot_key]
+        name = android_resource_name(dot_key)
+        if isinstance(value, dict):
+            lines.append(f'    <plurals name="{name}">')
+            for category in ("one", "other"):
+                if category not in value:
+                    continue
+                converted = android_convert_placeholders(value[category])
+                lines.append(f'        <item quantity="{category}">{android_escape(converted)}</item>')
+            lines.append("    </plurals>")
+        else:
+            converted = android_convert_placeholders(str(value))
+            lines.append(f'    <string name="{name}">{android_escape(converted)}</string>')
+    lines.append("</resources>")
+    return "\n".join(lines) + "\n"
+
+
+def export_android(flat_by_lang: dict[str, dict[str, Any]], dry_run: bool) -> None:
+    for lang in SUPPORTED_LANGUAGES:
+        xml_text = build_android_xml(flat_by_lang[lang])
+        values_dir = ANDROID_RES_DIR / ANDROID_VALUES_DIRS[lang]
+        xml_path = values_dir / ANDROID_GENERATED_FILENAME
+
+        if dry_run:
+            print(f"[dry-run] würde schreiben: {xml_path}")
+            continue
+
+        values_dir.mkdir(parents=True, exist_ok=True)
+        xml_path.write_text(xml_text, encoding="utf-8")
+        print(f"geschrieben: {xml_path}")
+
+
 # ─── WebExtension (browser.i18n / _locales/<lang>/messages.json) ──────────────
 #
 # browser.i18n nutzt benannte Platzhalter, die über eine "placeholders"-Tabelle
@@ -539,6 +670,7 @@ def export_merlin_server(flat_by_lang: dict[str, dict[str, Any]], dry_run: bool)
 
 PLATFORM_EXPORTERS = {
     "ios": export_ios,
+    "android": export_android,
     "webext": export_webext,
     "nextcloud": export_nextcloud,
     "merlin-server": export_merlin_server,

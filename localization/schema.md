@@ -53,6 +53,21 @@ bei WebExtension-`messages.json` als `$COUNT$`-Platzhalter erhalten).
 `export.py --check` bricht ab, wenn Keys fehlen oder zusätzlich vorhanden
 sind.
 
+## Sonderfall Android
+
+`merlin-android` ist wie iOS ein nativer Client der generischen Namespaces
+(`common.*`, `onboarding.*`, `articleReader.*`, ...) - `webext.*`/
+`nextcloudWeb.*`/`merlinServer.*` gehören nicht dorthin und werden beim
+Export herausgefiltert. `export.py --platform android` erzeugt daraus je
+Sprache eine `res/values(-de)/strings_i18n.xml` (Default-Ordner `values`
+für die Quellsprache `en`) mit `<string>`- und `<plurals>`-Ressourcen -
+eigene generierte Datei statt Einträge in der bestehenden `strings.xml`,
+damit von Hand gepflegte Ressourcen dort (aktuell nur `app_name`)
+unangetastet bleiben; der Key `app.name` wird deshalb beim Android-Export
+ausgeklammert. Platzhalter werden positionell (`%1$s`, `%2$d`, ...) statt
+einfach (`%@`/`%lld` wie bei iOS) ausgegeben, da Android das bei mehr als
+einem Platzhalter pro String zwingend verlangt.
+
 ## Sonderfall WebExtension (Thunderbird/Chrome/Firefox)
 WebExtensions nutzen `browser.i18n` mit `_locales/<lang>/messages.json`.
 Alle dafür bestimmten Strings liegen im Namespace `webext.*` (z.B.
