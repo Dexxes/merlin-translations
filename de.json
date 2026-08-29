@@ -31,7 +31,9 @@
   "articleList": {
     "searchPlaceholder": "Artikel suchen",
     "filter": {
+      "pages": "Seiten",
       "unread": "Ungelesen",
+      "unseen": "Ungesehen",
       "favorites": "Favoriten",
       "archive": "Archiv",
       "videos": "Videos"
@@ -42,6 +44,7 @@
       "favoritesMessage": "Noch keine Favoriten. Markiere Artikel mit einem Stern, um sie hier zu finden.",
       "archiveMessage": "Dein Archiv ist leer.",
       "videosMessage": "Noch keine Videos gespeichert. Füge einen YouTube- oder Video-Link hinzu, um ihn hier zu sehen.",
+      "unseenMessage": "Noch keine ungesehenen Videos. Füge einen YouTube- oder Video-Link hinzu, um ihn hier zu sehen.",
       "refreshButton": "Aktualisieren",
       "taggedMessage": "Keine Artikel mit Tag \"{tag}\"."
     },
@@ -504,6 +507,8 @@
       "mastodonInstancePrompt": "Deine Mastodon-Instanz (z.B. mastodon.social):",
       "favorites": "Favoriten",
       "unread": "Ungelesen",
+      "pages": "Seiten",
+      "unwatched": "Ungesehen",
       "default": "Standard",
       "addToFavorites": "Zu Favoriten hinzufügen",
       "removeFromFavorites": "Aus Favoriten entfernen",
@@ -657,7 +662,7 @@
       }
     },
     "sidebar": {
-      "video": "Video",
+      "video": "Videos",
       "filterTagsPlaceholder": "Tags filtern…",
       "clearSearch": "Suche leeren",
       "pinned": "Angeheftet",
@@ -949,7 +954,10 @@
       "cancel": "Abbrechen",
       "continueReading": "Weiterlesen",
       "viewLabel": "Ansicht",
+      "viewPages": "Seiten",
+      "viewVideos": "Videos",
       "viewUnread": "Ungelesen",
+      "viewUnseen": "Ungesehen",
       "viewFavorites": "Favoriten",
       "viewArchive": "Archiv",
       "viewAll": "Alle",

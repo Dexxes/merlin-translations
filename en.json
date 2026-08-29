@@ -31,7 +31,9 @@
   "articleList": {
     "searchPlaceholder": "Search articles",
     "filter": {
+      "pages": "Pages",
       "unread": "Unread",
+      "unseen": "Unwatched",
       "favorites": "Favorites",
       "archive": "Archive",
       "videos": "Videos"
@@ -42,6 +44,7 @@
       "favoritesMessage": "No favorites yet. Star articles to find them here.",
       "archiveMessage": "Your archive is empty.",
       "videosMessage": "No videos saved yet. Add a YouTube or video link to see it here.",
+      "unseenMessage": "No unwatched videos yet. Add a YouTube or video link to see it here.",
       "refreshButton": "Refresh",
       "taggedMessage": "No articles tagged \"{tag}\"."
     },
@@ -504,6 +507,8 @@
       "mastodonInstancePrompt": "Your Mastodon instance (e.g. mastodon.social):",
       "favorites": "Favorites",
       "unread": "Unread",
+      "pages": "Pages",
+      "unwatched": "Unwatched",
       "default": "Default",
       "addToFavorites": "Add to favorites",
       "removeFromFavorites": "Remove from favorites",
@@ -657,7 +662,7 @@
       }
     },
     "sidebar": {
-      "video": "Video",
+      "video": "Videos",
       "filterTagsPlaceholder": "Filter tags…",
       "clearSearch": "Clear search",
       "pinned": "Pinned",
@@ -949,7 +954,10 @@
       "cancel": "Cancel",
       "continueReading": "Continue reading",
       "viewLabel": "View",
+      "viewPages": "Pages",
+      "viewVideos": "Videos",
       "viewUnread": "Unread",
+      "viewUnseen": "Unwatched",
       "viewFavorites": "Favorites",
       "viewArchive": "Archive",
       "viewAll": "All",
