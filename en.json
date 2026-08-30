@@ -32,11 +32,13 @@
     "searchPlaceholder": "Search articles",
     "filter": {
       "pages": "Pages",
+      "continueReading": "Continue reading",
       "unread": "Unread",
       "unseen": "Unwatched",
       "favorites": "Favorites",
       "archive": "Archive",
-      "videos": "Videos"
+      "videos": "Videos",
+      "continueWatching": "Continue watching"
     },
     "emptyState": {
       "title": "Nothing here yet",
@@ -46,7 +48,9 @@
       "videosMessage": "No videos saved yet. Add a YouTube or video link to see it here.",
       "unseenMessage": "No unwatched videos yet. Add a YouTube or video link to see it here.",
       "refreshButton": "Refresh",
-      "taggedMessage": "No articles tagged \"{tag}\"."
+      "taggedMessage": "No articles tagged \"{tag}\".",
+      "continueReadingMessage": "Nothing to continue reading. Articles you've started appear here.",
+      "continueWatchingMessage": "Nothing to continue watching. Videos you've started appear here."
     },
     "unconfigured": {
       "title": "Not connected",

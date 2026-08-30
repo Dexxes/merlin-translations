@@ -32,11 +32,13 @@
     "searchPlaceholder": "Artikel suchen",
     "filter": {
       "pages": "Seiten",
+      "continueReading": "Weiterlesen",
       "unread": "Ungelesen",
       "unseen": "Ungesehen",
       "favorites": "Favoriten",
       "archive": "Archiv",
-      "videos": "Videos"
+      "videos": "Videos",
+      "continueWatching": "Weiterschauen"
     },
     "emptyState": {
       "title": "Noch nichts hier",
@@ -46,7 +48,9 @@
       "videosMessage": "Noch keine Videos gespeichert. Füge einen YouTube- oder Video-Link hinzu, um ihn hier zu sehen.",
       "unseenMessage": "Noch keine ungesehenen Videos. Füge einen YouTube- oder Video-Link hinzu, um ihn hier zu sehen.",
       "refreshButton": "Aktualisieren",
-      "taggedMessage": "Keine Artikel mit Tag \"{tag}\"."
+      "taggedMessage": "Keine Artikel mit Tag \"{tag}\".",
+      "continueReadingMessage": "Nichts zum Weiterlesen. Angefangene Artikel erscheinen hier.",
+      "continueWatchingMessage": "Nichts zum Weiterschauen. Angefangene Videos erscheinen hier."
     },
     "unconfigured": {
       "title": "Nicht verbunden",
