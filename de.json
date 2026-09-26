@@ -145,6 +145,11 @@
       "message": "Dieser Artikel könnte auf {domain} hinter einer Paywall liegen. Verbinde dein Abo, um ihn freizuschalten.",
       "retryButton": "Erneut versuchen"
     },
+    "paywallSubscribeBanner": {
+      "archiveButton": "Archivieren",
+      "message": "Dies ist ein Bezahlartikel. Merlin kann ihn nicht automatisch freischalten.",
+      "subscribeButton": "Abo abschliessen"
+    },
     "shareLink": {
       "title": "Freigabelink",
       "explainer": "Erstelle einen öffentlichen Link, um diesen Artikel mit anderen zu teilen – auch ohne Merlin-Konto.",
