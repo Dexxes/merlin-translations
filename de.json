@@ -96,6 +96,11 @@
       "published": "ERSCHIENEN",
       "saved": "GESPEICHERT"
     },
+    "paywallSubscribeBanner": {
+      "archiveButton": "Archivieren",
+      "message": "Dies ist ein Bezahlartikel. Merlin kann ihn nicht automatisch freischalten.",
+      "subscribeButton": "Abo abschliessen"
+    },
     "sideMenu": {
       "addFavorite": "Als Favorit markieren",
       "removeFavorite": "Aus Favoriten entfernen",

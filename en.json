@@ -96,6 +96,11 @@
       "published": "PUBLISHED",
       "saved": "SAVED"
     },
+    "paywallSubscribeBanner": {
+      "archiveButton": "Archive",
+      "message": "This is a paid article. Merlin can't unlock it automatically.",
+      "subscribeButton": "Subscribe"
+    },
     "sideMenu": {
       "addFavorite": "Add to Favorites",
       "removeFavorite": "Remove from Favorites",
