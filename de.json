@@ -158,6 +158,9 @@
       "regenerateButton": "Link erneuern",
       "revokeButton": "Link widerrufen"
     },
+    "unsupportedSiteBanner": {
+      "message": "Diese Seite ({domain}) kann von Merlin nicht gespeichert werden: sie liefert keinen lesbaren Artikeltext, den Merlin abrufen könnte."
+    },
     "video": {
       "variant": "Fassung"
     }
@@ -389,7 +392,8 @@
       "authFailedTitle": "Merlin: Anmeldung fehlgeschlagen",
       "authFailedMessage": "Merlin: Anmeldung fehlgeschlagen – bitte erneut einloggen",
       "configureCredentials": "Bitte zuerst Zugangsdaten konfigurieren.",
-      "needsPermission": "Merlin braucht eine Berechtigung für diesen Server — bitte in den Einstellungen erneut einloggen."
+      "needsPermission": "Merlin braucht eine Berechtigung für diesen Server — bitte in den Einstellungen erneut einloggen.",
+      "unsupportedSiteMessage": "Merlin: Diese Seite wird nicht unterstützt ({domain})"
     },
     "flyout": {
       "articleAdded": "Artikel gespeichert",
@@ -398,7 +402,8 @@
       "connectionFailed": "Verbindung fehlgeschlagen: {error}",
       "serverError": "Serverfehler: HTTP {code}",
       "saving": "Wird an Merlin geschickt…",
-      "addedToReadingList": "Zur Leseliste hinzugefügt."
+      "addedToReadingList": "Zur Leseliste hinzugefügt.",
+      "unsupportedSite": "Nicht unterstützt: {domain} liefert keinen lesbaren Artikeltext."
     },
     "options": {
       "pageTitle": "Merlin",

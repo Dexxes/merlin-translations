@@ -158,6 +158,9 @@
       "regenerateButton": "Regenerate Link",
       "revokeButton": "Revoke Link"
     },
+    "unsupportedSiteBanner": {
+      "message": "This site ({domain}) can't be saved by Merlin: it doesn't provide readable article text to fetch."
+    },
     "video": {
       "variant": "Version"
     }
@@ -389,7 +392,8 @@
       "authFailedTitle": "Merlin: Login failed",
       "authFailedMessage": "Merlin: Login failed – please log in again",
       "configureCredentials": "Please configure your credentials first.",
-      "needsPermission": "Merlin needs permission for this server — please log in again in the settings."
+      "needsPermission": "Merlin needs permission for this server — please log in again in the settings.",
+      "unsupportedSiteMessage": "Merlin: This site isn't supported ({domain})"
     },
     "flyout": {
       "articleAdded": "Article added",
@@ -398,7 +402,8 @@
       "connectionFailed": "Connection failed: {error}",
       "serverError": "Server error: HTTP {code}",
       "saving": "Saving to Merlin…",
-      "addedToReadingList": "Added to your reading list."
+      "addedToReadingList": "Added to your reading list.",
+      "unsupportedSite": "Not supported: {domain} doesn't provide readable article text."
     },
     "options": {
       "pageTitle": "Merlin",
