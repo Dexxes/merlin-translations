@@ -537,6 +537,7 @@
     },
     "articleCard": {
       "loading": "Lädt…",
+      "notSupported": "Nicht unterstützt",
       "open": "Öffnen",
       "whatIsWrongPlaceholder": "Was stimmt nicht? (optional)",
       "noReportBackendConfigured": "Kein Meldungs-Backend konfiguriert. Lege die URL in den Einstellungen fest.",
@@ -564,7 +565,8 @@
       "markedAsUnread": "Als ungelesen markiert",
       "htmlExportedSuccessfully": "HTML erfolgreich exportiert",
       "failedToExportHtml": "HTML-Export fehlgeschlagen",
-      "dayArticleAdded": "Der Tag, an dem der Artikel zu deiner Liste hinzugefügt wurde"
+      "dayArticleAdded": "Der Tag, an dem der Artikel zu deiner Liste hinzugefügt wurde",
+      "unsupportedSiteMessage": "Diese Seite ({domain}) wird von Merlin nicht unterstützt: sie liefert keinen lesbaren Artikeltext, den Merlin abrufen könnte."
     },
     "settingsPreview": {
       "livePreview": "Live-Vorschau",
