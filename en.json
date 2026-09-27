@@ -411,6 +411,7 @@
       "unsupportedSite": "Not supported: {domain} doesn't provide readable article text."
     },
     "options": {
+      "httpWarning": "Warning: this URL uses http:// — your app password will be sent unencrypted. Use https:// if possible.",
       "pageTitle": "Merlin",
       "headerSubtitle": "Extension Settings",
       "urlLabel": "URL to your Merlin instance",

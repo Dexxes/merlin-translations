@@ -411,6 +411,7 @@
       "unsupportedSite": "Nicht unterstützt: {domain} liefert keinen lesbaren Artikeltext."
     },
     "options": {
+      "httpWarning": "Achtung: Diese URL nutzt http:// — dein App-Passwort wird unverschlüsselt übertragen. Nutze wenn möglich https://.",
       "pageTitle": "Merlin",
       "headerSubtitle": "Add-on-Einstellungen",
       "urlLabel": "Nextcloud-URL",
