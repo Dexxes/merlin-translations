@@ -96,6 +96,11 @@
       "published": "PUBLISHED",
       "saved": "SAVED"
     },
+    "paywallSubscribeBanner": {
+      "archiveButton": "Archive",
+      "message": "This is a paid article. Merlin can't unlock it automatically.",
+      "subscribeButton": "Subscribe"
+    },
     "sideMenu": {
       "addFavorite": "Add to Favorites",
       "removeFavorite": "Remove from Favorites",
@@ -157,6 +162,9 @@
       "newPassword": "New Password",
       "regenerateButton": "Regenerate Link",
       "revokeButton": "Revoke Link"
+    },
+    "unsupportedSiteBanner": {
+      "message": "This site ({domain}) can't be saved by Merlin: it doesn't provide readable article text to fetch."
     },
     "video": {
       "variant": "Version"
@@ -389,7 +397,8 @@
       "authFailedTitle": "Merlin: Login failed",
       "authFailedMessage": "Merlin: Login failed – please log in again",
       "configureCredentials": "Please configure your credentials first.",
-      "needsPermission": "Merlin needs permission for this server — please log in again in the settings."
+      "needsPermission": "Merlin needs permission for this server — please log in again in the settings.",
+      "unsupportedSiteMessage": "Merlin: This site isn't supported ({domain})"
     },
     "flyout": {
       "articleAdded": "Article added",
@@ -398,9 +407,11 @@
       "connectionFailed": "Connection failed: {error}",
       "serverError": "Server error: HTTP {code}",
       "saving": "Saving to Merlin…",
-      "addedToReadingList": "Added to your reading list."
+      "addedToReadingList": "Added to your reading list.",
+      "unsupportedSite": "Not supported: {domain} doesn't provide readable article text."
     },
     "options": {
+      "httpWarning": "Warning: this URL uses http:// — your app password will be sent unencrypted. Use https:// if possible.",
       "pageTitle": "Merlin",
       "headerSubtitle": "Extension Settings",
       "urlLabel": "URL to your Merlin instance",
@@ -532,6 +543,7 @@
     },
     "articleCard": {
       "loading": "Loading…",
+      "notSupported": "Not supported",
       "open": "Open",
       "whatIsWrongPlaceholder": "What is wrong? (optional)",
       "noReportBackendConfigured": "No report backend configured. Set the URL in Settings.",
@@ -559,7 +571,8 @@
       "markedAsUnread": "Marked as unread",
       "htmlExportedSuccessfully": "HTML exported successfully",
       "failedToExportHtml": "Failed to export HTML",
-      "dayArticleAdded": "The day the article was added to your list"
+      "dayArticleAdded": "The day the article was added to your list",
+      "unsupportedSiteMessage": "This site ({domain}) is not supported by Merlin: it does not provide readable article text to fetch."
     },
     "settingsPreview": {
       "livePreview": "Live preview",

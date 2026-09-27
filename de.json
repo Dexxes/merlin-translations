@@ -96,6 +96,11 @@
       "published": "ERSCHIENEN",
       "saved": "GESPEICHERT"
     },
+    "paywallSubscribeBanner": {
+      "archiveButton": "Archivieren",
+      "message": "Dies ist ein Bezahlartikel. Merlin kann ihn nicht automatisch freischalten.",
+      "subscribeButton": "Abo abschliessen"
+    },
     "sideMenu": {
       "addFavorite": "Als Favorit markieren",
       "removeFavorite": "Aus Favoriten entfernen",
@@ -157,6 +162,9 @@
       "newPassword": "Neues Passwort",
       "regenerateButton": "Link erneuern",
       "revokeButton": "Link widerrufen"
+    },
+    "unsupportedSiteBanner": {
+      "message": "Diese Seite ({domain}) kann von Merlin nicht gespeichert werden: sie liefert keinen lesbaren Artikeltext, den Merlin abrufen könnte."
     },
     "video": {
       "variant": "Fassung"
@@ -389,7 +397,8 @@
       "authFailedTitle": "Merlin: Anmeldung fehlgeschlagen",
       "authFailedMessage": "Merlin: Anmeldung fehlgeschlagen – bitte erneut einloggen",
       "configureCredentials": "Bitte zuerst Zugangsdaten konfigurieren.",
-      "needsPermission": "Merlin braucht eine Berechtigung für diesen Server — bitte in den Einstellungen erneut einloggen."
+      "needsPermission": "Merlin braucht eine Berechtigung für diesen Server — bitte in den Einstellungen erneut einloggen.",
+      "unsupportedSiteMessage": "Merlin: Diese Seite wird nicht unterstützt ({domain})"
     },
     "flyout": {
       "articleAdded": "Artikel gespeichert",
@@ -398,9 +407,11 @@
       "connectionFailed": "Verbindung fehlgeschlagen: {error}",
       "serverError": "Serverfehler: HTTP {code}",
       "saving": "Wird an Merlin geschickt…",
-      "addedToReadingList": "Zur Leseliste hinzugefügt."
+      "addedToReadingList": "Zur Leseliste hinzugefügt.",
+      "unsupportedSite": "Nicht unterstützt: {domain} liefert keinen lesbaren Artikeltext."
     },
     "options": {
+      "httpWarning": "Achtung: Diese URL nutzt http:// — dein App-Passwort wird unverschlüsselt übertragen. Nutze wenn möglich https://.",
       "pageTitle": "Merlin",
       "headerSubtitle": "Add-on-Einstellungen",
       "urlLabel": "Nextcloud-URL",
@@ -532,6 +543,7 @@
     },
     "articleCard": {
       "loading": "Lädt…",
+      "notSupported": "Nicht unterstützt",
       "open": "Öffnen",
       "whatIsWrongPlaceholder": "Was stimmt nicht? (optional)",
       "noReportBackendConfigured": "Kein Meldungs-Backend konfiguriert. Lege die URL in den Einstellungen fest.",
@@ -559,7 +571,8 @@
       "markedAsUnread": "Als ungelesen markiert",
       "htmlExportedSuccessfully": "HTML erfolgreich exportiert",
       "failedToExportHtml": "HTML-Export fehlgeschlagen",
-      "dayArticleAdded": "Der Tag, an dem der Artikel zu deiner Liste hinzugefügt wurde"
+      "dayArticleAdded": "Der Tag, an dem der Artikel zu deiner Liste hinzugefügt wurde",
+      "unsupportedSiteMessage": "Diese Seite ({domain}) wird von Merlin nicht unterstützt: sie liefert keinen lesbaren Artikeltext, den Merlin abrufen könnte."
     },
     "settingsPreview": {
       "livePreview": "Live-Vorschau",
