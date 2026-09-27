@@ -150,6 +150,11 @@
       "message": "This article may be behind a paywall on {domain}. Connect your subscription to unlock it.",
       "retryButton": "Retry"
     },
+    "paywallSubscribeBanner": {
+      "archiveButton": "Archive",
+      "message": "This is a paid article. Merlin can't unlock it automatically.",
+      "subscribeButton": "Subscribe"
+    },
     "shareLink": {
       "title": "Share Link",
       "explainer": "Create a public link to share this article with anyone, even without a Merlin account.",
