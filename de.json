@@ -251,6 +251,13 @@
       "retentionOff": "Unbegrenzt aufbewahren",
       "retentionDaysFormat": "{count} Tage aufbewahren"
     },
+    "storage": {
+      "sectionHeader": "Speicher",
+      "footer": "Zeigt, wie viel Speicherplatz deine Artikel und Highlights auf dem Server sowie im lokalen Zwischenspeicher belegen.",
+      "serverLabel": "Server",
+      "localLabel": "Lokaler Zwischenspeicher",
+      "loadError": "Konnte nicht geladen werden"
+    },
     "about": {
       "sectionHeader": "Über",
       "versionLabel": "Version",

@@ -251,6 +251,13 @@
       "retentionOff": "Keep forever",
       "retentionDaysFormat": "Keep for {count} days"
     },
+    "storage": {
+      "sectionHeader": "Storage",
+      "footer": "Shows how much storage your articles and highlights use on the server and in the local cache.",
+      "serverLabel": "Server",
+      "localLabel": "Local Cache",
+      "loadError": "Couldn't load"
+    },
     "about": {
       "sectionHeader": "About",
       "versionLabel": "Version",
