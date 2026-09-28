@@ -589,7 +589,8 @@
       "paywallLoginNotice": "Dieser Artikel könnte auf {domain} hinter einer Paywall liegen. Der Text unten ist möglicherweise unvollständig — hinterlege deine Zugangsdaten für diese Seite, damit Merlin den vollständigen Artikel abrufen kann.",
       "manageSubscriptions": "Abos verwalten",
       "paywallNotice": "Dieser Artikel steht hinter einer Paywall und konnte nicht vollständig abgerufen werden.",
-      "subscribe": "Abo abschliessen"
+      "subscribe": "Abo abschliessen",
+      "storeSubscriptionLogin": "Abodaten hinterlegen"
     },
     "settingsPreview": {
       "livePreview": "Live-Vorschau",

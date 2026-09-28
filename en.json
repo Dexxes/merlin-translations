@@ -589,7 +589,8 @@
       "paywallLoginNotice": "This article may be behind a paywall on {domain}. The text below might be incomplete — store your subscription login for this site to let Merlin fetch the full article.",
       "manageSubscriptions": "Manage subscriptions",
       "paywallNotice": "This article is behind a paywall and could not be fetched in full.",
-      "subscribe": "Subscribe"
+      "subscribe": "Subscribe",
+      "storeSubscriptionLogin": "Store subscription login"
     },
     "settingsPreview": {
       "livePreview": "Live preview",
