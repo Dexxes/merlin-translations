@@ -179,6 +179,14 @@
     "unsupportedSiteBanner": {
       "message": "Diese Seite ({domain}) kann von Merlin nicht gespeichert werden: sie liefert keinen lesbaren Artikeltext, den Merlin abrufen könnte."
     },
+    "pdf": {
+      "badge": "PDF",
+      "loading": "PDF wird geladen…",
+      "failed": "Die PDF konnte nicht geladen werden.",
+      "retry": "Erneut versuchen",
+      "encrypted": "Diese PDF ist passwortgeschützt und kann hier nicht angezeigt werden.",
+      "openBrowser": "Im Browser öffnen"
+    },
     "video": {
       "variant": "Fassung"
     }
@@ -583,6 +591,15 @@
       "paywallBadge": "Paywall"
     },
     "articleReader": {
+      "pdf": {
+        "loading": "PDF wird geladen…",
+        "pages": {
+          "one": "%n Seite",
+          "other": "%n Seiten"
+        },
+        "document": "PDF-Dokument",
+        "open": "PDF öffnen"
+      },
       "backToList": "Zurück zur Liste",
       "archiveAndReturnToList": "Archivieren und zur Liste zurückkehren",
       "switchToLightMode": "Zum hellen Modus wechseln",
@@ -1040,6 +1057,10 @@
       "addArticleFailed": "Artikel konnte nicht hinzugefügt werden."
     },
     "articleReader": {
+      "pdf": {
+        "document": "PDF-Dokument",
+        "open": "PDF öffnen"
+      },
       "pageTitle": "Artikel – Merlin",
       "backToLibrary": "Zurück zur Leseliste",
       "archive": "Archivieren",
