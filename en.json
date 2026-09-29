@@ -96,6 +96,14 @@
       "published": "PUBLISHED",
       "saved": "SAVED"
     },
+    "supportBox": {
+      "title": "Enjoying this article from {site}?",
+      "both": "Consider taking out a {subscribe} or making a {donate}.",
+      "subscribeOnly": "Consider taking out a {subscribe}.",
+      "donateOnly": "Consider making a {donate}.",
+      "subscribeLabel": "subscription",
+      "donateLabel": "donation"
+    },
     "paywallSubscribeBanner": {
       "archiveButton": "Archive",
       "message": "This is a paid article. Merlin can't unlock it automatically.",
@@ -512,6 +520,14 @@
     }
   },
   "nextcloudWeb": {
+    "supportBox": {
+      "title": "Enjoying this article from {site}?",
+      "both": "Consider taking out a {subscribe} or making a {donate}.",
+      "subscribeOnly": "Consider taking out a {subscribe}.",
+      "donateOnly": "Consider making a {donate}.",
+      "subscribeLabel": "subscription",
+      "donateLabel": "donation"
+    },
     "common": {
       "addArticle": "Add Article",
       "cancel": "Cancel",
