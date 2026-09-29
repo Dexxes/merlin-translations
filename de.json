@@ -858,6 +858,14 @@
       "email": "E-Mail",
       "backToLogin": "Zurück zur Anmeldung"
     },
+    "supportBox": {
+      "title": "Dir gefällt der Artikel von {site}?",
+      "both": "Überlege, ein {subscribe} abzuschließen oder zu {donate}.",
+      "subscribeOnly": "Überlege, ein {subscribe} abzuschließen.",
+      "donateOnly": "Überlege, zu {donate}.",
+      "subscribeLabel": "Abo",
+      "donateLabel": "spenden"
+    },
     "login": {
       "pageTitle": "Anmelden – Merlin",
       "heading": "Anmelden",

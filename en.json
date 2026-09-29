@@ -858,6 +858,14 @@
       "email": "Email",
       "backToLogin": "Back to login"
     },
+    "supportBox": {
+      "title": "Enjoying this article from {site}?",
+      "both": "Consider taking out a {subscribe} or making a {donate}.",
+      "subscribeOnly": "Consider taking out a {subscribe}.",
+      "donateOnly": "Consider making a {donate}.",
+      "subscribeLabel": "subscription",
+      "donateLabel": "donation"
+    },
     "login": {
       "pageTitle": "Log in – Merlin",
       "heading": "Log in",
