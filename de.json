@@ -96,6 +96,14 @@
       "published": "ERSCHIENEN",
       "saved": "GESPEICHERT"
     },
+    "supportBox": {
+      "title": "Dir gefällt der Artikel von {site}?",
+      "both": "Überlege, ein {subscribe} abzuschließen oder zu {donate}.",
+      "subscribeOnly": "Überlege, ein {subscribe} abzuschließen.",
+      "donateOnly": "Überlege, zu {donate}.",
+      "subscribeLabel": "Abo",
+      "donateLabel": "spenden"
+    },
     "paywallSubscribeBanner": {
       "archiveButton": "Archivieren",
       "message": "Dies ist ein Bezahlartikel. Merlin kann ihn nicht automatisch freischalten.",
@@ -510,6 +518,14 @@
     }
   },
   "nextcloudWeb": {
+    "supportBox": {
+      "title": "Dir gefällt der Artikel von {site}?",
+      "both": "Überlege, ein {subscribe} abzuschließen oder zu {donate}.",
+      "subscribeOnly": "Überlege, ein {subscribe} abzuschließen.",
+      "donateOnly": "Überlege, zu {donate}.",
+      "subscribeLabel": "Abo",
+      "donateLabel": "spenden"
+    },
     "common": {
       "addArticle": "Artikel hinzufügen",
       "cancel": "Abbrechen",
