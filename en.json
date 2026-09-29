@@ -261,7 +261,8 @@
     "about": {
       "sectionHeader": "About",
       "versionLabel": "Version",
-      "commitLabel": "Commit"
+      "commitLabel": "Commit",
+      "sourceCodeLabel": "Source code"
     },
     "developer": {
       "sectionHeader": "Developer",
@@ -469,7 +470,8 @@
       "urlSaved": "URL saved. Use \"Login with Nextcloud\" to authenticate.",
       "couldNotSave": "Could not save: {error}",
       "urlPlaceholderFull": "https://cloud.example.com",
-      "urlHintShort": "The base URL of your Nextcloud instance (no trailing slash needed)"
+      "urlHintShort": "The base URL of your Nextcloud instance (no trailing slash needed)",
+      "sourceCodeLink": "Source code on GitHub"
     },
     "passphrase": {
       "label": "Encryption passphrase",
@@ -889,7 +891,8 @@
       "connect": "Connect",
       "remove": "Remove",
       "connectedNotice": "Connected. Merlin will use this login for {domain} from now on.",
-      "loginFailedGeneric": "Login failed."
+      "loginFailedGeneric": "Login failed.",
+      "sourceCodeLink": "Source code on GitHub"
     },
     "adminUsers": {
       "pageTitle": "Admin – Merlin",
