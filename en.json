@@ -573,13 +573,14 @@
     },
     "articleCard": {
       "loading": "Loading…",
-      "notSupported": "Not supported",
+      "notSupported": "Page unavailable",
       "open": "Open",
       "whatIsWrongPlaceholder": "What is wrong? (optional)",
       "noReportBackendConfigured": "No report backend configured. Set the URL in Settings.",
       "reported": "Article reported",
       "couldNotSendReport": "Could not send report — please try again.",
-      "minutesShort": "{minutes} min"
+      "minutesShort": "{minutes} min",
+      "paywallBadge": "Paywall"
     },
     "articleReader": {
       "backToList": "Back to list",
@@ -602,7 +603,12 @@
       "htmlExportedSuccessfully": "HTML exported successfully",
       "failedToExportHtml": "Failed to export HTML",
       "dayArticleAdded": "The day the article was added to your list",
-      "unsupportedSiteMessage": "This site ({domain}) is not supported by Merlin: it does not provide readable article text to fetch."
+      "unsupportedSiteMessage": "This site ({domain}) is not supported by Merlin: it does not provide readable article text to fetch.",
+      "paywallLoginNotice": "This article may be behind a paywall on {domain}. The text below might be incomplete — store your subscription login for this site to let Merlin fetch the full article.",
+      "manageSubscriptions": "Manage subscriptions",
+      "paywallNotice": "This article is behind a paywall and could not be fetched in full.",
+      "subscribe": "Subscribe",
+      "storeSubscriptionLogin": "Store subscription login"
     },
     "settingsPreview": {
       "livePreview": "Live preview",
