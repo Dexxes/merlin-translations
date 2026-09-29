@@ -592,6 +592,11 @@
     },
     "articleReader": {
       "pdf": {
+        "loading": "Loading PDF…",
+        "pages": {
+          "one": "%n page",
+          "other": "%n pages"
+        },
         "document": "PDF document",
         "open": "Open PDF"
       },
