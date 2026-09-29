@@ -179,6 +179,14 @@
     "unsupportedSiteBanner": {
       "message": "This site ({domain}) can't be saved by Merlin: it doesn't provide readable article text to fetch."
     },
+    "pdf": {
+      "badge": "PDF",
+      "loading": "Loading PDF…",
+      "failed": "The PDF could not be loaded.",
+      "retry": "Try again",
+      "encrypted": "This PDF is password-protected and can’t be displayed here.",
+      "openBrowser": "Open in browser"
+    },
     "video": {
       "variant": "Version"
     }
@@ -583,6 +591,10 @@
       "paywallBadge": "Paywall"
     },
     "articleReader": {
+      "pdf": {
+        "document": "PDF document",
+        "open": "Open PDF"
+      },
       "backToList": "Back to list",
       "archiveAndReturnToList": "Archive and return to list",
       "switchToLightMode": "Switch to light mode",
@@ -1040,6 +1052,10 @@
       "addArticleFailed": "Could not add article."
     },
     "articleReader": {
+      "pdf": {
+        "document": "PDF document",
+        "open": "Open PDF"
+      },
       "pageTitle": "Article – Merlin",
       "backToLibrary": "Back to reading list",
       "archive": "Archive",
