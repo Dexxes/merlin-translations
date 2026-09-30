@@ -91,10 +91,10 @@
   },
   "articleReader": {
     "labels": {
-      "author": "BY",
-      "readingTime": "READING TIME",
-      "published": "PUBLISHED",
-      "saved": "SAVED"
+      "author": "By",
+      "readingTime": "Reading time",
+      "published": "Published",
+      "saved": "Saved"
     },
     "supportBox": {
       "title": "Enjoying this article from {site}?",

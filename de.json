@@ -91,10 +91,10 @@
   },
   "articleReader": {
     "labels": {
-      "author": "VON",
-      "readingTime": "LESEZEIT",
-      "published": "ERSCHIENEN",
-      "saved": "GESPEICHERT"
+      "author": "Von",
+      "readingTime": "Lesezeit",
+      "published": "Erschienen",
+      "saved": "Gespeichert"
     },
     "supportBox": {
       "title": "Dir gefällt der Artikel von {site}?",
