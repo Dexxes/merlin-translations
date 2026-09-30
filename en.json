@@ -857,7 +857,11 @@
       "forward": "Forward 30 seconds",
       "speed": "Playback speed",
       "version": "Version",
-      "position": "Position"
+      "position": "Position",
+      "mute": "Mute",
+      "unmute": "Unmute",
+      "fullscreen": "Fullscreen",
+      "exitFullscreen": "Exit fullscreen"
     }
   },
   "merlinServer": {
