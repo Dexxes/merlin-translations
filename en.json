@@ -849,6 +849,15 @@
         "one": "%n faulty",
         "other": "%n faulty"
       }
+    },
+    "mediaPlayer": {
+      "play": "Play",
+      "pause": "Pause",
+      "back": "Back 15 seconds",
+      "forward": "Forward 30 seconds",
+      "speed": "Playback speed",
+      "version": "Version",
+      "position": "Position"
     }
   },
   "merlinServer": {
