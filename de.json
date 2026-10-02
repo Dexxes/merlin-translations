@@ -570,12 +570,20 @@
     },
     "articleList": {
       "searchPlaceholder": "Artikel durchsuchen…",
-      "noResults": "Keine Ergebnisse für \"{query}\"",
+      "noResults": "Keine Ergebnisse für „{query}“",
       "tryDifferentSearch": "Versuche einen anderen Suchbegriff",
       "noVideosYet": "Noch keine Videos",
       "noArticlesYet": "Noch keine Artikel",
       "saveVideoLinksHint": "Speichere Video-Links, um sie hier anzusehen",
       "addFirstArticleHint": "Füge deinen ersten Artikel hinzu, um loszulegen"
+    },
+    "media": {
+      "audio": "Audio",
+      "sourceHint": "Audio- oder Videoquelle der Seite (Player im Reader); mehrere Quellen bilden eine Fallback-Kette",
+      "noAudioYet": "Noch keine Audios",
+      "notListened": "Ungehört",
+      "openViaArchive": "Via archive.ph öffnen",
+      "saveAudioLinksHint": "Speichere Podcast- und Radio-Links, um sie hier anzuhören"
     },
     "articleCard": {
       "loading": "Lädt…",

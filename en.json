@@ -582,6 +582,14 @@
       "saveVideoLinksHint": "Save video links to watch them here",
       "addFirstArticleHint": "Add your first article to get started"
     },
+    "media": {
+      "audio": "Audio",
+      "sourceHint": "Audio or video source of the page (player in the reader); several sources act as a fallback chain",
+      "noAudioYet": "No audio yet",
+      "notListened": "Not listened",
+      "openViaArchive": "Open via archive.ph",
+      "saveAudioLinksHint": "Save podcast and radio links to listen to them here"
+    },
     "articleCard": {
       "loading": "Loading…",
       "notSupported": "Page unavailable",
