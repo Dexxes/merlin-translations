@@ -585,20 +585,10 @@
     "media": {
       "audio": "Audio",
       "sourceHint": "Audio- oder Videoquelle der Seite (Player im Reader); mehrere Quellen bilden eine Fallback-Kette",
-      "back15": "15 Sekunden zurück",
-      "forward30": "30 Sekunden vor",
       "noAudioYet": "Noch keine Audios",
       "notListened": "Ungehört",
       "openViaArchive": "Via archive.ph öffnen",
-      "pause": "Pause",
-      "play": "Wiedergabe",
-      "playbackSpeed": "Wiedergabegeschwindigkeit",
-      "position": "Position",
-      "saveAudioLinksHint": "Speichere Podcast- und Radio-Links, um sie hier anzuhören",
-      "mute": "Stumm schalten",
-      "unmute": "Ton einschalten",
-      "fullscreen": "Vollbild",
-      "exitFullscreen": "Vollbild beenden"
+      "saveAudioLinksHint": "Speichere Podcast- und Radio-Links, um sie hier anzuhören"
     },
     "articleCard": {
       "loading": "Lädt…",
