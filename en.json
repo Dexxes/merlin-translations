@@ -582,6 +582,24 @@
       "saveVideoLinksHint": "Save video links to watch them here",
       "addFirstArticleHint": "Add your first article to get started"
     },
+    "media": {
+      "audio": "Audio",
+      "sourceHint": "Audio or video source of the page (player in the reader); several sources act as a fallback chain",
+      "back15": "Back 15 seconds",
+      "forward30": "Forward 30 seconds",
+      "noAudioYet": "No audio yet",
+      "notListened": "Not listened",
+      "openViaArchive": "Open via archive.ph",
+      "pause": "Pause",
+      "play": "Play",
+      "playbackSpeed": "Playback speed",
+      "position": "Position",
+      "saveAudioLinksHint": "Save podcast and radio links to listen to them here",
+      "mute": "Mute",
+      "unmute": "Unmute",
+      "fullscreen": "Fullscreen",
+      "exitFullscreen": "Exit fullscreen"
+    },
     "articleCard": {
       "loading": "Loading…",
       "notSupported": "Page unavailable",
