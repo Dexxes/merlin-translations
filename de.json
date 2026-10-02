@@ -104,11 +104,6 @@
       "subscribeLabel": "Abo",
       "donateLabel": "spenden"
     },
-    "paywallSubscribeBanner": {
-      "archiveButton": "Archivieren",
-      "message": "Dies ist ein Bezahlartikel. Merlin kann ihn nicht automatisch freischalten.",
-      "subscribeButton": "Abo abschliessen"
-    },
     "sideMenu": {
       "addFavorite": "Als Favorit markieren",
       "removeFavorite": "Aus Favoriten entfernen",
@@ -574,6 +569,9 @@
       "failedToAdd": "Artikel konnte nicht hinzugefügt werden: {error}"
     },
     "articleList": {
+      "searchPlaceholder": "Artikel durchsuchen…",
+      "noResults": "Keine Ergebnisse für \"{query}\"",
+      "tryDifferentSearch": "Versuche einen anderen Suchbegriff",
       "noVideosYet": "Noch keine Videos",
       "noArticlesYet": "Noch keine Artikel",
       "saveVideoLinksHint": "Speichere Video-Links, um sie hier anzusehen",

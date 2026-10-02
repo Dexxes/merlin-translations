@@ -574,6 +574,9 @@
       "failedToAdd": "Failed to add article: {error}"
     },
     "articleList": {
+      "searchPlaceholder": "Search articles…",
+      "noResults": "No results for \"{query}\"",
+      "tryDifferentSearch": "Try a different search term",
       "noVideosYet": "No videos yet",
       "noArticlesYet": "No articles yet",
       "saveVideoLinksHint": "Save video links to watch them here",
