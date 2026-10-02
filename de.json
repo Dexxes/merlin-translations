@@ -574,6 +574,9 @@
       "failedToAdd": "Artikel konnte nicht hinzugefügt werden: {error}"
     },
     "articleList": {
+      "searchPlaceholder": "Artikel durchsuchen…",
+      "noResults": "Keine Ergebnisse für \"{query}\"",
+      "tryDifferentSearch": "Versuche einen anderen Suchbegriff",
       "noVideosYet": "Noch keine Videos",
       "noArticlesYet": "Noch keine Artikel",
       "saveVideoLinksHint": "Speichere Video-Links, um sie hier anzusehen",
