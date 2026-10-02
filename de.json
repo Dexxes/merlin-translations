@@ -847,6 +847,19 @@
         "one": "%n fehlerhaft",
         "other": "%n fehlerhaft"
       }
+    },
+    "mediaPlayer": {
+      "play": "Wiedergabe",
+      "pause": "Pause",
+      "back": "15 Sekunden zurück",
+      "forward": "30 Sekunden vor",
+      "speed": "Wiedergabegeschwindigkeit",
+      "version": "Version",
+      "position": "Position",
+      "mute": "Stumm schalten",
+      "unmute": "Ton einschalten",
+      "fullscreen": "Vollbild",
+      "exitFullscreen": "Vollbild beenden"
     }
   },
   "merlinServer": {
