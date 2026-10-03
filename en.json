@@ -147,6 +147,9 @@
       "processing": "Loading article…",
       "retry": "Try Again"
     },
+    "imagePlaceholder": {
+      "unavailable": "Image unavailable"
+    },
     "linkDialog": {
       "addToReadingList": "Add to Reading List"
     },

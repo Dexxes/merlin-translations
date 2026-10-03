@@ -142,6 +142,9 @@
       "processing": "Artikel wird geladen…",
       "retry": "Erneut versuchen"
     },
+    "imagePlaceholder": {
+      "unavailable": "Bild nicht abrufbar"
+    },
     "linkDialog": {
       "addToReadingList": "Zur Leseliste hinzufügen"
     },
