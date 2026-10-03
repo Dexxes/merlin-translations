@@ -1152,5 +1152,18 @@
       "invalidCredentials": "Ungültige Zugangsdaten",
       "loginFlowBroken": "Login fehlgeschlagen"
     }
+  },
+  "captionCreditPrefixes": {
+    "photo": "Foto",
+    "photos": "Fotos",
+    "image": "Bild",
+    "images": "Bilder",
+    "source": "Quelle",
+    "sources": "Quellen",
+    "credit": "Credit",
+    "credits": "Credits",
+    "copyright": "Copyright",
+    "graphic": "Grafik",
+    "illustration": "Illustration"
   }
 }

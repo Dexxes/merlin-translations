@@ -1157,5 +1157,18 @@
       "invalidCredentials": "Invalid Credentials",
       "loginFlowBroken": "Login Broken"
     }
+  },
+  "captionCreditPrefixes": {
+    "photo": "Photo",
+    "photos": "Photos",
+    "image": "Image",
+    "images": "Images",
+    "source": "Source",
+    "sources": "Sources",
+    "credit": "Credit",
+    "credits": "Credits",
+    "copyright": "Copyright",
+    "graphic": "Graphic",
+    "illustration": "Illustration"
   }
 }
