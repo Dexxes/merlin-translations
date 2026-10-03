@@ -26,7 +26,13 @@
     "listView": "List View",
     "cardView": "Card View",
     "appTour": "App Tour",
-    "filterWithCount": "{label} ({count})"
+    "filterWithCount": "{label} ({count})",
+    "mediaTypePicker": "Media type",
+    "tab": {
+      "text": "Text",
+      "video": "Video",
+      "audio": "Audio"
+    }
   },
   "articleList": {
     "searchPlaceholder": "Search articles",
