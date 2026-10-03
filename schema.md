@@ -118,6 +118,22 @@ fälschliche Wiederverwendung würde beim gettext-Lookup einfach keine
 Übersetzung finden. Dasselbe Muster wie beim eigenständigen `webext.*`-
 Namespace.
 
+## Sonderfall Bildquellen-Präfixe
+`captionCreditPrefixes.*` sind keine UI-Strings, sondern die Wörter, an denen
+merlin-nextcloud in einer Bildunterschrift die Bildquelle erkennt: als
+Präfix ("Foto: dpa", "© dpa") oder als Klammerzusatz am Ende ("Ein Bild
+(Quelle: dpa)"). Jede Sprache trägt ihre Entsprechungen (`photo` → "Foto" /
+"Photo", `source` → "Quelle" / "Source", …).
+
+Die Sprache eines gespeicherten Artikels hat nichts mit der UI-Sprache des
+Nutzers zu tun. `export.py --platform nextcloud` schreibt deshalb die Werte
+aller Sprachen gemeinsam nach
+`merlin-nextcloud/resources/caption-credit-prefixes.json`
+(`{"de": [...], "en": [...]}`), und der Extractor erkennt jedes davon. Die
+Datei liegt bewusst nicht in `l10n/`, weil Nextcloud jede `<name>.json` dort
+als Sprache auflistet. Eine neue Sprache in `SUPPORTED_LANGUAGES` bringt ihre
+Präfixe automatisch mit. Der Namespace wird nicht nach iOS exportiert.
+
 ## Sonderfall merlin-server
 `merlin-server` hat - anders als Nextcloud - keine gettext-Infrastruktur und
 keinen Framework-i18n-Dienst (kein Vue, kein `@nextcloud/l10n`). Die Strings

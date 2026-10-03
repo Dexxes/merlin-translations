@@ -10,7 +10,9 @@ Aktuell implementiert:
   - webext (Thunderbird): _locales/<lang>/messages.json für browser.i18n.
     Nur die Keys unter dem `webext.`-Namespace werden hier exportiert; iOS
     überspringt diese umgekehrt (siehe without_prefix in export_ios).
-  - nextcloud: l10n/<lang>.json + l10n/<lang>.js für die Vue-Frontend-Strings
+  - nextcloud: resources/caption-credit-prefixes.json (Bildquellen-Präfixe
+    aller Sprachen, `captionCreditPrefixes.`-Namespace) sowie
+    l10n/<lang>.json + l10n/<lang>.js für die Vue-Frontend-Strings
     der merlin-nextcloud-App (@nextcloud/l10n translate()/translatePlural()).
     Nur die Keys unter dem `nextcloudWeb.`-Namespace werden hier exportiert -
     siehe "Sonderfall Nextcloud" in schema.md. Der englische Literal-String
@@ -121,6 +123,19 @@ NEXTCLOUD_PREFIX = "nextcloudWeb."
 
 # Zielordner für die generierten Nextcloud-Übersetzungsdateien.
 NEXTCLOUD_L10N_DIR = REPO_ROOT / "merlin-nextcloud" / "l10n"
+
+# Namespace für die Präfixe, an denen der ContentExtractorService von
+# merlin-nextcloud eine Bildquelle in einer Bildunterschrift erkennt
+# ("Foto: dpa", "(Quelle: Statistisches Bundesamt)"). Kein UI-String: die
+# Sprache des Artikels hängt nicht an der UI-Sprache des Nutzers, deshalb
+# exportiert export_nextcloud() die Werte ALLER Sprachen gemeinsam in eine
+# Datei, und der Extractor erkennt jedes davon (siehe "Sonderfall
+# Bildquellen-Präfixe" in schema.md).
+CAPTION_CREDIT_PREFIX = "captionCreditPrefixes."
+
+# Zieldatei für die Bildquellen-Präfixe. Bewusst nicht in l10n/: Nextcloud
+# wertet jede <name>.json dort als verfügbare Sprache.
+NEXTCLOUD_CAPTION_CREDIT_FILE = REPO_ROOT / "merlin-nextcloud" / "resources" / "caption-credit-prefixes.json"
 
 # Nextcloud-App-ID (siehe appinfo/info.xml <id>) - erster Arg von
 # OC.L10N.register() in der generierten .js-Datei.
@@ -290,7 +305,7 @@ def export_ios(flat_by_lang: dict[str, dict[str, Any]], dry_run: bool) -> None:
     # bleiben (sonst lägen ungenutzte webext-/nextcloudWeb-Keys in den
     # iOS-Resources).
     flat_by_lang = {
-        lang: without_prefix(without_prefix(flat, WEBEXT_PREFIX), NEXTCLOUD_PREFIX)
+        lang: without_prefix(without_prefix(without_prefix(flat, WEBEXT_PREFIX), NEXTCLOUD_PREFIX), CAPTION_CREDIT_PREFIX)
         for lang, flat in flat_by_lang.items()
     }
     for resource_dir in IOS_RESOURCE_DIRS:
@@ -467,7 +482,33 @@ def build_nextcloud_js(translations: dict[str, Any]) -> str:
     )
 
 
+def build_caption_credit_json(flat_by_lang: dict[str, dict[str, Any]]) -> str:
+    """Bildquellen-Präfixe je Sprache: {"de": ["Foto", ...], "en": ["Photo", ...]}.
+
+    Reihenfolge der Keys wie in der Quelldatei, Dubletten innerhalb einer
+    Sprache entfernt (z. B. "Copyright" ist in DE und EN gleich, das ist
+    sprachübergreifend unschädlich).
+    """
+    out: dict[str, list[str]] = {}
+    for lang in SUPPORTED_LANGUAGES:
+        words: list[str] = []
+        for value in only_prefix(flat_by_lang[lang], CAPTION_CREDIT_PREFIX).values():
+            word = str(value).strip()
+            if word and word not in words:
+                words.append(word)
+        out[lang] = words
+    return json.dumps(out, ensure_ascii=False, indent=2) + "\n"
+
+
 def export_nextcloud(flat_by_lang: dict[str, dict[str, Any]], dry_run: bool) -> None:
+    caption_credit_text = build_caption_credit_json(flat_by_lang)
+    if dry_run:
+        print(f"[dry-run] würde schreiben: {NEXTCLOUD_CAPTION_CREDIT_FILE}")
+    else:
+        NEXTCLOUD_CAPTION_CREDIT_FILE.parent.mkdir(parents=True, exist_ok=True)
+        NEXTCLOUD_CAPTION_CREDIT_FILE.write_text(caption_credit_text, encoding="utf-8")
+        print(f"geschrieben: {NEXTCLOUD_CAPTION_CREDIT_FILE}")
+
     en_flat = flat_by_lang[SOURCE_LANGUAGE]
     for lang in SUPPORTED_LANGUAGES:
         # Englisch (Quellsprache) braucht keine l10n-Datei - gettext-Standardverhalten.
