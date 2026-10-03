@@ -408,7 +408,8 @@ def export_webext(flat_by_lang: dict[str, dict[str, Any]], dry_run: bool) -> Non
 # den englischen Literal-String selbst nach (klassisches gettext-Prinzip) -
 # der Dot-Key aus strings/<lang>.json ist dafür irrelevant, siehe schema.md.
 # Für Pluralformen erwartet Nextcloud als Lookup-Key
-# "<singular>_::_<plural>" und als Wert ein Array der Übersetzungen in
+# "_<singular>_::_<plural>_" (mit Unterstrich vorn und hinten, so baut
+# translatePlural() ihn zusammen, ebenso IL10N::n() in PHP) und als Wert ein Array der Übersetzungen in
 # Plural-Index-Reihenfolge (siehe translationtool.phar-Ausgabe anderer
 # Nextcloud-Apps).
 
@@ -426,10 +427,10 @@ def build_nextcloud_translations(en_flat: dict[str, Any], target_flat: dict[str,
             continue
         target_value = target_flat[dot_key]
         if isinstance(en_value, dict):
-            # Pluralform: Key ist "singular_::_plural", Wert ein Array in
+            # Pluralform: Key ist "_singular_::_plural_", Wert ein Array in
             # Plural-Index-Reihenfolge (Index 0 = "one", Index 1 = "other" -
             # reicht für die aktuelle DE/EN-Pluralregel, siehe NEXTCLOUD_PLURAL_FORM).
-            msgid = f"{en_value['one']}_::_{en_value['other']}"
+            msgid = f"_{en_value['one']}_::_{en_value['other']}_"
             translations[msgid] = [target_value['one'], target_value['other']]
         else:
             translations[en_value] = target_value
