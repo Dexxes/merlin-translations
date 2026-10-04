@@ -876,6 +876,51 @@
       "unmute": "Unmute",
       "fullscreen": "Fullscreen",
       "exitFullscreen": "Exit fullscreen"
+    },
+    "retention": {
+      "title": "Retention",
+      "adminIntro": "Archived articles are deleted automatically once they have been in the archive longer than the period set here. Articles that are not archived are never deleted. Users can choose a shorter period for themselves. 0 means no limit.",
+      "adminArticlesDays": "Delete archived articles after (days)",
+      "adminFavoritesDays": "Delete archived favorites after (days)",
+      "adminPreview": {
+        "one": "With these values, %n archived article will be deleted on the next daily run.",
+        "other": "With these values, %n archived articles will be deleted on the next daily run."
+      },
+      "saveAnyway": "Save anyway",
+      "previewFailed": "Could not check how many articles are affected.",
+      "saved": "Retention saved",
+      "saveFailed": "Could not save the retention period.",
+      "settingsIntro": "Archived articles can be deleted automatically. The period counts from the day you archive an article; articles that are not archived are kept.",
+      "articlesAfter": "Delete archived articles after",
+      "favoritesAfter": "Delete archived favorites after",
+      "maximum": {
+        "one": "Maximum (%n day)",
+        "other": "Maximum (%n days)"
+      },
+      "never": "Never",
+      "days": {
+        "one": "%n day",
+        "other": "%n days"
+      },
+      "nothingDeleted": "Nothing is deleted automatically.",
+      "deletedAfter": {
+        "one": "Deleted %n day after archiving. Takes effect with the next daily cleanup.",
+        "other": "Deleted %n days after archiving. Takes effect with the next daily cleanup."
+      },
+      "noticeTitle": "Retention period",
+      "noticeArticles": {
+        "one": "Archived articles are deleted %n day after archiving.",
+        "other": "Archived articles are deleted %n days after archiving."
+      },
+      "noticeArticlesUnlimited": "Archived articles are kept without a time limit.",
+      "noticeFavorites": {
+        "one": "Archived favorites are deleted %n day after archiving.",
+        "other": "Archived favorites are deleted %n days after archiving."
+      },
+      "noticeFavoritesUnlimited": "Archived favorites are kept without a time limit.",
+      "noticeFooter": "Articles that are not archived are kept. You can choose a shorter period in the settings.",
+      "openSettings": "Open settings",
+      "gotIt": "Got it"
     }
   },
   "merlinServer": {

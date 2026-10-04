@@ -871,6 +871,51 @@
       "unmute": "Ton einschalten",
       "fullscreen": "Vollbild",
       "exitFullscreen": "Vollbild beenden"
+    },
+    "retention": {
+      "title": "Löschfrist",
+      "adminIntro": "Archivierte Artikel werden automatisch gelöscht, sobald sie länger als hier eingestellt im Archiv liegen. Nicht archivierte Artikel werden nie gelöscht. Nutzer können für sich eine kürzere Frist wählen. 0 bedeutet keine Begrenzung.",
+      "adminArticlesDays": "Archivierte Artikel löschen nach (Tagen)",
+      "adminFavoritesDays": "Archivierte Favoriten löschen nach (Tagen)",
+      "adminPreview": {
+        "one": "Mit diesen Werten wird beim nächsten täglichen Durchlauf %n archivierter Artikel gelöscht.",
+        "other": "Mit diesen Werten werden beim nächsten täglichen Durchlauf %n archivierte Artikel gelöscht."
+      },
+      "saveAnyway": "Trotzdem speichern",
+      "previewFailed": "Konnte nicht prüfen, wie viele Artikel betroffen sind.",
+      "saved": "Löschfrist gespeichert",
+      "saveFailed": "Die Löschfrist konnte nicht gespeichert werden.",
+      "settingsIntro": "Archivierte Artikel können automatisch gelöscht werden. Die Frist zählt ab dem Tag, an dem du einen Artikel archivierst; nicht archivierte Artikel bleiben erhalten.",
+      "articlesAfter": "Archivierte Artikel löschen nach",
+      "favoritesAfter": "Archivierte Favoriten löschen nach",
+      "maximum": {
+        "one": "Maximum (%n Tag)",
+        "other": "Maximum (%n Tage)"
+      },
+      "never": "Nie",
+      "days": {
+        "one": "%n Tag",
+        "other": "%n Tage"
+      },
+      "nothingDeleted": "Es wird nichts automatisch gelöscht.",
+      "deletedAfter": {
+        "one": "Wird %n Tag nach dem Archivieren gelöscht. Gilt ab dem nächsten täglichen Durchlauf.",
+        "other": "Wird %n Tage nach dem Archivieren gelöscht. Gilt ab dem nächsten täglichen Durchlauf."
+      },
+      "noticeTitle": "Löschfrist",
+      "noticeArticles": {
+        "one": "Archivierte Artikel werden %n Tag nach dem Archivieren gelöscht.",
+        "other": "Archivierte Artikel werden %n Tage nach dem Archivieren gelöscht."
+      },
+      "noticeArticlesUnlimited": "Archivierte Artikel bleiben ohne Zeitlimit gespeichert.",
+      "noticeFavorites": {
+        "one": "Archivierte Favoriten werden %n Tag nach dem Archivieren gelöscht.",
+        "other": "Archivierte Favoriten werden %n Tage nach dem Archivieren gelöscht."
+      },
+      "noticeFavoritesUnlimited": "Archivierte Favoriten bleiben ohne Zeitlimit gespeichert.",
+      "noticeFooter": "Nicht archivierte Artikel bleiben erhalten. In den Einstellungen kannst du eine kürzere Frist wählen.",
+      "openSettings": "Einstellungen öffnen",
+      "gotIt": "Verstanden"
     }
   },
   "merlinServer": {
