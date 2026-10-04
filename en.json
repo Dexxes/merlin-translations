@@ -301,7 +301,14 @@
         "other": "After {count} days"
       },
       "footer": "Archived articles are permanently deleted from the server once the period ends, counted from when you archive them. Applies to all devices and the Nextcloud web app.",
-      "saveFailed": "Could not save the retention period."
+      "saveFailed": "Could not save the retention period.",
+      "customLabel": "Custom Value (Days)",
+      "customPlaceholder": "e.g. 45",
+      "invalidDays": "Please enter a whole number of days. An empty field removes your own period.",
+      "clampedToMax": {
+        "one": "Your server allows at most {count} day. That value was saved.",
+        "other": "Your server allows at most {count} days. That value was saved."
+      }
     },
     "paywall": {
       "rowTitle": "Site Credentials",
@@ -953,7 +960,14 @@
       "noticeFavoritesUnlimited": "Archived favorites are kept without a time limit.",
       "noticeFooter": "Articles that are not archived are kept. You can choose a shorter period in the settings.",
       "openSettings": "Open settings",
-      "gotIt": "Got it"
+      "gotIt": "Got it",
+      "customLabel": "Custom value in days",
+      "customPlaceholder": "e.g. 45",
+      "invalidDays": "Please enter a whole number of days. An empty field removes your own period.",
+      "clampedToMax": {
+        "one": "Your server allows at most %n day. That value was saved.",
+        "other": "Your server allows at most %n days. That value was saved."
+      }
     }
   },
   "merlinServer": {
