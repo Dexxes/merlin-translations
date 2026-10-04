@@ -287,6 +287,22 @@
       "sectionHeader": "Developer",
       "modeToggle": "Developer Mode"
     },
+    "retention": {
+      "sectionHeader": "Retention Period",
+      "articlesLabel": "Archived Articles",
+      "favoritesLabel": "Archived Favorites",
+      "never": "Never delete",
+      "maximum": {
+        "one": "Maximum ({count} day)",
+        "other": "Maximum ({count} days)"
+      },
+      "afterDays": {
+        "one": "After {count} day",
+        "other": "After {count} days"
+      },
+      "footer": "Archived articles are permanently deleted from the server once the period ends, counted from when you archive them. Applies to all devices and the Nextcloud web app.",
+      "saveFailed": "Could not save the retention period."
+    },
     "paywall": {
       "rowTitle": "Site Credentials",
       "footer": "Manage login credentials for paywalled sites so Merlin can fetch the full article content."
@@ -383,6 +399,23 @@
     "step13": {
       "title": "Shake to Undo",
       "body": "Archived or deleted something by accident? Just shake your phone to undo your last action."
+    },
+    "retention": {
+      "title": "Retention period",
+      "bodyUnknown": "Archived articles can be deleted from the server automatically after a set period, counted from when you archive them. You choose the period in Settings, and your server can set a maximum.",
+      "articles": {
+        "one": "Archived articles are deleted {count} day after archiving.",
+        "other": "Archived articles are deleted {count} days after archiving."
+      },
+      "articlesKept": "Archived articles are not deleted automatically.",
+      "favorites": {
+        "one": "Archived favorites after {count} day.",
+        "other": "Archived favorites after {count} days."
+      },
+      "favoritesKept": "Archived favorites are kept.",
+      "settingsHint": "You can choose a shorter period in Settings.",
+      "openSettings": "Open Settings",
+      "gotIt": "Got it"
     },
     "buttons": {
       "getStarted": "Get Started"

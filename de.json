@@ -282,6 +282,22 @@
       "sectionHeader": "Entwickler",
       "modeToggle": "Entwicklermodus"
     },
+    "retention": {
+      "sectionHeader": "Löschfrist",
+      "articlesLabel": "Archivierte Artikel",
+      "favoritesLabel": "Archivierte Favoriten",
+      "never": "Nie löschen",
+      "maximum": {
+        "one": "Maximum ({count} Tag)",
+        "other": "Maximum ({count} Tage)"
+      },
+      "afterDays": {
+        "one": "Nach {count} Tag",
+        "other": "Nach {count} Tagen"
+      },
+      "footer": "Archivierte Artikel werden nach Ablauf der Frist endgültig vom Server gelöscht, gezählt ab dem Archivieren. Gilt für alle Geräte und die Nextcloud-Web-App.",
+      "saveFailed": "Löschfrist konnte nicht gespeichert werden."
+    },
     "paywall": {
       "rowTitle": "Zugangsdaten für Websites",
       "footer": "Verwalte Zugangsdaten für Seiten mit Paywall, damit Merlin den vollständigen Artikelinhalt abrufen kann."
@@ -378,6 +394,23 @@
     "step13": {
       "title": "Schütteln zum Rückgängigmachen",
       "body": "Versehentlich etwas archiviert oder gelöscht? Schüttle einfach dein Telefon, um die letzte Aktion rückgängig zu machen."
+    },
+    "retention": {
+      "title": "Löschfrist",
+      "bodyUnknown": "Archivierte Artikel können nach einer Frist automatisch vom Server gelöscht werden, gezählt ab dem Archivieren. Die Frist wählst du in den Einstellungen, dein Server kann eine Höchstdauer vorgeben.",
+      "articles": {
+        "one": "Archivierte Artikel werden {count} Tag nach dem Archivieren gelöscht.",
+        "other": "Archivierte Artikel werden {count} Tage nach dem Archivieren gelöscht."
+      },
+      "articlesKept": "Archivierte Artikel werden nicht automatisch gelöscht.",
+      "favorites": {
+        "one": "Archivierte Favoriten nach {count} Tag.",
+        "other": "Archivierte Favoriten nach {count} Tagen."
+      },
+      "favoritesKept": "Archivierte Favoriten bleiben erhalten.",
+      "settingsHint": "Eine kürzere Frist kannst du in den Einstellungen wählen.",
+      "openSettings": "Einstellungen öffnen",
+      "gotIt": "Verstanden"
     },
     "buttons": {
       "getStarted": "Los geht's"
