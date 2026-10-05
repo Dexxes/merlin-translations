@@ -174,6 +174,39 @@
       "regenerateButton": "Link erneuern",
       "revokeButton": "Link widerrufen"
     },
+    "comments": {
+      "title": "Kommentare",
+      "countLabel": "Kommentare ({count})",
+      "comment": "Kommentieren",
+      "onPassageTitle": "Kommentare zu dieser Stelle",
+      "allComments": "Alle Kommentare",
+      "none": "Noch keine Kommentare. Markiere eine Textstelle, um sie zu kommentieren.",
+      "noneOnPassage": "Zu dieser Stelle gibt es noch keine Kommentare.",
+      "writeComment": "Kommentar schreiben …",
+      "writeReply": "Antwort schreiben …",
+      "replyTo": "Antwort an {name}",
+      "reply": "Antworten",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "send": "Senden",
+      "edited": "(bearbeitet)",
+      "deleted": "Kommentar gelöscht",
+      "you": "Du",
+      "confirmDelete": "Diesen Kommentar löschen?",
+      "highlightRemoved": "Die Markierung wurde entfernt",
+      "removeHighlight": "Markierung entfernen",
+      "deleteHighlightTitle": "Markierung mit Kommentaren entfernen?",
+      "deleteHighlightMessage": "Die Kommentare bleiben mit der zitierten Textstelle erhalten.",
+      "saveFailed": "Der Kommentar konnte nicht gespeichert werden.",
+      "deleteFailed": "Der Kommentar konnte nicht gelöscht werden.",
+      "visitorsCanComment": "Besucher dürfen markieren und kommentieren",
+      "nameExplainer": "Besucher wählen einen Namen. Wer denselben Namen nutzt, kann alles bearbeiten und löschen, was darunter geschrieben wurde.",
+      "error": {
+        "bodyTooLong": "Der Kommentar darf höchstens 5000 Zeichen lang sein.",
+        "bodyEmpty": "Der Kommentar ist leer.",
+        "generic": "Der Kommentar konnte nicht gespeichert werden."
+      }
+    },
     "unsupportedSiteBanner": {
       "message": "Diese Seite ({domain}) kann von Merlin nicht gespeichert werden: sie liefert keinen lesbaren Artikeltext, den Merlin abrufen könnte."
     },

@@ -179,6 +179,39 @@
       "regenerateButton": "Regenerate Link",
       "revokeButton": "Revoke Link"
     },
+    "comments": {
+      "title": "Comments",
+      "countLabel": "Comments ({count})",
+      "comment": "Comment",
+      "onPassageTitle": "Comments on this passage",
+      "allComments": "All comments",
+      "none": "No comments yet. Select text to highlight and comment on it.",
+      "noneOnPassage": "No comments on this passage yet.",
+      "writeComment": "Write a comment…",
+      "writeReply": "Write a reply…",
+      "replyTo": "Reply to {name}",
+      "reply": "Reply",
+      "edit": "Edit",
+      "delete": "Delete",
+      "send": "Send",
+      "edited": "(edited)",
+      "deleted": "Comment deleted",
+      "you": "You",
+      "confirmDelete": "Delete this comment?",
+      "highlightRemoved": "The highlight was removed",
+      "removeHighlight": "Remove highlight",
+      "deleteHighlightTitle": "Remove highlight with comments?",
+      "deleteHighlightMessage": "The comments are kept together with the quoted passage.",
+      "saveFailed": "The comment could not be saved.",
+      "deleteFailed": "The comment could not be deleted.",
+      "visitorsCanComment": "Visitors can highlight and comment",
+      "nameExplainer": "Visitors choose a name. Anyone using the same name can edit and delete what was written under it.",
+      "error": {
+        "bodyTooLong": "The comment can be at most 5000 characters long.",
+        "bodyEmpty": "The comment is empty.",
+        "generic": "The comment could not be saved."
+      }
+    },
     "unsupportedSiteBanner": {
       "message": "This site ({domain}) can't be saved by Merlin: it doesn't provide readable article text to fetch."
     },
