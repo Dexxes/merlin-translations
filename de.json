@@ -296,14 +296,7 @@
         "other": "Nach {count} Tagen"
       },
       "footer": "Archivierte Artikel werden nach Ablauf der Frist endgültig vom Server gelöscht, gezählt ab dem Archivieren. Gilt für alle Geräte und die Nextcloud-Web-App.",
-      "saveFailed": "Löschfrist konnte nicht gespeichert werden.",
-      "customLabel": "Eigener Wert (Tage)",
-      "customPlaceholder": "z. B. 45",
-      "invalidDays": "Bitte eine ganze Zahl von Tagen eingeben. Ein leeres Feld entfernt die eigene Frist.",
-      "clampedToMax": {
-        "one": "Dein Server erlaubt höchstens {count} Tag. Dieser Wert wurde gespeichert.",
-        "other": "Dein Server erlaubt höchstens {count} Tage. Dieser Wert wurde gespeichert."
-      }
+      "saveFailed": "Löschfrist konnte nicht gespeichert werden."
     },
     "paywall": {
       "rowTitle": "Zugangsdaten für Websites",
