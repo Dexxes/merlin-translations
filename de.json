@@ -379,6 +379,11 @@
       "title": "Schütteln zum Rückgängigmachen",
       "body": "Versehentlich etwas archiviert oder gelöscht? Schüttle einfach dein Telefon, um die letzte Aktion rückgängig zu machen."
     },
+    "accentColor": {
+      "title": "Deine Akzentfarbe",
+      "body": "Wähle zum Schluss deine Akzentfarbe für Fortschrittsbalken und Hervorhebungen. Ändern kannst du sie jederzeit im Lesemenü unter Erscheinungsbild.",
+      "custom": "Eigene Farbe"
+    },
     "buttons": {
       "getStarted": "Los geht's"
     },

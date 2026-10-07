@@ -384,6 +384,11 @@
       "title": "Shake to Undo",
       "body": "Archived or deleted something by accident? Just shake your phone to undo your last action."
     },
+    "accentColor": {
+      "title": "Your Accent Color",
+      "body": "Finally, pick your accent color for the progress bar and highlights. You can change it anytime under Appearance in the reader menu.",
+      "custom": "Custom color"
+    },
     "buttons": {
       "getStarted": "Get Started"
     },
