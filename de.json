@@ -749,6 +749,8 @@
       "pin": "Anheften",
       "unpin": "Lösen",
       "deleteTag": "Tag löschen",
+      "hideTag": "Tag ausblenden",
+      "showTag": "Tag einblenden",
       "showLess": "Weniger anzeigen",
       "noTagsMatching": "Keine Tags passend zu „{query}“",
       "showAllTags": {

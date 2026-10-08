@@ -754,6 +754,8 @@
       "pin": "Pin",
       "unpin": "Unpin",
       "deleteTag": "Delete tag",
+      "hideTag": "Hide tag",
+      "showTag": "Show tag",
       "showLess": "Show less",
       "noTagsMatching": "No tags matching \"{query}\"",
       "showAllTags": {
