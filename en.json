@@ -70,7 +70,8 @@
       "archived": "Archived",
       "unarchived": "Removed from archive",
       "undoButton": "Undo"
-    }
+    },
+    "archivedBadge": "Archived"
   },
   "articleActions": {
     "share": "Share",
