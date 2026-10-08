@@ -756,7 +756,11 @@
       "showAllTags": {
         "one": "Alle {count} Tag anzeigen",
         "other": "Alle {count} Tags anzeigen"
-      }
+      },
+      "tabText": "Text",
+      "tabVideo": "Video",
+      "tabAudio": "Audio",
+      "mediaTypeTabs": "Medienart"
     },
     "contentFilters": {
       "myContentFilters": "Meine Content-Filter",
