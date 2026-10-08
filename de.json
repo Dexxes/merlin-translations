@@ -70,7 +70,8 @@
       "archived": "Archiviert",
       "unarchived": "Aus dem Archiv entfernt",
       "undoButton": "Rückgängig"
-    }
+    },
+    "archivedBadge": "Archiviert"
   },
   "articleActions": {
     "share": "Teilen",
@@ -173,6 +174,43 @@
       "newPassword": "Neues Passwort",
       "regenerateButton": "Link erneuern",
       "revokeButton": "Link widerrufen"
+    },
+    "comments": {
+      "title": "Kommentare",
+      "countLabel": "Kommentare ({count})",
+      "comment": "Kommentieren",
+      "onPassageTitle": "Kommentare zu dieser Stelle",
+      "allComments": "Alle Kommentare",
+      "sort": "Sortieren",
+      "sortText": "Reihenfolge im Text",
+      "sortNewest": "Neueste Antwort zuerst",
+      "sortOldest": "Älteste Antwort zuerst",
+      "none": "Noch keine Kommentare. Markiere eine Textstelle, um sie zu kommentieren.",
+      "noneOnPassage": "Zu dieser Stelle gibt es noch keine Kommentare.",
+      "writeComment": "Kommentar schreiben …",
+      "writeReply": "Antwort schreiben …",
+      "replyTo": "Antwort an {name}",
+      "reply": "Antworten",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "send": "Senden",
+      "edited": "(bearbeitet)",
+      "deleted": "Kommentar gelöscht",
+      "you": "Du",
+      "confirmDelete": "Diesen Kommentar löschen?",
+      "highlightRemoved": "Die Markierung wurde entfernt",
+      "removeHighlight": "Markierung entfernen",
+      "deleteHighlightTitle": "Markierung mit Kommentaren entfernen?",
+      "deleteHighlightMessage": "Die Kommentare bleiben mit der zitierten Textstelle erhalten.",
+      "saveFailed": "Der Kommentar konnte nicht gespeichert werden.",
+      "deleteFailed": "Der Kommentar konnte nicht gelöscht werden.",
+      "visitorsCanComment": "Besucher dürfen markieren und kommentieren",
+      "nameExplainer": "Besucher wählen einen Namen. Wer denselben Namen nutzt, kann alles bearbeiten und löschen, was darunter geschrieben wurde.",
+      "error": {
+        "bodyTooLong": "Der Kommentar darf höchstens 5000 Zeichen lang sein.",
+        "bodyEmpty": "Der Kommentar ist leer.",
+        "generic": "Der Kommentar konnte nicht gespeichert werden."
+      }
     },
     "unsupportedSiteBanner": {
       "message": "Diese Seite ({domain}) kann von Merlin nicht gespeichert werden: sie liefert keinen lesbaren Artikeltext, den Merlin abrufen könnte."
@@ -411,6 +449,11 @@
       "settingsHint": "Eine kürzere Frist kannst du in den Einstellungen wählen.",
       "openSettings": "Einstellungen öffnen",
       "gotIt": "Verstanden"
+    },
+    "accentColor": {
+      "title": "Deine Akzentfarbe",
+      "body": "Wähle zum Schluss deine Akzentfarbe für Fortschrittsbalken und Hervorhebungen. Ändern kannst du sie jederzeit im Lesemenü unter Erscheinungsbild.",
+      "custom": "Eigene Farbe"
     },
     "buttons": {
       "getStarted": "Los geht's"
@@ -781,12 +824,18 @@
       "pin": "Anheften",
       "unpin": "Lösen",
       "deleteTag": "Tag löschen",
+      "hideTag": "Tag ausblenden",
+      "showTag": "Tag einblenden",
       "showLess": "Weniger anzeigen",
       "noTagsMatching": "Keine Tags passend zu „{query}“",
       "showAllTags": {
         "one": "Alle {count} Tag anzeigen",
         "other": "Alle {count} Tags anzeigen"
-      }
+      },
+      "tabText": "Text",
+      "tabVideo": "Video",
+      "tabAudio": "Audio",
+      "mediaTypeTabs": "Medienart"
     },
     "contentFilters": {
       "myContentFilters": "Meine Content-Filter",
@@ -955,6 +1004,74 @@
       "clampedToMax": {
         "one": "Dein Server erlaubt höchstens %n Tag. Dieser Wert wurde gespeichert.",
         "other": "Dein Server erlaubt höchstens %n Tage. Dieser Wert wurde gespeichert."
+      }
+    },
+    "comments": {
+      "edited": "(bearbeitet)",
+      "allComments": "Alle Kommentare",
+      "sort": "Sortieren",
+      "sortText": "Reihenfolge im Text",
+      "sortNewest": "Neueste Antwort zuerst",
+      "sortOldest": "Älteste Antwort zuerst",
+      "sameNameWarning": "Wer denselben Namen eingibt, kann alles bearbeiten und löschen, was darunter geschrieben wurde.",
+      "shareDialogIntro": "Alle mit diesem Link können den Artikel lesen – auch deine Markierungen und Kommentare.",
+      "changeName": "Name ändern",
+      "close": "Schließen",
+      "deleted": "Kommentar gelöscht",
+      "onArticleLabel": "Kommentar zum Artikel",
+      "onPassageLabel": "Kommentar zu dieser Stelle",
+      "countLabel": "Kommentare ({count})",
+      "closedForLink": "Für diesen Link sind Kommentare geschlossen.",
+      "closedForVisitors": "Kommentare für Besucher geschlossen",
+      "onPassageTitle": "Kommentare zu dieser Stelle",
+      "title": "Kommentare",
+      "continue": "Weiter",
+      "confirmDelete": "Diesen Kommentar löschen?",
+      "edit": "Bearbeiten",
+      "highlightedBy": "Markiert von {name}",
+      "name": "Name",
+      "noneOnPassage": "Zu dieser Stelle gibt es noch keine Kommentare.",
+      "none": "Noch keine Kommentare. Markiere eine Textstelle, um sie zu kommentieren.",
+      "onArticle": "Zum Artikel",
+      "nameTooShort": "Bitte gib einen Namen mit mindestens 2 Zeichen ein.",
+      "replyTo": "Antwort an {name}",
+      "reply": "Antworten",
+      "selectHint": "Markiere eine Textstelle, um sie hervorzuheben oder zu kommentieren.",
+      "send": "Senden",
+      "ownerBadge": "Hat den Artikel geteilt",
+      "showInText": "Im Text zeigen",
+      "bodyTooLong": "Der Kommentar darf höchstens 5000 Zeichen lang sein.",
+      "saveFailed": "Der Kommentar konnte nicht gespeichert werden.",
+      "highlightRemoved": "Die Markierung wurde entfernt",
+      "nameTooLong": "Der Name darf höchstens 50 Zeichen lang sein.",
+      "nameReserved": "Dieser Name ist vergeben. Bitte wähle einen anderen.",
+      "yourColor": "Deine Farbe",
+      "nameHasColor": "Dieser Name hat schon eine Farbe",
+      "colorTaken": "Diese Farbe wurde gerade vergeben. Bitte wähle eine andere.",
+      "nameSaveFailed": "Speichern hat nicht geklappt. Bitte versuche es noch einmal.",
+      "dailyLimit": "Heute gab es zu viele Kommentare. Bitte versuche es morgen wieder.",
+      "rateLimited": "Zu viele Anfragen. Bitte warte einen Moment.",
+      "visitorsCanComment": "Besucher dürfen markieren und kommentieren",
+      "visitorsNowCanComment": "Besucher dürfen jetzt markieren und kommentieren",
+      "nameExplainer": "Besucher wählen einen Namen. Wer denselben Namen nutzt, kann alles bearbeiten und löschen, was darunter geschrieben wurde.",
+      "askName": "Wie heißt du?",
+      "writeComment": "Kommentar schreiben …",
+      "writeReply": "Antwort schreiben …",
+      "writingAs": "Du schreibst als {name}.",
+      "onlyOwn": "Du kannst nur deine eigenen Kommentare ändern.",
+      "you": "Du",
+      "nameVisible": "Dein Name steht an deinen Markierungen und Kommentaren und ist für alle mit diesem Link sichtbar.",
+      "justNow": "gerade eben",
+      "comment": "Kommentieren",
+      "highlightAndComment": "Markieren und kommentieren",
+      "removeHighlight": "Markierung entfernen",
+      "minutesAgo": {
+        "one": "vor %n Minute",
+        "other": "vor %n Minuten"
+      },
+      "hoursAgo": {
+        "one": "vor %n Stunde",
+        "other": "vor %n Stunden"
       }
     }
   },
