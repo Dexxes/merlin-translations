@@ -337,6 +337,19 @@
     }
   },
   "share": {
+    "files": {
+      "subtitle": "Save files to Merlin",
+      "count": {
+        "one": "{count} file",
+        "other": "{count} files"
+      },
+      "summary": "{files} · {size}",
+      "uploadingSubtitle": "Uploading…",
+      "progress": "File {current} of {total} · {percent}",
+      "errorReadFile": "The shared file could not be read.",
+      "errorUpload": "Upload failed: {name}",
+      "errorStandalone": "Files can only be saved with Nextcloud, not with the Merlin server."
+    },
     "extracting": {
       "subtitle": "Reading shared content…"
     },
@@ -580,6 +593,15 @@
     }
   },
   "nextcloudWeb": {
+    "files": {
+      "folderName": "Merlin files",
+      "folderImages": "Images",
+      "folderVideos": "Videos",
+      "folderAudio": "Audio",
+      "folderPdfs": "PDFs",
+      "folderOther": "Other files",
+      "download": "Download file"
+    },
     "supportBox": {
       "title": "Enjoying this article from {site}?",
       "both": "Consider taking out a {subscribe} or making a {donate}.",

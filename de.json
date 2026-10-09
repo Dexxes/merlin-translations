@@ -332,6 +332,19 @@
     }
   },
   "share": {
+    "files": {
+      "subtitle": "Dateien in Merlin speichern",
+      "count": {
+        "one": "{count} Datei",
+        "other": "{count} Dateien"
+      },
+      "summary": "{files} · {size}",
+      "uploadingSubtitle": "Wird hochgeladen…",
+      "progress": "Datei {current} von {total} · {percent}",
+      "errorReadFile": "Die geteilte Datei konnte nicht gelesen werden.",
+      "errorUpload": "Hochladen fehlgeschlagen: {name}",
+      "errorStandalone": "Dateien lassen sich nur mit Nextcloud speichern, nicht mit dem Merlin-Server."
+    },
     "extracting": {
       "subtitle": "Geteilten Inhalt wird gelesen…"
     },
@@ -575,6 +588,15 @@
     }
   },
   "nextcloudWeb": {
+    "files": {
+      "folderName": "Merlin Dateien",
+      "folderImages": "Bilder",
+      "folderVideos": "Videos",
+      "folderAudio": "Audio",
+      "folderPdfs": "PDFs",
+      "folderOther": "Sonstige Dateien",
+      "download": "Datei herunterladen"
+    },
     "supportBox": {
       "title": "Dir gefällt der Artikel von {site}?",
       "both": "Überlege, ein {subscribe} abzuschließen oder zu {donate}.",
