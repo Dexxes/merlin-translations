@@ -597,6 +597,11 @@
   },
   "nextcloudWeb": {
     "files": {
+      "metadata": "Metadaten",
+      "metadataFile": "Datei",
+      "metadataType": "Typ",
+      "metadataSize": "Größe",
+      "metadataModified": "Geändert",
       "tab": "Dateien",
       "notOpened": "Nicht geöffnet",
       "noFilesYet": "Noch keine Dateien",

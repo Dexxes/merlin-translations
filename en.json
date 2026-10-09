@@ -602,6 +602,11 @@
   },
   "nextcloudWeb": {
     "files": {
+      "metadata": "Metadata",
+      "metadataFile": "File",
+      "metadataType": "Type",
+      "metadataSize": "Size",
+      "metadataModified": "Modified",
       "tab": "Files",
       "notOpened": "Not opened",
       "noFilesYet": "No files yet",
