@@ -1,4 +1,18 @@
 {
+  "fileRename": {
+    "title": "Rename file",
+    "placeholder": "Name",
+    "confirm": "Rename",
+    "message": "The extension .{extension} is kept.",
+    "menu": "Rename…",
+    "errorTitle": "Rename failed",
+    "errorExists": "A file with this name already exists in the folder."
+  },
+  "lightbox": {
+    "liveText": "Text in image",
+    "liveTextNone": "No text found in the image",
+    "liveTextFailed": "Text could not be recognized"
+  },
   "app": {
     "name": "Merlin"
   },
@@ -602,6 +616,13 @@
   },
   "nextcloudWeb": {
     "files": {
+      "recognizedText": "Recognized text",
+      "rename": "Rename…",
+      "renamePrompt": "New name (the extension .{extension} stays):",
+      "renamePromptPlain": "New name:",
+      "renamed": "File renamed",
+      "renameExists": "A file with this name already exists in the folder",
+      "renameFailed": "Could not rename the file",
       "metadata": "Metadata",
       "metadataFile": "File",
       "metadataType": "Type",

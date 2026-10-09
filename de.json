@@ -1,4 +1,18 @@
 {
+  "fileRename": {
+    "title": "Datei umbenennen",
+    "placeholder": "Name",
+    "confirm": "Umbenennen",
+    "message": "Die Endung .{extension} bleibt erhalten.",
+    "menu": "Umbenennen…",
+    "errorTitle": "Umbenennen fehlgeschlagen",
+    "errorExists": "Im Ordner gibt es schon eine Datei mit diesem Namen."
+  },
+  "lightbox": {
+    "liveText": "Text im Bild",
+    "liveTextNone": "Kein Text im Bild gefunden",
+    "liveTextFailed": "Text konnte nicht erkannt werden"
+  },
   "app": {
     "name": "Merlin"
   },
@@ -597,6 +611,13 @@
   },
   "nextcloudWeb": {
     "files": {
+      "recognizedText": "Erkannter Text",
+      "rename": "Umbenennen…",
+      "renamePrompt": "Neuer Name (die Endung .{extension} bleibt):",
+      "renamePromptPlain": "Neuer Name:",
+      "renamed": "Datei umbenannt",
+      "renameExists": "Im Ordner gibt es schon eine Datei mit diesem Namen",
+      "renameFailed": "Datei konnte nicht umbenannt werden",
       "metadata": "Metadaten",
       "metadataFile": "Datei",
       "metadataType": "Typ",
