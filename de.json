@@ -1,4 +1,22 @@
 {
+  "fileRename": {
+    "title": "Datei umbenennen",
+    "placeholder": "Name",
+    "confirm": "Umbenennen",
+    "message": "Die Endung .{extension} bleibt erhalten.",
+    "menu": "Umbenennen…",
+    "errorTitle": "Umbenennen fehlgeschlagen",
+    "errorExists": "Im Ordner gibt es schon eine Datei mit diesem Namen."
+  },
+  "lightbox": {
+    "liveText": "Text im Bild",
+    "liveTextNone": "Kein Text im Bild gefunden",
+    "liveTextFailed": "Text konnte nicht erkannt werden",
+    "liveTextDone": "Fertig"
+  },
+  "fileText": {
+    "createEvent": "Termin erstellen"
+  },
   "app": {
     "name": "Merlin"
   },
@@ -31,12 +49,14 @@
     "tab": {
       "text": "Text",
       "video": "Video",
-      "audio": "Audio"
+      "audio": "Audio",
+      "files": "Dateien"
     }
   },
   "articleList": {
     "searchPlaceholder": "Artikel suchen",
     "filter": {
+      "unopened": "Nicht geöffnet",
       "pages": "Seiten",
       "continueReading": "Weiterlesen",
       "unread": "Ungelesen",
@@ -47,6 +67,7 @@
       "continueWatching": "Weiterschauen"
     },
     "emptyState": {
+      "filesMessage": "Noch keine Dateien. Teile Bilder, PDFs oder andere Dateien vom Handy mit Merlin, um sie hier zu finden.",
       "title": "Noch nichts hier",
       "allMessage": "Keine Artikel gespeichert. Tippe auf +, um einen hinzuzufügen.",
       "favoritesMessage": "Noch keine Favoriten. Markiere Artikel mit einem Stern, um sie hier zu finden.",
@@ -332,6 +353,24 @@
     }
   },
   "share": {
+    "files": {
+      "compression": {
+        "strong": "Stark komprimieren",
+        "light": "Schwach komprimieren",
+        "original": "Unkomprimiert"
+      },
+      "subtitle": "Dateien in Merlin speichern",
+      "count": {
+        "one": "{count} Datei",
+        "other": "{count} Dateien"
+      },
+      "summary": "{files} · {size}",
+      "uploadingSubtitle": "Wird hochgeladen…",
+      "progress": "Datei {current} von {total} · {percent}",
+      "errorReadFile": "Die geteilte Datei konnte nicht gelesen werden.",
+      "errorUpload": "Hochladen fehlgeschlagen: {name}",
+      "errorStandalone": "Dateien lassen sich nur mit Nextcloud speichern, nicht mit dem Merlin-Server."
+    },
     "extracting": {
       "subtitle": "Geteilten Inhalt wird gelesen…"
     },
@@ -575,6 +614,31 @@
     }
   },
   "nextcloudWeb": {
+    "files": {
+      "recognizedText": "Erkannter Text",
+      "rename": "Umbenennen…",
+      "renamePrompt": "Neuer Name (die Endung .{extension} bleibt):",
+      "renamePromptPlain": "Neuer Name:",
+      "renamed": "Datei umbenannt",
+      "renameExists": "Im Ordner gibt es schon eine Datei mit diesem Namen",
+      "renameFailed": "Datei konnte nicht umbenannt werden",
+      "metadata": "Metadaten",
+      "metadataFile": "Datei",
+      "metadataType": "Typ",
+      "metadataSize": "Größe",
+      "metadataModified": "Geändert",
+      "tab": "Dateien",
+      "notOpened": "Nicht geöffnet",
+      "noFilesYet": "Noch keine Dateien",
+      "emptyHint": "Teile Bilder, PDFs und andere Dateien vom Handy mit Merlin, um sie hier zu finden",
+      "folderName": "Merlin Dateien",
+      "folderImages": "Bilder",
+      "folderVideos": "Videos",
+      "folderAudio": "Audio",
+      "folderPdfs": "PDFs",
+      "folderOther": "Sonstige Dateien",
+      "download": "Datei herunterladen"
+    },
     "supportBox": {
       "title": "Dir gefällt der Artikel von {site}?",
       "both": "Überlege, ein {subscribe} abzuschließen oder zu {donate}.",

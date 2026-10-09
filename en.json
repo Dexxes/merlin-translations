@@ -1,4 +1,22 @@
 {
+  "fileRename": {
+    "title": "Rename file",
+    "placeholder": "Name",
+    "confirm": "Rename",
+    "message": "The extension .{extension} is kept.",
+    "menu": "Rename…",
+    "errorTitle": "Rename failed",
+    "errorExists": "A file with this name already exists in the folder."
+  },
+  "lightbox": {
+    "liveText": "Text in image",
+    "liveTextNone": "No text found in the image",
+    "liveTextFailed": "Text could not be recognized",
+    "liveTextDone": "Done"
+  },
+  "fileText": {
+    "createEvent": "Create event"
+  },
   "app": {
     "name": "Merlin"
   },
@@ -31,12 +49,14 @@
     "tab": {
       "text": "Text",
       "video": "Video",
-      "audio": "Audio"
+      "audio": "Audio",
+      "files": "Files"
     }
   },
   "articleList": {
     "searchPlaceholder": "Search articles",
     "filter": {
+      "unopened": "Not opened",
       "pages": "Pages",
       "continueReading": "Continue reading",
       "unread": "Unread",
@@ -47,6 +67,7 @@
       "continueWatching": "Continue watching"
     },
     "emptyState": {
+      "filesMessage": "No files yet. Share images, PDFs or other files from your phone to Merlin to find them here.",
       "title": "Nothing here yet",
       "allMessage": "No articles saved yet. Tap + to add one.",
       "favoritesMessage": "No favorites yet. Star articles to find them here.",
@@ -337,6 +358,24 @@
     }
   },
   "share": {
+    "files": {
+      "compression": {
+        "strong": "Compress strongly",
+        "light": "Compress lightly",
+        "original": "Uncompressed"
+      },
+      "subtitle": "Save files to Merlin",
+      "count": {
+        "one": "{count} file",
+        "other": "{count} files"
+      },
+      "summary": "{files} · {size}",
+      "uploadingSubtitle": "Uploading…",
+      "progress": "File {current} of {total} · {percent}",
+      "errorReadFile": "The shared file could not be read.",
+      "errorUpload": "Upload failed: {name}",
+      "errorStandalone": "Files can only be saved with Nextcloud, not with the Merlin server."
+    },
     "extracting": {
       "subtitle": "Reading shared content…"
     },
@@ -580,6 +619,31 @@
     }
   },
   "nextcloudWeb": {
+    "files": {
+      "recognizedText": "Recognized text",
+      "rename": "Rename…",
+      "renamePrompt": "New name (the extension .{extension} stays):",
+      "renamePromptPlain": "New name:",
+      "renamed": "File renamed",
+      "renameExists": "A file with this name already exists in the folder",
+      "renameFailed": "Could not rename the file",
+      "metadata": "Metadata",
+      "metadataFile": "File",
+      "metadataType": "Type",
+      "metadataSize": "Size",
+      "metadataModified": "Modified",
+      "tab": "Files",
+      "notOpened": "Not opened",
+      "noFilesYet": "No files yet",
+      "emptyHint": "Share images, PDFs and other files from your phone to Merlin to find them here",
+      "folderName": "Merlin files",
+      "folderImages": "Images",
+      "folderVideos": "Videos",
+      "folderAudio": "Audio",
+      "folderPdfs": "PDFs",
+      "folderOther": "Other files",
+      "download": "Download file"
+    },
     "supportBox": {
       "title": "Enjoying this article from {site}?",
       "both": "Consider taking out a {subscribe} or making a {donate}.",
