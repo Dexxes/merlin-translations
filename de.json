@@ -11,7 +11,11 @@
   "lightbox": {
     "liveText": "Text im Bild",
     "liveTextNone": "Kein Text im Bild gefunden",
-    "liveTextFailed": "Text konnte nicht erkannt werden"
+    "liveTextFailed": "Text konnte nicht erkannt werden",
+    "liveTextDone": "Fertig"
+  },
+  "fileText": {
+    "createEvent": "Termin erstellen"
   },
   "app": {
     "name": "Merlin"

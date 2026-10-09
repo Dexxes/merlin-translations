@@ -11,7 +11,11 @@
   "lightbox": {
     "liveText": "Text in image",
     "liveTextNone": "No text found in the image",
-    "liveTextFailed": "Text could not be recognized"
+    "liveTextFailed": "Text could not be recognized",
+    "liveTextDone": "Done"
+  },
+  "fileText": {
+    "createEvent": "Create event"
   },
   "app": {
     "name": "Merlin"
