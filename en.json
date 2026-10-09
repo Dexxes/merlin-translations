@@ -31,12 +31,14 @@
     "tab": {
       "text": "Text",
       "video": "Video",
-      "audio": "Audio"
+      "audio": "Audio",
+      "files": "Files"
     }
   },
   "articleList": {
     "searchPlaceholder": "Search articles",
     "filter": {
+      "unopened": "Not opened",
       "pages": "Pages",
       "continueReading": "Continue reading",
       "unread": "Unread",
@@ -47,6 +49,7 @@
       "continueWatching": "Continue watching"
     },
     "emptyState": {
+      "filesMessage": "No files yet. Share images, PDFs or other files from your phone to Merlin to find them here.",
       "title": "Nothing here yet",
       "allMessage": "No articles saved yet. Tap + to add one.",
       "favoritesMessage": "No favorites yet. Star articles to find them here.",
@@ -338,6 +341,11 @@
   },
   "share": {
     "files": {
+      "compression": {
+        "strong": "Compress strongly",
+        "light": "Compress lightly",
+        "original": "Uncompressed"
+      },
       "subtitle": "Save files to Merlin",
       "count": {
         "one": "{count} file",
@@ -594,6 +602,10 @@
   },
   "nextcloudWeb": {
     "files": {
+      "tab": "Files",
+      "notOpened": "Not opened",
+      "noFilesYet": "No files yet",
+      "emptyHint": "Share images, PDFs and other files from your phone to Merlin to find them here",
       "folderName": "Merlin files",
       "folderImages": "Images",
       "folderVideos": "Videos",
