@@ -14,6 +14,10 @@
     "liveTextFailed": "Text could not be recognized",
     "liveTextDone": "Done"
   },
+  "fileShare": {
+    "loading": "Loading file …",
+    "failed": "The file could not be loaded."
+  },
   "fileText": {
     "createEvent": "Create event"
   },

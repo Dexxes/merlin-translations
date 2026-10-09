@@ -14,6 +14,10 @@
     "liveTextFailed": "Text konnte nicht erkannt werden",
     "liveTextDone": "Fertig"
   },
+  "fileShare": {
+    "loading": "Datei wird geladen …",
+    "failed": "Die Datei konnte nicht geladen werden."
+  },
   "fileText": {
     "createEvent": "Termin erstellen"
   },
