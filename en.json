@@ -588,6 +588,10 @@
       "subscribeLabel": "subscription",
       "donateLabel": "donation"
     },
+    "authorBox": {
+      "aboutAuthor": "About the author",
+      "aboutAuthors": "About the authors"
+    },
     "common": {
       "addArticle": "Add Article",
       "cancel": "Cancel",
@@ -852,6 +856,8 @@
       "showExtractedArticle": "Show extracted article",
       "title": "Title",
       "author": "Author",
+      "authorPhoto": "Author photo",
+      "authorBio": "Author bio",
       "date": "Date",
       "teaser": "Teaser",
       "category": "Category",

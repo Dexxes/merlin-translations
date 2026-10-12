@@ -583,6 +583,10 @@
       "subscribeLabel": "Abo",
       "donateLabel": "spenden"
     },
+    "authorBox": {
+      "aboutAuthor": "Über die Autorin / den Autor",
+      "aboutAuthors": "Über die Autor*innen"
+    },
     "common": {
       "addArticle": "Artikel hinzufügen",
       "cancel": "Abbrechen",
@@ -847,6 +851,8 @@
       "showExtractedArticle": "Extrahierten Artikel anzeigen",
       "title": "Titel",
       "author": "Autor",
+      "authorPhoto": "Autorenfoto",
+      "authorBio": "Autoren-Bio",
       "date": "Datum",
       "teaser": "Vorschau",
       "category": "Kategorie",
