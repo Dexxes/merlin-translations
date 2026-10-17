@@ -257,7 +257,15 @@
       "failed": "The PDF could not be loaded.",
       "retry": "Try again",
       "encrypted": "This PDF is password-protected and can’t be displayed here.",
-      "openBrowser": "Open in browser"
+      "openBrowser": "Open in browser",
+      "highlight": {
+        "menu": "Highlight",
+        "yellow": "Yellow",
+        "green": "Green",
+        "blue": "Blue",
+        "pink": "Pink",
+        "orange": "Orange"
+      }
     },
     "video": {
       "variant": "Version"

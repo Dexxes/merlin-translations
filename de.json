@@ -252,7 +252,15 @@
       "failed": "Die PDF konnte nicht geladen werden.",
       "retry": "Erneut versuchen",
       "encrypted": "Diese PDF ist passwortgeschützt und kann hier nicht angezeigt werden.",
-      "openBrowser": "Im Browser öffnen"
+      "openBrowser": "Im Browser öffnen",
+      "highlight": {
+        "menu": "Markieren",
+        "yellow": "Gelb",
+        "green": "Grün",
+        "blue": "Blau",
+        "pink": "Rosa",
+        "orange": "Orange"
+      }
     },
     "video": {
       "variant": "Fassung"
