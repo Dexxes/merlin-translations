@@ -186,7 +186,8 @@
       "addToReadingList": "Add to Reading List"
     },
     "highlightToolbar": {
-      "title": "Highlight Color"
+      "title": "Highlight Color",
+      "copyText": "Copy text"
     },
     "paywallBanner": {
       "connectButton": "Connect",
@@ -1157,6 +1158,8 @@
       "justNow": "just now",
       "comment": "Comment",
       "highlightAndComment": "Highlight and comment",
+      "copyText": "Copy text",
+      "textCopiedToClipboard": "Text copied to clipboard",
       "removeHighlight": "Remove highlight",
       "minutesAgo": {
         "one": "%n minute ago",

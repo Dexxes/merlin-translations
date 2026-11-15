@@ -181,7 +181,8 @@
       "addToReadingList": "Zur Leseliste hinzufügen"
     },
     "highlightToolbar": {
-      "title": "Markierungsfarbe"
+      "title": "Markierungsfarbe",
+      "copyText": "Text kopieren"
     },
     "paywallBanner": {
       "connectButton": "Verbinden",
@@ -1152,6 +1153,8 @@
       "justNow": "gerade eben",
       "comment": "Kommentieren",
       "highlightAndComment": "Markieren und kommentieren",
+      "copyText": "Text kopieren",
+      "textCopiedToClipboard": "Text in Zwischenablage kopiert",
       "removeHighlight": "Markierung entfernen",
       "minutesAgo": {
         "one": "vor %n Minute",
