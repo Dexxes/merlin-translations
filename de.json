@@ -55,7 +55,15 @@
       "video": "Video",
       "audio": "Audio",
       "files": "Dateien"
-    }
+    },
+    "collapseSubTags": "Unter-Tags einklappen",
+    "deleteTagAction": "Tag löschen",
+    "deleteTag": {
+      "message": "„{name}“ wird von allen Artikeln entfernt, Unter-Tags werden mitgelöscht. Die Artikel selbst bleiben erhalten.",
+      "title": "Tag löschen?"
+    },
+    "expandSubTags": "Unter-Tags ausklappen",
+    "moveTag": "Verschieben nach…"
   },
   "articleList": {
     "searchPlaceholder": "Artikel suchen",
@@ -68,7 +76,10 @@
       "favorites": "Favoriten",
       "archive": "Archiv",
       "videos": "Videos",
-      "continueWatching": "Weiterschauen"
+      "continueWatching": "Weiterschauen",
+      "audio": "Audio",
+      "continueListening": "Weiterhören",
+      "unheard": "Ungehört"
     },
     "emptyState": {
       "filesMessage": "Noch keine Dateien. Teile Bilder, PDFs oder andere Dateien vom Handy mit Merlin, um sie hier zu finden.",
@@ -81,7 +92,9 @@
       "refreshButton": "Aktualisieren",
       "taggedMessage": "Keine Artikel mit Tag \"{tag}\".",
       "continueReadingMessage": "Nichts zum Weiterlesen. Angefangene Artikel erscheinen hier.",
-      "continueWatchingMessage": "Nichts zum Weiterschauen. Angefangene Videos erscheinen hier."
+      "continueWatchingMessage": "Nichts zum Weiterschauen. Angefangene Videos erscheinen hier.",
+      "continueListeningMessage": "Nichts zum Weiterhören. Angefangene Audios erscheinen hier.",
+      "unheardMessage": "Noch keine ungehörten Audios. Füge einen Podcast- oder Audio-Link hinzu, um ihn hier zu finden."
     },
     "unconfigured": {
       "title": "Nicht verbunden",
@@ -102,7 +115,10 @@
       "unarchived": "Aus dem Archiv entfernt",
       "undoButton": "Rückgängig"
     },
-    "archivedBadge": "Archiviert"
+    "archivedBadge": "Archiviert",
+    "loadMore": {
+      "retryButton": "Ältere Artikel laden"
+    }
   },
   "articleActions": {
     "share": "Teilen",
@@ -152,7 +168,8 @@
       "editReminder": "Erinnerung ändern…",
       "setReminder": "Erinnern…",
       "reportArticle": "Artikel melden…",
-      "publicLink": "Öffentlichen Link erstellen"
+      "publicLink": "Öffentlichen Link erstellen",
+      "find": "Im Artikel suchen"
     },
     "ttsPanel": {
       "preparing": "Audio wird vorbereitet …"
@@ -165,7 +182,12 @@
       "accentColor": "Akzentfarbe",
       "progressAndHighlights": "Fortschrittsbalken & Hervorhebungen",
       "quoteMode": "Zitat-Tafel",
-      "quoteModeFooter": "Bei markiertem Text erscheint der Knopf „Zitat-Tafel“: Er legt den Text allein auf Glas, zum Speichern oder Teilen als Bild."
+      "quoteModeFooter": "Bei markiertem Text erscheint der Knopf „Zitat-Tafel“: Er legt den Text allein auf Glas, zum Speichern oder Teilen als Bild.",
+      "installedFont": "Installierte Schrift",
+      "installedFontNone": "Keine – Voreinstellung nutzen",
+      "paperTexture": "Papierstruktur",
+      "handsFree": "Freihand-Lesemodus",
+      "handsFreeFooter": "Zeigt in der unteren Leiste einen Button, der den Artikel von selbst scrollen lässt."
     },
     "tagSheet": {
       "title": "Tags bearbeiten",
@@ -180,7 +202,9 @@
       "unavailable": "Bild nicht abrufbar"
     },
     "linkDialog": {
-      "addToReadingList": "Zur Leseliste hinzufügen"
+      "addToReadingList": "Zur Leseliste hinzufügen",
+      "addToMerlin": "Zu Merlin hinzufügen",
+      "addWithTags": "Mit Tags hinzufügen"
     },
     "highlightToolbar": {
       "title": "Markierungsfarbe",
@@ -317,6 +341,25 @@
         "message": "Erlaube Merlin in den Einstellungen, Fotos hinzuzufügen.",
         "settings": "Einstellungen"
       }
+    },
+    "actionButton": "Aktionen",
+    "handsFree": {
+      "start": "Freihand-Lesen",
+      "pause": "Pause",
+      "resume": "Weiter",
+      "stop": "Freihand-Lesen beenden",
+      "speed": "Scrollgeschwindigkeit",
+      "slow": "langsam",
+      "medium": "mittel",
+      "fast": "schnell"
+    },
+    "find": {
+      "close": "Fertig",
+      "next": "Nächster Treffer",
+      "noMatches": "Keine Treffer",
+      "placeholder": "Im Artikel suchen",
+      "position": "{current} von {total}",
+      "previous": "Vorheriger Treffer"
     }
   },
   "addArticle": {
@@ -338,6 +381,12 @@
       "removeButton": "Erinnerung entfernen",
       "titleSet": "Erinnerung setzen",
       "titleEdit": "Erinnerung ändern"
+    },
+    "error": {
+      "permissionDenied": "Bitte erlaube Benachrichtigungen in den Einstellungen, um Erinnerungen zu setzen."
+    },
+    "notification": {
+      "body": "Dein gespeicherter Artikel wartet auf dich."
     }
   },
   "tagFilterSheet": {
@@ -356,7 +405,12 @@
     "commentLabel": "Kommentar (optional)",
     "commentPlaceholder": "Was stimmt nicht?",
     "successMessage": "Danke – Artikel wurde gemeldet.",
-    "submitButton": "Melden"
+    "submitButton": "Melden",
+    "error": {
+      "backendNotConfigured": "Kein Report-Backend konfiguriert. Bitte die URL unter Einstellungen → Reporting hinterlegen.",
+      "backendURLInvalid": "Ungültige Backend-URL: {url}",
+      "serverRejected": "Der Server hat die Meldung abgelehnt."
+    }
   },
   "settings": {
     "account": {
@@ -369,7 +423,8 @@
       "waitingForBrowser": "Warte auf Anmeldung im Browser…",
       "loggedInSuccess": "Erfolgreich angemeldet!",
       "logoutDialogTitle": "Abmelden?",
-      "logoutDialogMessage": "Deine Nextcloud-Zugangsdaten werden von diesem Gerät entfernt. Zwischengespeicherte Artikel und Lesepositionen bleiben erhalten."
+      "logoutDialogMessage": "Deine Nextcloud-Zugangsdaten werden von diesem Gerät entfernt. Zwischengespeicherte Artikel und Lesepositionen bleiben erhalten.",
+      "backendStandalone": "Standalone-Server"
     },
     "testConnection": {
       "button": "Verbindung testen"
@@ -406,7 +461,9 @@
       "sectionHeader": "Über",
       "versionLabel": "Version",
       "commitLabel": "Commit",
-      "sourceCodeLabel": "Quellcode"
+      "sourceCodeLabel": "Quellcode",
+      "contactDeveloperLabel": "Entwickler kontaktieren",
+      "privacyLabel": "Datenschutzerklärung"
     },
     "developer": {
       "sectionHeader": "Entwickler",
@@ -450,7 +507,8 @@
       "progress": "Datei {current} von {total} · {percent}",
       "errorReadFile": "Die geteilte Datei konnte nicht gelesen werden.",
       "errorUpload": "Hochladen fehlgeschlagen: {name}",
-      "errorStandalone": "Dateien lassen sich nur mit Nextcloud speichern, nicht mit dem Merlin-Server."
+      "errorStandalone": "Dateien lassen sich nur mit Nextcloud speichern, nicht mit dem Merlin-Server.",
+      "preparing": "Wird vorbereitet…"
     },
     "extracting": {
       "subtitle": "Geteilten Inhalt wird gelesen…"
@@ -484,7 +542,10 @@
       "errorAppNotFound": "Merlin-App auf diesem Server nicht gefunden.",
       "errorRateLimited": "Der Server begrenzt aktuell die Anfragen.\nBitte warte einen Moment und versuche es erneut.",
       "errorServerCode": "Serverfehler (HTTP {code}).",
-      "errorNetwork": "Netzwerkfehler: {error}"
+      "errorNetwork": "Netzwerkfehler: {error}",
+      "errorEncode": "Die Anfrage konnte nicht erstellt werden.",
+      "errorInvalidUrl": "Ungültige Nextcloud-Adresse.",
+      "tapToClose": "Tippen zum Schließen"
     },
     "rateLimited": {
       "subtitle": "Rate-Limit erreicht"
@@ -582,12 +643,15 @@
         "title": "Fischotter könnte in Berlin wieder heimisch werden",
         "meta": "rbb|24 · 8 Min.",
         "byline": "Von Julian von Bülow · rbb|24 · 8 Min. · Mai 2026",
-        "body": "Schlechte Wasserqualität und dicht bebaute Ufer: Lange galten Fischotter in Berlin als ausgerottet, seit den 60ern stehen sie unter strengem Schutz, in den 90er Jahren nehmen die Bestände wieder zu. Ebenso wurden die Tiere im 18. und 19. Jahrhundert intensiv bejagt, da sie als Nahrungskonkurrent zum Menschen gesehen wurden und ihr Fell begehrt war. In den vergangenen Jahren konnte sich ihre Population dank Tier- und Naturschutz wieder erholen und wurde vor allem im Ostteil Berlins gesichtet. Der moderne urbane Raum birgt allerdings für Fischotter auch viele Gefahren."
+        "body": "Schlechte Wasserqualität und dicht bebaute Ufer: Lange galten Fischotter in Berlin als ausgerottet, seit den 60ern stehen sie unter strengem Schutz, in den 90er Jahren nehmen die Bestände wieder zu. Ebenso wurden die Tiere im 18. und 19. Jahrhundert intensiv bejagt, da sie als Nahrungskonkurrent zum Menschen gesehen wurden und ihr Fell begehrt war. In den vergangenen Jahren konnte sich ihre Population dank Tier- und Naturschutz wieder erholen und wurde vor allem im Ostteil Berlins gesichtet. Der moderne urbane Raum birgt allerdings für Fischotter auch viele Gefahren.",
+        "tag": "Natur",
+        "teaser": "Lange galten sie als ausgerottet, jetzt werden sie vor allem im Osten der Stadt wieder gesichtet."
       },
       "sampleHighlight": "In einer Zeit endlosen Scrollens wirkt langsames Lesen fast schon radikal. Doch eine wachsende Zahl an Studien legt nahe, dass tiefes, bewusstes Lesen eine der wertvollsten Fähigkeiten sein könnte, die wir kultivieren können.",
       "readerMenu": {
         "close": "Schließen"
-      }
+      },
+      "sampleHighlightPhrase": "tiefes, bewusstes Lesen eine der wertvollsten Fähigkeiten sein könnte, die wir kultivieren können"
     }
   },
   "webext": {
@@ -1497,5 +1561,72 @@
       "invalidCredentials": "Ungültige Zugangsdaten",
       "loginFlowBroken": "Login fehlgeschlagen"
     }
+  },
+  "api": {
+    "error": {
+      "decodingFailed": "Server-Antwort konnte nicht gelesen werden: {error}\nAntwort: {body}",
+      "decoding": {
+        "atPath": "{problem} bei '{path}' – {detail}",
+        "dataCorrupted": "Daten unlesbar",
+        "keyNotFound": "Schlüssel fehlt: {key}",
+        "typeMismatch": "Typ passt nicht (erwartet {type})",
+        "valueNotFound": "Wert fehlt (erwartet {type})"
+      },
+      "network": "Netzwerkfehler: {error}",
+      "notConfigured": "Kein Server verbunden. Bitte die Einstellungen öffnen.",
+      "notFound": "Nicht gefunden.",
+      "server": "Server-Fehler (HTTP {code}).",
+      "unauthorized": "Anmeldung fehlgeschlagen. Bitte Benutzername und App-Passwort prüfen.",
+      "unknown": "Ein unbekannter Fehler ist aufgetreten."
+    }
+  },
+  "audioPlayer": {
+    "airplay": "AirPlay",
+    "error": {
+      "generic": "Audio konnte nicht abgespielt werden."
+    },
+    "pause": "Pause",
+    "play": "Abspielen",
+    "position": "Position",
+    "rate": "Geschwindigkeit",
+    "resumeAt": "Weiter bei {time}",
+    "skipBack": "15 Sekunden zurück",
+    "skipForward": "30 Sekunden vor",
+    "variant": "Fassung"
+  },
+  "moveTagSheet": {
+    "intro": "„{name}“ verschieben unter:",
+    "introWithSubTags": "„{name}“ mit seinen Unter-Tags verschieben unter:",
+    "move": "Verschieben",
+    "title": "Tag verschieben",
+    "topLevel": "Oberste Ebene"
+  },
+  "splash": {
+    "slowConnection": {
+      "message": "Verbindungsaufbau dauert... Im Offlinemodus starten?",
+      "offline": "Offline starten"
+    }
+  },
+  "tagParentPicker": {
+    "label": "Unter",
+    "topLevel": "Oberste Ebene"
+  },
+  "tts": {
+    "error": {
+      "audioSession": "Audio-Session-Fehler: {error}",
+      "download": "Download-Fehler: {error}",
+      "missingCredentials": "Anmeldedaten fehlen.",
+      "notConfigured": "Kein Server verbunden. Bitte zuerst anmelden.",
+      "server": "Server-Fehler: HTTP {code}",
+      "tempFile": "Temp-Datei konnte nicht geöffnet werden."
+    },
+    "step": {
+      "generatingAudio": "Audio wird generiert …",
+      "preparingText": "Reintext wird aufbereitet …",
+      "sendingText": "Text wird an Sprachmodell gesendet …"
+    }
+  },
+  "youtube": {
+    "serverNotConfigured": "Server nicht konfiguriert"
   }
 }

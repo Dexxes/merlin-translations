@@ -55,7 +55,15 @@
       "video": "Video",
       "audio": "Audio",
       "files": "Files"
-    }
+    },
+    "collapseSubTags": "Collapse sub-tags",
+    "deleteTagAction": "Delete tag",
+    "deleteTag": {
+      "message": "“{name}” will be removed from all articles, including its sub-tags. The articles themselves are kept.",
+      "title": "Delete tag?"
+    },
+    "expandSubTags": "Expand sub-tags",
+    "moveTag": "Move to…"
   },
   "articleList": {
     "searchPlaceholder": "Search articles",
@@ -68,7 +76,10 @@
       "favorites": "Favorites",
       "archive": "Archive",
       "videos": "Videos",
-      "continueWatching": "Continue watching"
+      "continueWatching": "Continue watching",
+      "audio": "Audio",
+      "continueListening": "Continue listening",
+      "unheard": "Not listened"
     },
     "emptyState": {
       "filesMessage": "No files yet. Share images, PDFs or other files from your phone to Merlin to find them here.",
@@ -81,7 +92,9 @@
       "refreshButton": "Refresh",
       "taggedMessage": "No articles tagged \"{tag}\".",
       "continueReadingMessage": "Nothing to continue reading. Articles you've started appear here.",
-      "continueWatchingMessage": "Nothing to continue watching. Videos you've started appear here."
+      "continueWatchingMessage": "Nothing to continue watching. Videos you've started appear here.",
+      "continueListeningMessage": "Nothing to continue listening. Audio you've started appears here.",
+      "unheardMessage": "No unheard audio yet. Add a podcast or audio link to find it here."
     },
     "unconfigured": {
       "title": "Not connected",
@@ -102,7 +115,10 @@
       "unarchived": "Removed from archive",
       "undoButton": "Undo"
     },
-    "archivedBadge": "Archived"
+    "archivedBadge": "Archived",
+    "loadMore": {
+      "retryButton": "Load older articles"
+    }
   },
   "articleActions": {
     "share": "Share",
@@ -157,7 +173,8 @@
       "editReminder": "Edit Reminder…",
       "setReminder": "Set Reminder…",
       "reportArticle": "Report Article…",
-      "publicLink": "Create Public Link"
+      "publicLink": "Create Public Link",
+      "find": "Find in Article"
     },
     "ttsPanel": {
       "preparing": "Preparing audio…"
@@ -170,7 +187,12 @@
       "accentColor": "Accent color",
       "progressAndHighlights": "Progress bar & highlights",
       "quoteMode": "Quote card",
-      "quoteModeFooter": "Selecting text shows a \"Quote card\" button: it puts the text on its own on glass, ready to save or share as an image."
+      "quoteModeFooter": "Selecting text shows a \"Quote card\" button: it puts the text on its own on glass, ready to save or share as an image.",
+      "installedFont": "Installed font",
+      "installedFontNone": "None – use preset",
+      "paperTexture": "Paper texture",
+      "handsFree": "Hands-free reading",
+      "handsFreeFooter": "Shows a button in the bottom bar that scrolls the article by itself."
     },
     "tagSheet": {
       "title": "Edit Tags",
@@ -185,7 +207,9 @@
       "unavailable": "Image unavailable"
     },
     "linkDialog": {
-      "addToReadingList": "Add to Reading List"
+      "addToReadingList": "Add to Reading List",
+      "addToMerlin": "Add to Merlin",
+      "addWithTags": "Add with Tags"
     },
     "highlightToolbar": {
       "title": "Highlight Color",
@@ -317,6 +341,25 @@
         "message": "Allow Merlin to add photos in Settings.",
         "settings": "Settings"
       }
+    },
+    "actionButton": "Actions",
+    "handsFree": {
+      "start": "Hands-free reading",
+      "pause": "Pause",
+      "resume": "Resume",
+      "stop": "Stop hands-free reading",
+      "speed": "Scroll speed",
+      "slow": "slow",
+      "medium": "medium",
+      "fast": "fast"
+    },
+    "find": {
+      "close": "Done",
+      "next": "Next Match",
+      "noMatches": "No Matches",
+      "placeholder": "Find in Article",
+      "position": "{current} of {total}",
+      "previous": "Previous Match"
     }
   },
   "addArticle": {
@@ -338,6 +381,12 @@
       "removeButton": "Remove Reminder",
       "titleSet": "Set Reminder",
       "titleEdit": "Edit Reminder"
+    },
+    "error": {
+      "permissionDenied": "Please allow notifications in Settings to set reminders."
+    },
+    "notification": {
+      "body": "Your saved article is waiting for you."
     }
   },
   "tagFilterSheet": {
@@ -356,7 +405,12 @@
     "commentLabel": "Comment (optional)",
     "commentPlaceholder": "What's wrong?",
     "successMessage": "Thanks – the article has been reported.",
-    "submitButton": "Report"
+    "submitButton": "Report",
+    "error": {
+      "backendNotConfigured": "No report backend configured. Please set the URL under Settings → Reporting.",
+      "backendURLInvalid": "Invalid backend URL: {url}",
+      "serverRejected": "The server rejected the report."
+    }
   },
   "settings": {
     "account": {
@@ -369,7 +423,8 @@
       "waitingForBrowser": "Waiting for browser login…",
       "loggedInSuccess": "Logged in successfully!",
       "logoutDialogTitle": "Logout?",
-      "logoutDialogMessage": "Your Nextcloud credentials will be removed from this device. Cached articles and reading positions are kept."
+      "logoutDialogMessage": "Your Nextcloud credentials will be removed from this device. Cached articles and reading positions are kept.",
+      "backendStandalone": "Standalone server"
     },
     "testConnection": {
       "button": "Test Connection"
@@ -406,7 +461,9 @@
       "sectionHeader": "About",
       "versionLabel": "Version",
       "commitLabel": "Commit",
-      "sourceCodeLabel": "Source code"
+      "sourceCodeLabel": "Source code",
+      "contactDeveloperLabel": "Contact Developer",
+      "privacyLabel": "Privacy Policy"
     },
     "developer": {
       "sectionHeader": "Developer",
@@ -450,7 +507,8 @@
       "progress": "File {current} of {total} · {percent}",
       "errorReadFile": "The shared file could not be read.",
       "errorUpload": "Upload failed: {name}",
-      "errorStandalone": "Files can only be saved with Nextcloud, not with the Merlin server."
+      "errorStandalone": "Files can only be saved with Nextcloud, not with the Merlin server.",
+      "preparing": "Preparing…"
     },
     "extracting": {
       "subtitle": "Reading shared content…"
@@ -484,7 +542,10 @@
       "errorAppNotFound": "Merlin app not found on this server.",
       "errorRateLimited": "The server is rate-limiting requests.\nPlease wait a moment, then try again.",
       "errorServerCode": "Server error (HTTP {code}).",
-      "errorNetwork": "Network error: {error}"
+      "errorNetwork": "Network error: {error}",
+      "errorEncode": "Could not create the request.",
+      "errorInvalidUrl": "Invalid Nextcloud URL.",
+      "tapToClose": "Tap to close"
     },
     "rateLimited": {
       "subtitle": "Rate limited"
@@ -582,12 +643,15 @@
         "title": "Otters could become native to Berlin again",
         "meta": "rbb|24 · 8 min",
         "byline": "By Julian von Bülow · rbb|24 · 8 min · May 2026",
-        "body": "Poor water quality and densely built riverbanks: otters were long considered extinct in Berlin. Since the 1960s they've been under strict protection, and since the 1990s their numbers have been rising again. In the 18th and 19th centuries they were heavily hunted, seen as competitors for food and prized for their fur. In recent years, thanks to wildlife and nature conservation, their population has recovered and they've increasingly been spotted in eastern Berlin. The modern urban environment, however, still poses many dangers for otters."
+        "body": "Poor water quality and densely built riverbanks: otters were long considered extinct in Berlin. Since the 1960s they've been under strict protection, and since the 1990s their numbers have been rising again. In the 18th and 19th centuries they were heavily hunted, seen as competitors for food and prized for their fur. In recent years, thanks to wildlife and nature conservation, their population has recovered and they've increasingly been spotted in eastern Berlin. The modern urban environment, however, still poses many dangers for otters.",
+        "tag": "Nature",
+        "teaser": "Long thought extinct, they are being spotted again, especially in the east of the city."
       },
       "sampleHighlight": "In an era of endless scrolling, slow reading feels almost radical. But a growing body of research suggests that deep, intentional reading may be one of the most valuable skills we can cultivate.",
       "readerMenu": {
         "close": "Close"
-      }
+      },
+      "sampleHighlightPhrase": "deep, intentional reading may be one of the most valuable skills we can cultivate"
     }
   },
   "webext": {
@@ -1497,5 +1561,72 @@
       "invalidCredentials": "Invalid Credentials",
       "loginFlowBroken": "Login Broken"
     }
+  },
+  "api": {
+    "error": {
+      "decodingFailed": "Could not parse server response: {error}\nResponse: {body}",
+      "decoding": {
+        "atPath": "{problem} at '{path}' – {detail}",
+        "dataCorrupted": "Data unreadable",
+        "keyNotFound": "Key missing: {key}",
+        "typeMismatch": "Type mismatch (expected {type})",
+        "valueNotFound": "Value missing (expected {type})"
+      },
+      "network": "Network error: {error}",
+      "notConfigured": "No server connected. Please open Settings.",
+      "notFound": "Resource not found.",
+      "server": "Server error (HTTP {code}).",
+      "unauthorized": "Authentication failed. Check username and app password.",
+      "unknown": "An unknown error occurred."
+    }
+  },
+  "audioPlayer": {
+    "airplay": "AirPlay",
+    "error": {
+      "generic": "Audio could not be played."
+    },
+    "pause": "Pause",
+    "play": "Play",
+    "position": "Position",
+    "rate": "Speed",
+    "resumeAt": "Resume at {time}",
+    "skipBack": "Back 15 seconds",
+    "skipForward": "Forward 30 seconds",
+    "variant": "Version"
+  },
+  "moveTagSheet": {
+    "intro": "Move “{name}” below:",
+    "introWithSubTags": "Move “{name}” with its sub-tags below:",
+    "move": "Move",
+    "title": "Move Tag",
+    "topLevel": "Top level"
+  },
+  "splash": {
+    "slowConnection": {
+      "message": "Connecting is taking a while... Start in offline mode?",
+      "offline": "Start offline"
+    }
+  },
+  "tagParentPicker": {
+    "label": "Below",
+    "topLevel": "Top level"
+  },
+  "tts": {
+    "error": {
+      "audioSession": "Audio session error: {error}",
+      "download": "Download error: {error}",
+      "missingCredentials": "Login credentials are missing.",
+      "notConfigured": "No server connected. Please log in first.",
+      "server": "Server error: HTTP {code}",
+      "tempFile": "Could not open the temporary file."
+    },
+    "step": {
+      "generatingAudio": "Generating audio …",
+      "preparingText": "Preparing text …",
+      "sendingText": "Sending text to the voice model …"
+    }
+  },
+  "youtube": {
+    "serverNotConfigured": "Server not configured"
   }
 }
