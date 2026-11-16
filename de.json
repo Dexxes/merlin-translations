@@ -354,7 +354,9 @@
       "sectionHeader": "Über",
       "versionLabel": "Version",
       "commitLabel": "Commit",
-      "sourceCodeLabel": "Quellcode"
+      "sourceCodeLabel": "Quellcode",
+      "privacyLabel": "Datenschutzerklärung",
+      "contactDeveloperLabel": "Entwickler kontaktieren"
     },
     "developer": {
       "sectionHeader": "Entwickler",

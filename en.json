@@ -359,7 +359,9 @@
       "sectionHeader": "About",
       "versionLabel": "Version",
       "commitLabel": "Commit",
-      "sourceCodeLabel": "Source code"
+      "sourceCodeLabel": "Source code",
+      "privacyLabel": "Privacy Policy",
+      "contactDeveloperLabel": "Contact Developer"
     },
     "developer": {
       "sectionHeader": "Developer",
