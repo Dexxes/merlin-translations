@@ -462,8 +462,8 @@
       "versionLabel": "Version",
       "commitLabel": "Commit",
       "sourceCodeLabel": "Source code",
-      "contactDeveloperLabel": "Contact Developer",
-      "privacyLabel": "Privacy Policy"
+      "privacyLabel": "Privacy Policy",
+      "contactDeveloperLabel": "Contact Developer"
     },
     "developer": {
       "sectionHeader": "Developer",

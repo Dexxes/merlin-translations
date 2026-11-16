@@ -462,8 +462,8 @@
       "versionLabel": "Version",
       "commitLabel": "Commit",
       "sourceCodeLabel": "Quellcode",
-      "contactDeveloperLabel": "Entwickler kontaktieren",
-      "privacyLabel": "Datenschutzerklärung"
+      "privacyLabel": "Datenschutzerklärung",
+      "contactDeveloperLabel": "Entwickler kontaktieren"
     },
     "developer": {
       "sectionHeader": "Entwickler",
