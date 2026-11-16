@@ -340,7 +340,9 @@
         "title": "Kein Zugriff auf Fotos",
         "message": "Erlaube Merlin in den Einstellungen, Fotos hinzuzufügen.",
         "settings": "Einstellungen"
-      }
+      },
+      "rotateTo169": "Für 16:9 Handy drehen",
+      "rotateTo916": "Für 9:16 Handy drehen"
     },
     "actionButton": "Aktionen",
     "handsFree": {
