@@ -163,7 +163,9 @@
       "font": "Schriftart",
       "lineSpacing": "Zeilenabstand",
       "accentColor": "Akzentfarbe",
-      "progressAndHighlights": "Fortschrittsbalken & Hervorhebungen"
+      "progressAndHighlights": "Fortschrittsbalken & Hervorhebungen",
+      "quoteMode": "Zitat-Tafel",
+      "quoteModeFooter": "Bei markiertem Text erscheint der Knopf „Zitat-Tafel“: Er legt den Text allein auf Glas, zum Speichern oder Teilen als Bild."
     },
     "tagSheet": {
       "title": "Tags bearbeiten",
@@ -265,6 +267,56 @@
     },
     "video": {
       "variant": "Fassung"
+    },
+    "quote": {
+      "open": "Zitat-Tafel",
+      "save": "Bild speichern",
+      "saved": "Gespeichert",
+      "share": "Teilen",
+      "showAuthor": "Autor",
+      "showSource": "Quelle",
+      "style": "Design",
+      "blur": "Weichzeichner",
+      "glow": "Leuchten hinter der Schrift",
+      "size": "Schriftgröße",
+      "font": {
+        "original": "Original",
+        "system": "Modern",
+        "serif": "Klassisch",
+        "rounded": "Rund",
+        "typewriter": "Schreibmaschine",
+        "handwriting": "Handschrift",
+        "script": "Schreibschrift"
+      },
+      "color": {
+        "auto": "Wie im Artikel",
+        "white": "Weiß",
+        "black": "Schwarz",
+        "red": "Rot",
+        "amber": "Gelb",
+        "green": "Grün",
+        "blue": "Blau",
+        "violet": "Lila"
+      },
+      "backdropPicker": "Hintergrund",
+      "backdrop": {
+        "article": "Artikel",
+        "bubbles": "Bunte Blasen",
+        "sunset": "Sonnenuntergang",
+        "ocean": "Ozean",
+        "hearts": "Herzen",
+        "rainbow": "Regenbogen",
+        "aurora": "Polarlicht",
+        "candy": "Bonbon"
+      },
+      "hint": "Tippen zum Schließen",
+      "close": "Schließen",
+      "saveFailed": "Das Bild konnte nicht gespeichert werden.",
+      "photosDenied": {
+        "title": "Kein Zugriff auf Fotos",
+        "message": "Erlaube Merlin in den Einstellungen, Fotos hinzuzufügen.",
+        "settings": "Einstellungen"
+      }
     }
   },
   "addArticle": {

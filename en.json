@@ -168,7 +168,9 @@
       "font": "Font",
       "lineSpacing": "Line spacing",
       "accentColor": "Accent color",
-      "progressAndHighlights": "Progress bar & highlights"
+      "progressAndHighlights": "Progress bar & highlights",
+      "quoteMode": "Quote card",
+      "quoteModeFooter": "Selecting text shows a \"Quote card\" button: it puts the text on its own on glass, ready to save or share as an image."
     },
     "tagSheet": {
       "title": "Edit Tags",
@@ -193,11 +195,6 @@
       "connectButton": "Connect",
       "message": "This article may be behind a paywall on {domain}. Connect your subscription to unlock it.",
       "retryButton": "Retry"
-    },
-    "paywallSubscribeBanner": {
-      "archiveButton": "Archive",
-      "message": "This is a paid article. Merlin can't unlock it automatically.",
-      "subscribeButton": "Subscribe"
     },
     "shareLink": {
       "title": "Share Link",
@@ -270,6 +267,56 @@
     },
     "video": {
       "variant": "Version"
+    },
+    "quote": {
+      "open": "Quote card",
+      "save": "Save Image",
+      "saved": "Saved",
+      "share": "Share",
+      "showAuthor": "Author",
+      "showSource": "Source",
+      "style": "Design",
+      "blur": "Blur",
+      "glow": "Glow behind text",
+      "size": "Font size",
+      "font": {
+        "original": "Original",
+        "system": "Modern",
+        "serif": "Classic",
+        "rounded": "Rounded",
+        "typewriter": "Typewriter",
+        "handwriting": "Handwriting",
+        "script": "Script"
+      },
+      "color": {
+        "auto": "As in article",
+        "white": "White",
+        "black": "Black",
+        "red": "Red",
+        "amber": "Yellow",
+        "green": "Green",
+        "blue": "Blue",
+        "violet": "Purple"
+      },
+      "backdropPicker": "Background",
+      "backdrop": {
+        "article": "Article",
+        "bubbles": "Colorful bubbles",
+        "sunset": "Sunset",
+        "ocean": "Ocean",
+        "hearts": "Hearts",
+        "rainbow": "Rainbow",
+        "aurora": "Aurora",
+        "candy": "Candy"
+      },
+      "hint": "Tap to close",
+      "close": "Close",
+      "saveFailed": "The image could not be saved.",
+      "photosDenied": {
+        "title": "No Access to Photos",
+        "message": "Allow Merlin to add photos in Settings.",
+        "settings": "Settings"
+      }
     }
   },
   "addArticle": {
