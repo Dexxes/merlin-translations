@@ -1,0 +1,889 @@
+{
+  "fileRename": {
+    "title": "تغییر نام فایل",
+    "placeholder": "نام",
+    "confirm": "تغییر نام",
+    "message": "پسوند .{extension} حفظ می‌شود.",
+    "menu": "تغییر نام…",
+    "errorTitle": "تغییر نام انجام نشد",
+    "errorExists": "فایلی با این نام در پوشه وجود دارد."
+  },
+  "lightbox": {
+    "liveText": "متن داخل تصویر",
+    "liveTextNone": "متنی در تصویر پیدا نشد",
+    "liveTextFailed": "متن قابل تشخیص نبود",
+    "liveTextDone": "تمام"
+  },
+  "fileShare": {
+    "loading": "در حال بارگیری فایل…",
+    "failed": "فایل بارگیری نشد."
+  },
+  "fileText": {
+    "createEvent": "ایجاد رویداد"
+  },
+  "common": {
+    "cancel": "لغو",
+    "done": "تمام",
+    "save": "ذخیره",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "ok": "باشه",
+    "error": "خطا",
+    "close": "بستن",
+    "back": "بازگشت",
+    "next": "بعدی",
+    "add": "افزودن",
+    "share": "اشتراک‌گذاری",
+    "refresh": "تازه‌سازی",
+    "login": "ورود",
+    "logout": "خروج",
+    "settings": "تنظیمات"
+  },
+  "navigationMenu": {
+    "tagsHeader": "برچسب‌ها",
+    "clearTagFilter": "حذف فیلتر برچسب",
+    "listView": "نمای فهرستی",
+    "cardView": "نمای کارتی",
+    "appTour": "معرفی برنامه",
+    "filterWithCount": "{label} ({count})",
+    "mediaTypePicker": "نوع رسانه",
+    "tab": {
+      "text": "متن",
+      "video": "ویدیو",
+      "audio": "صوت",
+      "files": "فایل‌ها"
+    },
+    "collapseSubTags": "بستن زیربرچسب‌ها",
+    "deleteTagAction": "حذف برچسب",
+    "deleteTag": {
+      "message": "«{name}» همراه با زیربرچسب‌هایش از همهٔ مقاله‌ها برداشته می‌شود. خود مقاله‌ها باقی می‌مانند.",
+      "title": "برچسب حذف شود؟"
+    },
+    "expandSubTags": "باز کردن زیربرچسب‌ها",
+    "moveTag": "انتقال به…"
+  },
+  "articleList": {
+    "searchPlaceholder": "جستجوی مقاله‌ها",
+    "filter": {
+      "unopened": "باز نشده",
+      "pages": "صفحه‌ها",
+      "continueReading": "ادامهٔ خواندن",
+      "unread": "خوانده نشده",
+      "unseen": "دیده نشده",
+      "favorites": "علاقه‌مندی‌ها",
+      "archive": "بایگانی",
+      "videos": "ویدیوها",
+      "continueWatching": "ادامهٔ تماشا",
+      "audio": "صوت",
+      "continueListening": "ادامهٔ شنیدن",
+      "unheard": "شنیده نشده"
+    },
+    "emptyState": {
+      "filesMessage": "هنوز فایلی نیست. تصویر، PDF یا فایل‌های دیگر را از گوشی با Merlin به اشتراک بگذارید تا اینجا ببینید.",
+      "title": "هنوز چیزی اینجا نیست",
+      "allMessage": "هنوز مقاله‌ای ذخیره نشده است. برای افزودن روی + بزنید.",
+      "favoritesMessage": "هنوز علاقه‌مندی‌ای ندارید. به مقاله‌ها ستاره بدهید تا اینجا پیدایشان کنید.",
+      "archiveMessage": "بایگانی شما خالی است.",
+      "videosMessage": "هنوز ویدیویی ذخیره نشده است. یک پیوند یوتیوب یا ویدیو اضافه کنید تا اینجا نمایش داده شود.",
+      "unseenMessage": "ویدیوی دیده‌نشده‌ای نیست. یک پیوند یوتیوب یا ویدیو اضافه کنید تا اینجا نمایش داده شود.",
+      "refreshButton": "تازه‌سازی",
+      "taggedMessage": "هیچ مقاله‌ای با برچسب «{tag}» نیست.",
+      "continueReadingMessage": "چیزی برای ادامهٔ خواندن نیست. مقاله‌هایی که شروع کرده‌اید اینجا نمایش داده می‌شوند.",
+      "continueWatchingMessage": "چیزی برای ادامهٔ تماشا نیست. ویدیوهایی که شروع کرده‌اید اینجا نمایش داده می‌شوند.",
+      "continueListeningMessage": "چیزی برای ادامهٔ شنیدن نیست. صوت‌هایی که شروع کرده‌اید اینجا نمایش داده می‌شوند.",
+      "unheardMessage": "صوت شنیده‌نشده‌ای نیست. یک پادکست یا پیوند صوتی اضافه کنید تا اینجا پیدایش کنید."
+    },
+    "unconfigured": {
+      "title": "متصل نیست",
+      "message": "تنظیمات را باز کنید و نشانی Nextcloud، نام کاربری و گذرواژهٔ برنامه را وارد کنید.",
+      "openSettingsButton": "باز کردن تنظیمات"
+    },
+    "miniPlayer": {
+      "fallbackTitle": "خواندن با صدای بلند"
+    },
+    "undo": {
+      "unfavorite": "واگرد حذف از علاقه‌مندی‌ها",
+      "favorite": "واگرد افزودن به علاقه‌مندی‌ها",
+      "unarchive": "واگرد خروج از بایگانی",
+      "archive": "واگرد بایگانی"
+    },
+    "archiveToast": {
+      "archived": "بایگانی شد",
+      "unarchived": "از بایگانی خارج شد",
+      "undoButton": "واگرد"
+    },
+    "archivedBadge": "بایگانی‌شده",
+    "loadMore": {
+      "retryButton": "بارگیری مقاله‌های قدیمی‌تر"
+    }
+  },
+  "articleActions": {
+    "share": "اشتراک‌گذاری",
+    "shareEllipsis": "اشتراک‌گذاری…",
+    "favoriteAdd": "علاقه‌مندی",
+    "favoriteRemove": "حذف از علاقه‌مندی‌ها",
+    "archiveAdd": "بایگانی",
+    "archiveRemove": "خروج از بایگانی",
+    "menu": {
+      "addToFavorites": "افزودن به علاقه‌مندی‌ها",
+      "removeFromFavorites": "حذف از علاقه‌مندی‌ها",
+      "markAsUnread": "علامت‌گذاری به‌عنوان خوانده‌نشده",
+      "archive": "بایگانی",
+      "editTags": "ویرایش برچسب‌ها…",
+      "share": "اشتراک‌گذاری…",
+      "copyLink": "رونوشت پیوند"
+    }
+  },
+  "articleReader": {
+    "labels": {
+      "author": "نوشتهٔ",
+      "readingTime": "زمان مطالعه",
+      "published": "منتشرشده",
+      "saved": "ذخیره‌شده"
+    },
+    "supportBox": {
+      "title": "از این مقالهٔ {site} لذت می‌برید؟",
+      "both": "به {subscribe} یا {donate} فکر کنید.",
+      "subscribeOnly": "به {subscribe} فکر کنید.",
+      "donateOnly": "به {donate} فکر کنید.",
+      "subscribeLabel": "اشتراک",
+      "donateLabel": "کمک مالی"
+    },
+    "paywallSubscribeBanner": {
+      "archiveButton": "بایگانی",
+      "message": "این مقاله پولی است. Merlin نمی‌تواند آن را خودکار باز کند.",
+      "subscribeButton": "اشتراک"
+    },
+    "sideMenu": {
+      "addFavorite": "افزودن به علاقه‌مندی‌ها",
+      "removeFavorite": "حذف از علاقه‌مندی‌ها",
+      "startReadAloud": "خواندن با صدای بلند",
+      "stopReadAloud": "توقف خواندن با صدای بلند",
+      "appearance": "ظاهر",
+      "share": "اشتراک‌گذاری…",
+      "openInBrowser": "باز کردن در مرورگر",
+      "openViaArchive": "باز کردن از طریق archive.ph",
+      "copyLink": "رونوشت پیوند",
+      "moveToReadingList": "انتقال به فهرست مطالعه",
+      "archive": "بایگانی",
+      "editTags": "ویرایش برچسب‌ها…",
+      "editReminder": "ویرایش یادآور…",
+      "setReminder": "تنظیم یادآور…",
+      "reportArticle": "گزارش مقاله…",
+      "publicLink": "ایجاد پیوند عمومی",
+      "find": "جستجو در مقاله"
+    },
+    "ttsPanel": {
+      "preparing": "در حال آماده‌سازی صدا…"
+    },
+    "appearance": {
+      "fontSize": "اندازهٔ قلم",
+      "theme": "پوسته",
+      "font": "قلم",
+      "lineSpacing": "فاصلهٔ خطوط",
+      "accentColor": "رنگ تأکیدی",
+      "progressAndHighlights": "نوار پیشرفت و برجسته‌سازی‌ها",
+      "quoteMode": "کارت نقل‌قول",
+      "quoteModeFooter": "با انتخاب متن، دکمهٔ «کارت نقل‌قول» نمایش داده می‌شود: متن را به‌تنهایی روی شیشه می‌گذارد تا به‌صورت تصویر ذخیره یا به اشتراک گذاشته شود.",
+      "installedFont": "قلم نصب‌شده",
+      "installedFontNone": "هیچ – استفاده از پیش‌فرض",
+      "paperTexture": "بافت کاغذ",
+      "handsFree": "خواندن بدون دست",
+      "handsFreeFooter": "دکمه‌ای در نوار پایین نمایش می‌دهد که مقاله را خودکار پیمایش می‌کند."
+    },
+    "tagSheet": {
+      "title": "ویرایش برچسب‌ها",
+      "newTagPlaceholder": "ایجاد برچسب جدید…"
+    },
+    "noContent": {
+      "title": "محتوایی در دسترس نیست",
+      "processing": "در حال بارگیری مقاله…",
+      "retry": "تلاش دوباره"
+    },
+    "imagePlaceholder": {
+      "unavailable": "تصویر در دسترس نیست"
+    },
+    "linkDialog": {
+      "addToReadingList": "افزودن به فهرست مطالعه",
+      "addToMerlin": "افزودن به Merlin",
+      "addWithTags": "افزودن با برچسب"
+    },
+    "highlightToolbar": {
+      "title": "رنگ برجسته‌سازی",
+      "copyText": "رونوشت متن"
+    },
+    "paywallBanner": {
+      "connectButton": "اتصال",
+      "message": "این مقاله ممکن است در {domain} پشت دیوار پرداخت باشد. اشتراک خود را متصل کنید تا باز شود.",
+      "retryButton": "تلاش دوباره"
+    },
+    "shareLink": {
+      "title": "اشتراک‌گذاری پیوند",
+      "explainer": "یک پیوند عمومی بسازید تا این مقاله را با هر کسی، حتی بدون حساب Merlin، به اشتراک بگذارید.",
+      "password": "گذرواژه",
+      "protectWithPassword": "محافظت با گذرواژه",
+      "setExpiry": "تعیین تاریخ انقضا",
+      "expiresOn": "تاریخ انقضا",
+      "createButton": "ایجاد پیوند اشتراک",
+      "shareButton": "اشتراک‌گذاری",
+      "newPassword": "گذرواژهٔ جدید",
+      "regenerateButton": "ساخت دوبارهٔ پیوند",
+      "revokeButton": "لغو پیوند"
+    },
+    "comments": {
+      "title": "نظرها",
+      "countLabel": "نظرها ({count})",
+      "comment": "نظر",
+      "onPassageTitle": "نظرها دربارهٔ این بخش",
+      "allComments": "همهٔ نظرها",
+      "sort": "مرتب‌سازی",
+      "sortText": "ترتیب در متن",
+      "sortNewest": "جدیدترین پاسخ اول",
+      "sortOldest": "قدیمی‌ترین پاسخ اول",
+      "none": "هنوز نظری نیست. متنی را انتخاب کنید تا برجسته کنید و نظر بدهید.",
+      "noneOnPassage": "هنوز نظری دربارهٔ این بخش نیست.",
+      "writeComment": "نوشتن نظر…",
+      "writeReply": "نوشتن پاسخ…",
+      "replyTo": "پاسخ به {name}",
+      "reply": "پاسخ",
+      "edit": "ویرایش",
+      "delete": "حذف",
+      "send": "ارسال",
+      "edited": "(ویرایش‌شده)",
+      "deleted": "نظر حذف شد",
+      "you": "شما",
+      "confirmDelete": "این نظر حذف شود؟",
+      "highlightRemoved": "برجسته‌سازی برداشته شد",
+      "removeHighlight": "برداشتن برجسته‌سازی",
+      "deleteHighlightTitle": "برجسته‌سازی همراه با نظرها برداشته شود؟",
+      "deleteHighlightMessage": "نظرها همراه با بخش نقل‌شده حفظ می‌شوند.",
+      "saveFailed": "نظر ذخیره نشد.",
+      "deleteFailed": "نظر حذف نشد.",
+      "visitorsCanComment": "بازدیدکنندگان می‌توانند برجسته کنند و نظر بدهند",
+      "nameExplainer": "بازدیدکنندگان نامی انتخاب می‌کنند. هر کسی با همان نام می‌تواند نوشته‌های زیر آن نام را ویرایش و حذف کند.",
+      "error": {
+        "bodyTooLong": "نظر حداکثر می‌تواند ۵۰۰۰ نویسه باشد.",
+        "bodyEmpty": "نظر خالی است.",
+        "generic": "نظر ذخیره نشد."
+      }
+    },
+    "unsupportedSiteBanner": {
+      "message": "Merlin نمی‌تواند این سایت ({domain}) را ذخیره کند: متن خوانایی برای دریافت مقاله ارائه نمی‌دهد."
+    },
+    "pdf": {
+      "badge": "PDF",
+      "loading": "در حال بارگیری PDF…",
+      "failed": "PDF بارگیری نشد.",
+      "retry": "تلاش دوباره",
+      "encrypted": "این PDF با گذرواژه محافظت شده و اینجا قابل نمایش نیست.",
+      "openBrowser": "باز کردن در مرورگر",
+      "highlight": {
+        "menu": "برجسته‌سازی",
+        "yellow": "زرد",
+        "green": "سبز",
+        "blue": "آبی",
+        "pink": "صورتی",
+        "orange": "نارنجی"
+      }
+    },
+    "video": {
+      "variant": "نسخه"
+    },
+    "quote": {
+      "open": "کارت نقل‌قول",
+      "save": "ذخیرهٔ تصویر",
+      "saved": "ذخیره شد",
+      "share": "اشتراک‌گذاری",
+      "showAuthor": "نویسنده",
+      "showSource": "منبع",
+      "style": "طراحی",
+      "blur": "محوشدگی",
+      "glow": "درخشش پشت متن",
+      "size": "اندازهٔ قلم",
+      "font": {
+        "original": "اصلی",
+        "system": "مدرن",
+        "serif": "کلاسیک",
+        "rounded": "گرد",
+        "typewriter": "ماشین تحریر",
+        "handwriting": "دست‌نویس",
+        "script": "خوشنویسی"
+      },
+      "color": {
+        "auto": "مانند مقاله",
+        "white": "سفید",
+        "black": "سیاه",
+        "red": "قرمز",
+        "amber": "زرد",
+        "green": "سبز",
+        "blue": "آبی",
+        "violet": "بنفش"
+      },
+      "backdropPicker": "پس‌زمینه",
+      "backdrop": {
+        "article": "مقاله",
+        "bubbles": "حباب‌های رنگی",
+        "sunset": "غروب",
+        "ocean": "اقیانوس",
+        "hearts": "قلب‌ها",
+        "rainbow": "رنگین‌کمان",
+        "aurora": "شفق قطبی",
+        "candy": "آب‌نبات"
+      },
+      "hint": "برای بستن ضربه بزنید",
+      "close": "بستن",
+      "saveFailed": "تصویر ذخیره نشد.",
+      "photosDenied": {
+        "title": "دسترسی به عکس‌ها وجود ندارد",
+        "message": "در تنظیمات به Merlin اجازهٔ افزودن عکس بدهید.",
+        "settings": "تنظیمات"
+      },
+      "rotateTo169": "برای ۱۶:۹ گوشی را بچرخانید",
+      "rotateTo916": "برای ۹:۱۶ گوشی را بچرخانید"
+    },
+    "actionButton": "کنش‌ها",
+    "handsFree": {
+      "start": "خواندن بدون دست",
+      "pause": "مکث",
+      "resume": "ادامه",
+      "stop": "توقف خواندن بدون دست",
+      "speed": "سرعت پیمایش",
+      "slow": "آهسته",
+      "medium": "متوسط",
+      "fast": "سریع"
+    },
+    "find": {
+      "close": "تمام",
+      "next": "مورد بعدی",
+      "noMatches": "موردی پیدا نشد",
+      "placeholder": "جستجو در مقاله",
+      "position": "{current} از {total}",
+      "previous": "مورد قبلی"
+    }
+  },
+  "addArticle": {
+    "title": "افزودن مقاله",
+    "urlSectionHeader": "نشانی مقاله",
+    "urlPlaceholder": "https://example.com/article",
+    "urlFooter": "نشانی مقاله‌ای را که می‌خواهید ذخیره کنید جای‌گذاری یا تایپ کنید.",
+    "tagsSectionHeader": "برچسب‌ها (اختیاری)",
+    "tagsPlaceholder": "جستجو یا ایجاد برچسب…"
+  },
+  "reminders": {
+    "list": {
+      "title": "یادآورها",
+      "emptyTitle": "یادآوری نیست",
+      "emptyMessage": "برای ساختن یادآور، در منوی مقاله روی «تنظیم یادآور» بزنید."
+    },
+    "sheet": {
+      "dateTimeLabel": "تاریخ و ساعت",
+      "removeButton": "حذف یادآور",
+      "titleSet": "تنظیم یادآور",
+      "titleEdit": "ویرایش یادآور"
+    },
+    "error": {
+      "permissionDenied": "برای تنظیم یادآور، لطفاً اعلان‌ها را در تنظیمات مجاز کنید."
+    },
+    "notification": {
+      "body": "مقالهٔ ذخیره‌شدهٔ شما منتظر شماست."
+    }
+  },
+  "tagFilterSheet": {
+    "title": "فیلتر برچسب",
+    "clearAll": "نمایش همه",
+    "emptyTitle": "هنوز برچسبی نیست",
+    "emptyMessage": "به مقاله‌ها برچسب بزنید تا اینجا بر اساس آن‌ها فیلتر کنید.",
+    "hiddenSummary": {
+      "one": "{count} برچسب پنهان",
+      "other": "{count} برچسب پنهان"
+    }
+  },
+  "report": {
+    "title": "گزارش مقاله",
+    "articleLabel": "مقاله",
+    "commentLabel": "توضیح (اختیاری)",
+    "commentPlaceholder": "چه مشکلی هست؟",
+    "successMessage": "سپاس – مقاله گزارش شد.",
+    "submitButton": "گزارش",
+    "error": {
+      "backendNotConfigured": "سرور گزارش تنظیم نشده است. لطفاً نشانی را در تنظیمات ← گزارش‌دهی وارد کنید.",
+      "backendURLInvalid": "نشانی سرور نامعتبر است: {url}",
+      "serverRejected": "سرور گزارش را رد کرد."
+    }
+  },
+  "settings": {
+    "account": {
+      "sectionHeader": "حساب Nextcloud",
+      "footer": "برای ورود از طریق مرورگر روی «ورود با Nextcloud» بزنید.",
+      "urlLabel": "نشانی",
+      "urlPlaceholder": "https://cloud.example.com",
+      "loginButton": "ورود با Nextcloud",
+      "loginButtonStandalone": "ورود",
+      "waitingForBrowser": "در انتظار ورود در مرورگر…",
+      "loggedInSuccess": "با موفقیت وارد شدید!",
+      "logoutDialogTitle": "خروج؟",
+      "logoutDialogMessage": "اطلاعات ورود Nextcloud شما از این دستگاه حذف می‌شود. مقاله‌های ذخیره‌شده در حافظهٔ موقت و جای مطالعه حفظ می‌شوند.",
+      "backendStandalone": "سرور مستقل"
+    },
+    "testConnection": {
+      "button": "آزمایش اتصال"
+    },
+    "preferences": {
+      "sectionHeader": "ترجیحات",
+      "footer": "تنظیمات به‌طور خودکار با حساب Nextcloud شما همگام می‌شوند.",
+      "defaultViewLabel": "نمای پیش‌فرض",
+      "progressBarLabel": "نوار پیشرفت مطالعه",
+      "saveProgressLabel": "ذخیرهٔ جای مطالعه",
+      "resumeOnOpenLabel": "ادامه از جایی که ماندم"
+    },
+    "cache": {
+      "sectionHeader": "حافظهٔ موقت",
+      "footer": "همهٔ مقاله‌ها و تصاویر حافظهٔ موقت، جای‌های مطالعهٔ ذخیره‌شده، حافظهٔ وب نمایشگر، اطلاعات ورود Nextcloud و همهٔ داده‌های MerlinShare را حذف می‌کند.",
+      "wifiOnlyToggle": "پیش‌بارگیری تصاویر فقط با Wi-Fi",
+      "clearButton": "پاک کردن حافظهٔ موقت",
+      "clearDialogTitle": "حافظهٔ موقت پاک شود؟",
+      "clearDialogMessage": "همهٔ مقاله‌ها و تصاویر حافظهٔ موقت، جای‌های مطالعه، حافظهٔ وب نمایشگر و اطلاعات ورود Nextcloud حذف می‌شوند. داده‌های MerlinShare هم پاک می‌شوند. از حساب خارج خواهید شد.",
+      "clearDialogConfirm": "پاک کردن",
+      "clearedSuccess": "حافظهٔ موقت با موفقیت پاک شد.",
+      "retentionLabel": "مدت نگهداری حافظهٔ موقت",
+      "retentionOff": "نگهداری برای همیشه",
+      "retentionDaysFormat": "نگهداری به مدت {count} روز"
+    },
+    "storage": {
+      "sectionHeader": "فضای ذخیره‌سازی",
+      "footer": "نشان می‌دهد مقاله‌ها و برجسته‌سازی‌های شما چه مقدار فضا روی سرور و در حافظهٔ موقت محلی اشغال کرده‌اند.",
+      "serverLabel": "سرور",
+      "localLabel": "حافظهٔ موقت محلی",
+      "loadError": "بارگیری نشد"
+    },
+    "about": {
+      "sectionHeader": "درباره",
+      "versionLabel": "نسخه",
+      "commitLabel": "کامیت",
+      "sourceCodeLabel": "کد منبع",
+      "privacyLabel": "سیاست حریم خصوصی",
+      "contactDeveloperLabel": "تماس با توسعه‌دهنده"
+    },
+    "developer": {
+      "sectionHeader": "توسعه‌دهنده",
+      "modeToggle": "حالت توسعه‌دهنده"
+    },
+    "retention": {
+      "sectionHeader": "مدت نگهداری",
+      "articlesLabel": "مقاله‌های بایگانی‌شده",
+      "favoritesLabel": "علاقه‌مندی‌های بایگانی‌شده",
+      "never": "هرگز حذف نشود",
+      "maximum": {
+        "one": "حداکثر ({count} روز)",
+        "other": "حداکثر ({count} روز)"
+      },
+      "afterDays": {
+        "one": "پس از {count} روز",
+        "other": "پس از {count} روز"
+      },
+      "footer": "مقاله‌های بایگانی‌شده پس از پایان این مدت، که از زمان بایگانی شمرده می‌شود، برای همیشه از سرور حذف می‌شوند. برای همهٔ دستگاه‌ها و برنامهٔ وب Nextcloud اعمال می‌شود.",
+      "saveFailed": "مدت نگهداری ذخیره نشد."
+    },
+    "paywall": {
+      "rowTitle": "اطلاعات ورود سایت‌ها",
+      "footer": "اطلاعات ورود سایت‌های دارای دیوار پرداخت را مدیریت کنید تا Merlin بتواند متن کامل مقاله را دریافت کند."
+    }
+  },
+  "share": {
+    "files": {
+      "compression": {
+        "strong": "فشرده‌سازی زیاد",
+        "light": "فشرده‌سازی کم",
+        "original": "بدون فشرده‌سازی"
+      },
+      "subtitle": "ذخیرهٔ فایل‌ها در Merlin",
+      "count": {
+        "one": "{count} فایل",
+        "other": "{count} فایل"
+      },
+      "summary": "{files} · {size}",
+      "uploadingSubtitle": "در حال بارگذاری…",
+      "progress": "فایل {current} از {total} · {percent}",
+      "errorReadFile": "فایل اشتراک‌گذاشته‌شده خوانده نشد.",
+      "errorUpload": "بارگذاری انجام نشد: {name}",
+      "errorStandalone": "فایل‌ها فقط با Nextcloud ذخیره می‌شوند، نه با سرور Merlin.",
+      "preparing": "در حال آماده‌سازی…"
+    },
+    "extracting": {
+      "subtitle": "در حال خواندن محتوای اشتراک‌گذاشته‌شده…"
+    },
+    "settings": {
+      "subtitle": "نیاز به راه‌اندازی",
+      "urlPlaceholder": "https://cloud.example.com",
+      "usernamePlaceholder": "نام کاربری",
+      "passwordPlaceholder": "گذرواژهٔ برنامه",
+      "saveButton": "ذخیره و ادامه",
+      "missingFieldsTitle": "فیلدهای خالی",
+      "missingFieldsMessage": "لطفاً همهٔ فیلدها را پر کنید."
+    },
+    "staging": {
+      "subtitle": "افزودن به فهرست مطالعه",
+      "loadingTags": "در حال بارگیری برچسب‌ها…",
+      "newTagPlaceholder": "برچسب جدید (اختیاری)",
+      "saveButton": "ذخیره در Merlin",
+      "noTags": "هنوز برچسبی نیست"
+    },
+    "saving": {
+      "subtitle": "در حال ذخیره در فهرست مطالعه…"
+    },
+    "result": {
+      "successTitle": "در Merlin ذخیره شد!",
+      "errorTitle": "ذخیره نشد",
+      "errorReadContent": "محتوای اشتراک‌گذاشته‌شده خوانده نشد.",
+      "errorNoUrl": "نشانی‌ای در محتوای اشتراک‌گذاشته‌شده پیدا نشد.",
+      "errorNoResponse": "پاسخی از سرور دریافت نشد.",
+      "errorAuthFailed": "احراز هویت انجام نشد.\nاطلاعات ورود را در برنامهٔ Merlin بررسی کنید.",
+      "errorAppNotFound": "برنامهٔ Merlin روی این سرور پیدا نشد.",
+      "errorRateLimited": "سرور تعداد درخواست‌ها را محدود کرده است.\nلطفاً کمی صبر کنید و دوباره تلاش کنید.",
+      "errorServerCode": "خطای سرور (HTTP {code}).",
+      "errorNetwork": "خطای شبکه: {error}",
+      "errorEncode": "درخواست ساخته نشد.",
+      "errorInvalidUrl": "نشانی Nextcloud نامعتبر است.",
+      "tapToClose": "برای بستن ضربه بزنید"
+    },
+    "rateLimited": {
+      "subtitle": "محدودیت درخواست"
+    }
+  },
+  "onboarding": {
+    "step1": {
+      "title": "به Merlin خوش آمدید!",
+      "body": "گشتی کوتاه در مهم‌ترین امکانات."
+    },
+    "step2": {
+      "title": "افزودن مقاله",
+      "body": "برای ذخیرهٔ هر نشانی روی + بزنید، یا پیوندها را از مرورگر، پیام‌رسان و برنامه‌های دیگر با گزینهٔ اشتراک‌گذاری بفرستید."
+    },
+    "step3": {
+      "title": "منوی ناوبری",
+      "body": "از لبهٔ راست صفحه بکشید تا مقاله‌ها را فیلتر کنید، برچسب‌ها را مرور کنید و تنظیمات را باز کنید."
+    },
+    "step4": {
+      "title": "تغییر نما",
+      "body": "فهرست فشرده می‌خواهید یا کارت‌های تصویری؟ هر زمان از منوی ناوبری بین نمای فهرستی و کارتی جابه‌جا شوید."
+    },
+    "step5": {
+      "title": "کنش‌های سریع",
+      "body": "هر مقاله را به راست بکشید تا بایگانی شود، به علاقه‌مندی‌ها برود یا حذف شود."
+    },
+    "step6": {
+      "title": "اشتراک‌گذاری مقاله",
+      "body": "هر مقاله را به چپ بکشید تا سریع با دوستان به اشتراک بگذارید یا به برنامهٔ دیگری بفرستید."
+    },
+    "step7": {
+      "title": "منوی نمایشگر",
+      "body": "هنگام خواندن از لبهٔ چپ بکشید تا مقاله را به اشتراک بگذارید، برچسب‌ها را ویرایش کنید، یادآور تنظیم کنید و کارهای دیگر."
+    },
+    "step8": {
+      "title": "ظاهر",
+      "body": "قلم، اندازه، پوسته و فاصلهٔ خطوط را مطابق سلیقهٔ خود تنظیم کنید."
+    },
+    "step9": {
+      "title": "برچسب‌ها",
+      "body": "فهرست مطالعه را با برچسب‌ها مرتب کنید. هر زمان از منوی نمایشگر برچسب اضافه یا حذف کنید."
+    },
+    "step10": {
+      "title": "یادآورها",
+      "body": "یادآور تنظیم کنید تا خواندن مقاله‌ای را فراموش نکنید. همهٔ یادآورها در منوی ناوبری هستند."
+    },
+    "step11": {
+      "title": "گزارش مقاله",
+      "body": "قالب‌بندی خراب دیدید؟ مقاله را گزارش کنید تا درستش کنیم."
+    },
+    "step12": {
+      "title": "برجسته‌سازی",
+      "body": "هنگام خواندن هر متنی را انتخاب کنید تا با یکی از پنج رنگ برجسته شود. برجسته‌سازی‌ها با حساب شما همگام می‌شوند."
+    },
+    "step13": {
+      "title": "تکان برای واگرد",
+      "body": "چیزی را اشتباهی بایگانی یا حذف کردید؟ کافی است گوشی را تکان دهید تا آخرین کار واگرد شود."
+    },
+    "retention": {
+      "title": "مدت نگهداری",
+      "bodyUnknown": "مقاله‌های بایگانی‌شده می‌توانند پس از مدتی مشخص، که از زمان بایگانی شمرده می‌شود، خودکار از سرور حذف شوند. مدت را در تنظیمات انتخاب می‌کنید و سرور شما می‌تواند حداکثری تعیین کند.",
+      "articles": {
+        "one": "مقاله‌های بایگانی‌شده {count} روز پس از بایگانی حذف می‌شوند.",
+        "other": "مقاله‌های بایگانی‌شده {count} روز پس از بایگانی حذف می‌شوند."
+      },
+      "articlesKept": "مقاله‌های بایگانی‌شده خودکار حذف نمی‌شوند.",
+      "favorites": {
+        "one": "علاقه‌مندی‌های بایگانی‌شده پس از {count} روز.",
+        "other": "علاقه‌مندی‌های بایگانی‌شده پس از {count} روز."
+      },
+      "favoritesKept": "علاقه‌مندی‌های بایگانی‌شده حفظ می‌شوند.",
+      "settingsHint": "می‌توانید در تنظیمات مدت کوتاه‌تری انتخاب کنید.",
+      "openSettings": "باز کردن تنظیمات",
+      "gotIt": "متوجه شدم"
+    },
+    "accentColor": {
+      "title": "رنگ تأکیدی شما",
+      "body": "در پایان، رنگ تأکیدی نوار پیشرفت و برجسته‌سازی‌ها را انتخاب کنید. هر زمان می‌توانید آن را در بخش ظاهر در منوی نمایشگر تغییر دهید.",
+      "custom": "رنگ دلخواه"
+    },
+    "buttons": {
+      "getStarted": "شروع کنیم"
+    },
+    "demo": {
+      "leftFlyout": {
+        "unread": "خوانده نشده (۱۲)",
+        "favorites": "علاقه‌مندی‌ها (۳)",
+        "archive": "بایگانی (۴۷)",
+        "tags": "برچسب‌ها",
+        "cardView": "نمای کارتی",
+        "reminders": "یادآورها",
+        "settings": "تنظیمات"
+      },
+      "sampleArticle": {
+        "title": "سمورهای آبی شاید دوباره بومی برلین شوند",
+        "meta": "rbb|24 · ۸ دقیقه",
+        "byline": "نوشتهٔ Julian von Bülow · rbb|24 · ۸ دقیقه · مه ۲۰۲۶",
+        "body": "کیفیت پایین آب و کرانه‌های پرساخت‌وساز: سمورهای آبی مدت‌ها در برلین منقرض‌شده به شمار می‌رفتند. از دههٔ ۱۹۶۰ به‌شدت حمایت می‌شوند و از دههٔ ۱۹۹۰ شمارشان دوباره رو به افزایش است. در سده‌های هجدهم و نوزدهم به‌شدت شکار می‌شدند، چون رقیب غذایی به حساب می‌آمدند و پوستشان ارزشمند بود. در سال‌های اخیر به لطف حفاظت از حیات وحش و طبیعت، جمعیتشان بهبود یافته و بیش از پیش در شرق برلین دیده شده‌اند. با این حال، محیط شهری امروزی هنوز خطرهای زیادی برای سمورهای آبی دارد.",
+        "tag": "طبیعت",
+        "teaser": "زمانی منقرض‌شده پنداشته می‌شدند، اما دوباره دیده می‌شوند، به‌ویژه در شرق شهر."
+      },
+      "sampleHighlight": "در دوران پیمایش بی‌پایان، آهسته خواندن تقریباً کاری انقلابی به نظر می‌رسد. اما پژوهش‌های روزافزون نشان می‌دهند که خواندن عمیق و آگاهانه ممکن است یکی از ارزشمندترین مهارت‌هایی باشد که می‌توانیم پرورش دهیم.",
+      "readerMenu": {
+        "close": "بستن"
+      },
+      "sampleHighlightPhrase": "خواندن عمیق و آگاهانه ممکن است یکی از ارزشمندترین مهارت‌هایی باشد که می‌توانیم پرورش دهیم"
+    }
+  },
+  "siteCredentials": {
+    "title": "اطلاعات ورود سایت‌ها",
+    "connectedSection": "متصل",
+    "addSection": "افزودن",
+    "noneYet": "هنوز اطلاعات ورودی برای سایتی ثبت نشده است.",
+    "usernamePlaceholder": "نام کاربری",
+    "passwordPlaceholder": "گذرواژه",
+    "savedHint": "با موفقیت ذخیره شد.",
+    "status": {
+      "ok": "متصل",
+      "pending": "در انتظار",
+      "invalidCredentials": "اطلاعات ورود نادرست",
+      "loginFlowBroken": "ورود خراب است"
+    }
+  },
+  "api": {
+    "error": {
+      "decodingFailed": "پاسخ سرور قابل پردازش نبود: {error}\nپاسخ: {body}",
+      "decoding": {
+        "atPath": "{problem} در «{path}» – {detail}",
+        "dataCorrupted": "داده‌ها خوانا نیستند",
+        "keyNotFound": "کلید وجود ندارد: {key}",
+        "typeMismatch": "نوع نادرست (انتظار: {type})",
+        "valueNotFound": "مقدار وجود ندارد (انتظار: {type})"
+      },
+      "network": "خطای شبکه: {error}",
+      "notConfigured": "هیچ سروری متصل نیست. لطفاً تنظیمات را باز کنید.",
+      "notFound": "منبع پیدا نشد.",
+      "server": "خطای سرور (HTTP {code}).",
+      "unauthorized": "احراز هویت انجام نشد. نام کاربری و گذرواژهٔ برنامه را بررسی کنید.",
+      "unknown": "خطای ناشناخته‌ای رخ داد."
+    }
+  },
+  "audioPlayer": {
+    "airplay": "AirPlay",
+    "error": {
+      "generic": "صدا پخش نشد."
+    },
+    "pause": "مکث",
+    "play": "پخش",
+    "position": "موقعیت",
+    "rate": "سرعت",
+    "resumeAt": "ادامه از {time}",
+    "skipBack": "۱۵ ثانیه عقب",
+    "skipForward": "۳۰ ثانیه جلو",
+    "variant": "نسخه"
+  },
+  "moveTagSheet": {
+    "intro": "انتقال «{name}» به زیر:",
+    "introWithSubTags": "انتقال «{name}» همراه با زیربرچسب‌هایش به زیر:",
+    "move": "انتقال",
+    "title": "انتقال برچسب",
+    "topLevel": "سطح بالا"
+  },
+  "splash": {
+    "slowConnection": {
+      "message": "اتصال کمی طول می‌کشد… در حالت آفلاین شروع شود؟",
+      "offline": "شروع آفلاین"
+    }
+  },
+  "tagParentPicker": {
+    "label": "زیر",
+    "topLevel": "سطح بالا"
+  },
+  "tts": {
+    "error": {
+      "audioSession": "خطای نشست صوتی: {error}",
+      "download": "خطای بارگیری: {error}",
+      "missingCredentials": "اطلاعات ورود وجود ندارد.",
+      "notConfigured": "هیچ سروری متصل نیست. لطفاً اول وارد شوید.",
+      "server": "خطای سرور: HTTP {code}",
+      "tempFile": "فایل موقت باز نشد."
+    },
+    "step": {
+      "generatingAudio": "در حال ساخت صدا…",
+      "preparingText": "در حال آماده‌سازی متن…",
+      "sendingText": "در حال ارسال متن به مدل صوتی…"
+    }
+  },
+  "youtube": {
+    "serverNotConfigured": "سرور تنظیم نشده است"
+  },
+  "android": {
+    "appearance": {
+      "chooseFont": "انتخاب قلم",
+      "font": {
+        "mono": "هم‌عرض",
+        "sansSerif": "بدون گیره",
+        "serif": "گیره‌دار",
+        "system": "پیش‌فرض"
+      },
+      "installedFontNoneAbove": "هیچ – پیش‌فرض بالا",
+      "larger": "بزرگ‌تر",
+      "looser": "بازتر",
+      "noFontFound": "قلم مناسبی پیدا نشد.",
+      "paperTextureFooter": "الیاف ظریف کاغذ در پس‌زمینه. فقط برای روشن و سپیا؛ تیره سیاه خالص می‌ماند.",
+      "smaller": "کوچک‌تر",
+      "theme": {
+        "auto": "خودکار",
+        "dark": "تیره",
+        "light": "روشن",
+        "sepia": "سپیا"
+      },
+      "themeFooter": "برای منوها و فهرست مقاله‌ها بیرون از نمایشگر هم اعمال می‌شود.",
+      "tighter": "فشرده‌تر"
+    },
+    "articleActions": {
+      "markUnreadShort": "خوانده نشده"
+    },
+    "articleList": {
+      "clearSearch": "پاک کردن جستجو",
+      "closeSearch": "بستن جستجو",
+      "favoriteAdded": "به علاقه‌مندی‌ها اضافه شد",
+      "favoriteRemoved": "از علاقه‌مندی‌ها حذف شد",
+      "hideArchived": "پنهان کردن بایگانی",
+      "noThumbnail": "بدون تصویر پیش‌نمایش",
+      "offlineBanner": "آفلاین – نمایش مقاله‌های ذخیره‌شده",
+      "paywall": "دیوار پرداخت",
+      "readingTimeMinutes": "{count} دقیقه",
+      "showArchived": "نمایش بایگانی",
+      "unsupportedSite": "سایت پشتیبانی نمی‌شود"
+    },
+    "articleReader": {
+      "archiveAndBack": "بایگانی و بازگشت",
+      "loadFailed": "مقاله بارگیری نشد",
+      "metadata": "فراداده"
+    },
+    "common": {
+      "collapse": "بستن",
+      "dismiss": "رد کردن",
+      "error": {
+        "offlineRetryLater": "اتصال برقرار نیست – لطفاً بعداً دوباره تلاش کنید."
+      },
+      "expand": "باز کردن",
+      "menu": "منو",
+      "remove": "حذف",
+      "search": "جستجو",
+      "selected": "انتخاب‌شده"
+    },
+    "highlights": {
+      "error": {
+        "deleteFailed": "برجسته‌سازی حذف نشد",
+        "saveFailed": "برجسته‌سازی ذخیره نشد.",
+        "updateFailed": "برجسته‌سازی تغییر نکرد."
+      }
+    },
+    "localeTag": "fa",
+    "login": {
+      "error": {
+        "failed": "ورود انجام نشد",
+        "invalidServerUrl": "نشانی سرور نامعتبر است",
+        "timeout": "زمان ورود به پایان رسید. لطفاً دوباره تلاش کنید."
+      }
+    },
+    "progressEdge": {
+      "bottom": "پایین",
+      "left": "چپ",
+      "off": "خاموش",
+      "right": "راست",
+      "top": "بالا"
+    },
+    "reminders": {
+      "channelDescription": "یادآورها برای مقاله‌های ذخیره‌شده",
+      "error": {
+        "exactAlarmNotPermitted": "برای تنظیم یادآور، لطفاً هشدارهای دقیق را در تنظیمات مجاز کنید.",
+        "setFailed": "یادآور تنظیم نشد"
+      }
+    },
+    "settings": {
+      "account": {
+        "connectHeadline": "اتصال به Merlin",
+        "loggedInAs": "واردشده به‌عنوان {name}"
+      },
+      "paywall": {
+        "manageButton": "مدیریت اطلاعات ورود سایت‌ها"
+      },
+      "testConnection": {
+        "failed": "اتصال برقرار نشد",
+        "success": "اتصال برقرار شد!"
+      }
+    },
+    "share": {
+      "defaultFileName": "فایل",
+      "unknownErrorShort": "ناشناخته"
+    },
+    "shareLink": {
+      "chooseDate": "انتخاب تاریخ",
+      "error": {
+        "createFailed": "پیوند ساخته نشد",
+        "expiryRemoveFailed": "تاریخ انقضا برداشته نشد",
+        "expirySaveFailed": "تاریخ انقضا ذخیره نشد",
+        "loadFailed": "وضعیت اشتراک بارگیری نشد",
+        "passwordRemoveFailed": "محافظت با گذرواژه برداشته نشد",
+        "passwordSaveFailed": "گذرواژه ذخیره نشد",
+        "regenerateFailed": "پیوند دوباره ساخته نشد",
+        "revokeFailed": "پیوند لغو نشد",
+        "settingSaveFailed": "تنظیم ذخیره نشد"
+      },
+      "expiryToggle": "پیوند در تاریخ مشخصی منقضی شود",
+      "explainer": "هر کسی این پیوند را داشته باشد می‌تواند مقاله را بخواند – همراه با برجسته‌سازی‌های شما.",
+      "menu": "پیوند عمومی…",
+      "shareLink": "اشتراک‌گذاری پیوند",
+      "title": "پیوند عمومی"
+    },
+    "siteCredentials": {
+      "edit": "ویرایش اطلاعات ورود",
+      "error": {
+        "deleteFailed": "اطلاعات ورود حذف نشد.",
+        "deleteFailedCode": "اطلاعات ورود حذف نشد (HTTP {code}).",
+        "loadFailed": "اطلاعات ورود بارگیری نشد.",
+        "saveFailed": "اطلاعات ورود ذخیره نشد."
+      },
+      "noDomainsMessage": "سرور در حال حاضر از اطلاعات ورود برای سایت‌های دارای دیوار پرداخت پشتیبانی نمی‌کند.",
+      "noDomainsTitle": "سایت دارای دیوار پرداختی در دسترس نیست"
+    },
+    "tagFilter": {
+      "hidden": "پنهان",
+      "hiddenWithParent": "پنهان همراه با برچسب والد",
+      "shown": "نمایان"
+    },
+    "tags": {
+      "add": "افزودن برچسب",
+      "error": {
+        "deleteOffline": "اتصال برقرار نیست – برچسب حذف نشد.",
+        "moveOffline": "اتصال برقرار نیست – برچسب منتقل نشد.",
+        "nameExists": "برچسبی با این نام وجود دارد."
+      },
+      "noneYet": "هنوز برچسبی نیست.",
+      "removeNamed": "حذف «{name}»",
+      "renameMenu": "تغییر نام…",
+      "renameTitle": "تغییر نام برچسب"
+    }
+  }
+}
