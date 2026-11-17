@@ -340,7 +340,9 @@
         "title": "No Access to Photos",
         "message": "Allow Merlin to add photos in Settings.",
         "settings": "Settings"
-      }
+      },
+      "rotateTo169": "Rotate phone for 16:9",
+      "rotateTo916": "Rotate phone for 9:16"
     },
     "actionButton": "Actions",
     "handsFree": {
