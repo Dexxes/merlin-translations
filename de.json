@@ -513,7 +513,7 @@
       "preparing": "Wird vorbereitet…"
     },
     "extracting": {
-      "subtitle": "Geteilten Inhalt wird gelesen…"
+      "subtitle": "Geteilter Inhalt wird gelesen…"
     },
     "settings": {
       "subtitle": "Einrichtung erforderlich",
@@ -1630,5 +1630,156 @@
   },
   "youtube": {
     "serverNotConfigured": "Server nicht konfiguriert"
+  },
+  "android": {
+    "appearance": {
+      "chooseFont": "Schrift auswählen",
+      "font": {
+        "mono": "Mono",
+        "sansSerif": "Sans-Serif",
+        "serif": "Serif",
+        "system": "Standard"
+      },
+      "installedFontNoneAbove": "Keine – Voreinstellung oben",
+      "larger": "Größer",
+      "looser": "Luftiger",
+      "noFontFound": "Keine passende Schrift gefunden.",
+      "paperTextureFooter": "Leichte Papierfasern im Hintergrund. Nur bei Hell und Sepia, Dunkel bleibt reines Schwarz.",
+      "smaller": "Kleiner",
+      "theme": {
+        "auto": "Automatisch",
+        "dark": "Dunkel",
+        "light": "Hell",
+        "sepia": "Sepia"
+      },
+      "themeFooter": "Gilt auch für Menüs und die Artikelübersicht außerhalb der Lese-Ansicht.",
+      "tighter": "Kompakter"
+    },
+    "articleActions": {
+      "markUnreadShort": "Ungelesen"
+    },
+    "articleList": {
+      "clearSearch": "Suche leeren",
+      "closeSearch": "Suche schließen",
+      "favoriteAdded": "Zu Favoriten hinzugefügt",
+      "favoriteRemoved": "Favorit entfernt",
+      "hideArchived": "Archiv ausblenden",
+      "noThumbnail": "Kein Vorschaubild",
+      "offlineBanner": "Offline – zeige zwischengespeicherte Artikel",
+      "paywall": "Paywall",
+      "readingTimeMinutes": "{count} Min.",
+      "showArchived": "Archiv einblenden",
+      "unsupportedSite": "Seite nicht unterstützt"
+    },
+    "articleReader": {
+      "archiveAndBack": "Archivieren und zurück",
+      "loadFailed": "Artikel konnte nicht geladen werden",
+      "metadata": "Metadaten"
+    },
+    "common": {
+      "collapse": "Zuklappen",
+      "dismiss": "Ausblenden",
+      "error": {
+        "offlineRetryLater": "Keine Verbindung – bitte später erneut versuchen."
+      },
+      "expand": "Aufklappen",
+      "menu": "Menü",
+      "remove": "Entfernen",
+      "search": "Suchen",
+      "selected": "Ausgewählt"
+    },
+    "highlights": {
+      "error": {
+        "deleteFailed": "Markierung konnte nicht gelöscht werden",
+        "saveFailed": "Die Markierung konnte nicht gespeichert werden.",
+        "updateFailed": "Die Markierung konnte nicht geändert werden."
+      }
+    },
+    "localeTag": "de",
+    "login": {
+      "error": {
+        "failed": "Login fehlgeschlagen",
+        "invalidServerUrl": "Ungültige Server-Adresse",
+        "timeout": "Zeitüberschreitung bei der Anmeldung. Bitte versuche es erneut."
+      }
+    },
+    "progressEdge": {
+      "bottom": "Unten",
+      "left": "Links",
+      "off": "Aus",
+      "right": "Rechts",
+      "top": "Oben"
+    },
+    "reminders": {
+      "channelDescription": "Erinnerungen an gespeicherte Artikel",
+      "error": {
+        "exactAlarmNotPermitted": "Bitte erlaube exakte Alarme in den Einstellungen, um Erinnerungen zu setzen.",
+        "setFailed": "Erinnerung konnte nicht gesetzt werden"
+      }
+    },
+    "settings": {
+      "account": {
+        "connectHeadline": "Mit Merlin verbinden",
+        "loggedInAs": "Angemeldet als {name}"
+      },
+      "paywall": {
+        "manageButton": "Zugangsdaten für Websites verwalten"
+      },
+      "testConnection": {
+        "failed": "Verbindung fehlgeschlagen",
+        "success": "Verbindung erfolgreich!"
+      }
+    },
+    "share": {
+      "defaultFileName": "Datei",
+      "unknownErrorShort": "unbekannt"
+    },
+    "shareLink": {
+      "chooseDate": "Datum wählen",
+      "error": {
+        "createFailed": "Link konnte nicht erstellt werden",
+        "expiryRemoveFailed": "Ablaufdatum konnte nicht entfernt werden",
+        "expirySaveFailed": "Ablaufdatum konnte nicht gespeichert werden",
+        "loadFailed": "Freigabe-Status konnte nicht geladen werden",
+        "passwordRemoveFailed": "Passwortschutz konnte nicht entfernt werden",
+        "passwordSaveFailed": "Passwort konnte nicht gespeichert werden",
+        "regenerateFailed": "Link konnte nicht erneuert werden",
+        "revokeFailed": "Link konnte nicht widerrufen werden",
+        "settingSaveFailed": "Einstellung konnte nicht gespeichert werden"
+      },
+      "expiryToggle": "Link läuft an einem bestimmten Datum ab",
+      "explainer": "Jeder mit diesem Link kann den Artikel lesen – inklusive deiner Markierungen.",
+      "menu": "Öffentlicher Link…",
+      "shareLink": "Link teilen",
+      "title": "Öffentlicher Link"
+    },
+    "siteCredentials": {
+      "edit": "Zugangsdaten bearbeiten",
+      "error": {
+        "deleteFailed": "Zugangsdaten konnten nicht entfernt werden.",
+        "deleteFailedCode": "Zugangsdaten konnten nicht entfernt werden (HTTP {code}).",
+        "loadFailed": "Zugangsdaten konnten nicht geladen werden.",
+        "saveFailed": "Zugangsdaten konnten nicht gespeichert werden."
+      },
+      "noDomainsMessage": "Der Server unterstützt aktuell keine Zugangsdaten für Paywall-Seiten.",
+      "noDomainsTitle": "Keine Paywall-Seiten verfügbar"
+    },
+    "tagFilter": {
+      "hidden": "Ausgeblendet",
+      "hiddenWithParent": "Mit Eltern-Tag ausgeblendet",
+      "shown": "Eingeblendet"
+    },
+    "tags": {
+      "add": "Tag hinzufügen",
+      "error": {
+        "deleteOffline": "Keine Verbindung – Tag nicht gelöscht.",
+        "moveOffline": "Keine Verbindung – Tag nicht verschoben.",
+        "nameExists": "Es gibt schon einen Tag mit diesem Namen."
+      },
+      "noneYet": "Noch keine Tags vorhanden.",
+      "removeNamed": "„{name}“ entfernen",
+      "renameMenu": "Umbenennen…",
+      "renameTitle": "Tag umbenennen"
+    }
   }
 }
