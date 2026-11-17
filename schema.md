@@ -150,3 +150,19 @@ per JS gebaute Tabellenzeilen, `confirm()`-Dialoge, Status-Labels), gibt jede
 Template-Datei ein whitelistetes `I18N`-Objekt aus
 (`json_encode($t->forJs(['key1', 'key2', ...]))`) - kein globaler Dump aller
 Keys, nur die auf der jeweiligen Seite tatsächlich benutzten.
+
+## Sonderfall Android
+`export.py --platform android` erzeugt `merlin-android/app/src/main/res/values/strings_i18n.xml`
+(Englisch, Default-Ordner und damit Fallback für alle nicht unterstützten
+Gerätesprachen) und `values-de/strings_i18n.xml`. Ressourcen-Name ist der
+Dot-Key mit `_` statt `.`; Platzhalter werden positionell (`%1$s`, `%2$d`)
+nach ihrem ersten Auftreten im englischen Text nummeriert, `{count}`/`{code}`
+als Integer. Pluralformen werden zu `<plurals>`.
+
+Exportiert werden alle App-Keys außer `webext.*`, `nextcloudWeb.*`,
+`merlinServer.*` und `app.name` (steht in Android von Hand in `strings.xml`).
+Texte, die nur die Android-App braucht, liegen unter dem eigenen Namespace
+`android.*`; dieser wird **nicht** in die iOS-Bundles exportiert.
+`android.localeTag` enthält je Sprache ihr Kürzel (`en`/`de`) – die App
+liest daran ab, welche Sprache Android tatsächlich gewählt hat, und formatiert
+Datumsangaben passend dazu.

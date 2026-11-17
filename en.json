@@ -1630,5 +1630,156 @@
   },
   "youtube": {
     "serverNotConfigured": "Server not configured"
+  },
+  "android": {
+    "appearance": {
+      "chooseFont": "Choose font",
+      "font": {
+        "mono": "Mono",
+        "sansSerif": "Sans-serif",
+        "serif": "Serif",
+        "system": "Default"
+      },
+      "installedFontNoneAbove": "None – preset above",
+      "larger": "Larger",
+      "looser": "Looser",
+      "noFontFound": "No matching font found.",
+      "paperTextureFooter": "Subtle paper fibers in the background. Light and sepia only; dark stays pure black.",
+      "smaller": "Smaller",
+      "theme": {
+        "auto": "Automatic",
+        "dark": "Dark",
+        "light": "Light",
+        "sepia": "Sepia"
+      },
+      "themeFooter": "Also applies to menus and the article list outside the reader.",
+      "tighter": "Tighter"
+    },
+    "articleActions": {
+      "markUnreadShort": "Unread"
+    },
+    "articleList": {
+      "clearSearch": "Clear search",
+      "closeSearch": "Close search",
+      "favoriteAdded": "Added to favorites",
+      "favoriteRemoved": "Removed from favorites",
+      "hideArchived": "Hide archive",
+      "noThumbnail": "No preview image",
+      "offlineBanner": "Offline – showing cached articles",
+      "paywall": "Paywall",
+      "readingTimeMinutes": "{count} min",
+      "showArchived": "Show archive",
+      "unsupportedSite": "Site not supported"
+    },
+    "articleReader": {
+      "archiveAndBack": "Archive and go back",
+      "loadFailed": "Article could not be loaded",
+      "metadata": "Metadata"
+    },
+    "common": {
+      "collapse": "Collapse",
+      "dismiss": "Dismiss",
+      "error": {
+        "offlineRetryLater": "No connection – please try again later."
+      },
+      "expand": "Expand",
+      "menu": "Menu",
+      "remove": "Remove",
+      "search": "Search",
+      "selected": "Selected"
+    },
+    "highlights": {
+      "error": {
+        "deleteFailed": "The highlight could not be deleted",
+        "saveFailed": "The highlight could not be saved.",
+        "updateFailed": "The highlight could not be changed."
+      }
+    },
+    "localeTag": "en",
+    "login": {
+      "error": {
+        "failed": "Login failed",
+        "invalidServerUrl": "Invalid server URL",
+        "timeout": "Login timed out. Please try again."
+      }
+    },
+    "progressEdge": {
+      "bottom": "Bottom",
+      "left": "Left",
+      "off": "Off",
+      "right": "Right",
+      "top": "Top"
+    },
+    "reminders": {
+      "channelDescription": "Reminders for saved articles",
+      "error": {
+        "exactAlarmNotPermitted": "Please allow exact alarms in Settings to set reminders.",
+        "setFailed": "The reminder could not be set"
+      }
+    },
+    "settings": {
+      "account": {
+        "connectHeadline": "Connect to Merlin",
+        "loggedInAs": "Logged in as {name}"
+      },
+      "paywall": {
+        "manageButton": "Manage site credentials"
+      },
+      "testConnection": {
+        "failed": "Connection failed",
+        "success": "Connection successful!"
+      }
+    },
+    "share": {
+      "defaultFileName": "File",
+      "unknownErrorShort": "unknown"
+    },
+    "shareLink": {
+      "chooseDate": "Choose date",
+      "error": {
+        "createFailed": "Link could not be created",
+        "expiryRemoveFailed": "Expiry date could not be removed",
+        "expirySaveFailed": "Expiry date could not be saved",
+        "loadFailed": "Share status could not be loaded",
+        "passwordRemoveFailed": "Password protection could not be removed",
+        "passwordSaveFailed": "Password could not be saved",
+        "regenerateFailed": "Link could not be regenerated",
+        "revokeFailed": "Link could not be revoked",
+        "settingSaveFailed": "Setting could not be saved"
+      },
+      "expiryToggle": "Link expires on a specific date",
+      "explainer": "Anyone with this link can read the article – including your highlights.",
+      "menu": "Public link…",
+      "shareLink": "Share link",
+      "title": "Public link"
+    },
+    "siteCredentials": {
+      "edit": "Edit credentials",
+      "error": {
+        "deleteFailed": "Credentials could not be removed.",
+        "deleteFailedCode": "Credentials could not be removed (HTTP {code}).",
+        "loadFailed": "Credentials could not be loaded.",
+        "saveFailed": "Credentials could not be saved."
+      },
+      "noDomainsMessage": "The server currently doesn’t support credentials for paywalled sites.",
+      "noDomainsTitle": "No paywalled sites available"
+    },
+    "tagFilter": {
+      "hidden": "Hidden",
+      "hiddenWithParent": "Hidden with parent tag",
+      "shown": "Shown"
+    },
+    "tags": {
+      "add": "Add tag",
+      "error": {
+        "deleteOffline": "No connection – tag not deleted.",
+        "moveOffline": "No connection – tag not moved.",
+        "nameExists": "A tag with this name already exists."
+      },
+      "noneYet": "No tags yet.",
+      "removeNamed": "Remove “{name}”",
+      "renameMenu": "Rename…",
+      "renameTitle": "Rename tag"
+    }
   }
 }

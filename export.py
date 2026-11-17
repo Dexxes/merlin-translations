@@ -10,6 +10,11 @@ Aktuell implementiert:
   - webext (Thunderbird): _locales/<lang>/messages.json für browser.i18n.
     Nur die Keys unter dem `webext.`-Namespace werden hier exportiert; iOS
     überspringt diese umgekehrt (siehe without_prefix in export_ios).
+  - android: app/src/main/res/values(-de)/strings_i18n.xml der
+    merlin-android-App (Englisch = Default-Ordner `values/`, damit jede
+    nicht unterstützte Gerätesprache auf Englisch zurückfällt). Exportiert
+    alle App-Keys inkl. `android.`-Namespace, ohne webext/nextcloudWeb/
+    merlinServer. iOS überspringt umgekehrt den `android.`-Namespace.
   - nextcloud: l10n/<lang>.json + l10n/<lang>.js für die Vue-Frontend-Strings
     der merlin-nextcloud-App (@nextcloud/l10n translate()/translatePlural()).
     Nur die Keys unter dem `nextcloudWeb.`-Namespace werden hier exportiert -
@@ -33,9 +38,10 @@ finalen Laufzeitformat - SwiftPM kopiert sie unverändert in die
 Resource-Bundles, ganz ohne Kompilierschritt. Siehe tasks/lessons.md.
 
 Aufruf:
-    python3 export.py                          # alle Plattformen (ios + webext + nextcloud + merlin-server)
+    python3 export.py                          # alle Plattformen (ios + android + webext + nextcloud + merlin-server)
     python3 export.py --platform webext        # nur die WebExtension-_locales
     python3 export.py --platform ios
+    python3 export.py --platform android        # nur merlin-android/res/values(-de)
     python3 export.py --platform nextcloud     # nur merlin-nextcloud/l10n
     python3 export.py --platform merlin-server  # nur merlin-server/src/I18n/lang
     python3 export.py --check                   # nur Key-Paritätscheck, kein Schreiben
@@ -290,7 +296,9 @@ def export_ios(flat_by_lang: dict[str, dict[str, Any]], dry_run: bool) -> None:
     # bleiben (sonst lägen ungenutzte webext-/nextcloudWeb-Keys in den
     # iOS-Resources).
     flat_by_lang = {
-        lang: without_prefix(without_prefix(flat, WEBEXT_PREFIX), NEXTCLOUD_PREFIX)
+        lang: without_prefix(
+            without_prefix(without_prefix(flat, WEBEXT_PREFIX), NEXTCLOUD_PREFIX), ANDROID_PREFIX
+        )
         for lang, flat in flat_by_lang.items()
     }
     for resource_dir in IOS_RESOURCE_DIRS:
@@ -537,9 +545,129 @@ def export_merlin_server(flat_by_lang: dict[str, dict[str, Any]], dry_run: bool)
         php_path.write_text(php_text, encoding="utf-8")
         print(f"geschrieben: {php_path}")
 
+# ─── Android (res/values[-<lang>]/strings_i18n.xml) ───────────────────────────
+#
+# Android-String-Ressourcen. Englisch (Quellsprache) landet im Default-Ordner
+# `values/` und ist damit automatisch der Fallback für jede Gerätesprache, für
+# die es keinen eigenen `values-<lang>/`-Ordner gibt. Eigene Datei
+# `strings_i18n.xml` statt `strings.xml`, damit die von Hand gepflegte
+# `app_name`-Ressource dort unangetastet bleibt.
+#
+# - Ressourcen-Name: Dot-Key mit `_` statt `.` (`settings.account.loginButton`
+#   -> `settings_account_loginButton`), Android erlaubt keine Punkte.
+# - Platzhalter: `{name}` -> positionell `%1$s` / `%2$d` (Android verlangt
+#   positionelle Platzhalter, sobald ein String mehr als einen enthält). Der
+#   Index richtet sich nach dem ersten Auftreten im ENGLISCHEN Text (über alle
+#   Pluralformen hinweg), damit alle Sprachen dieselbe Argument-Reihenfolge im
+#   Code erwarten - auch wenn die Übersetzung die Platzhalter umstellt.
+#   Typ wie bei iOS: {count}/{code} -> Integer (%d), alles andere -> %s.
+# - Pluralformen -> <plurals> mit <item quantity="one|other">.
+# - Werte stehen in doppelten Anführungszeichen, damit Leerzeichen am Rand und
+#   Apostrophe (don't) nicht von aapt umgedeutet werden.
+
+ANDROID_RES_DIR = REPO_ROOT / "merlin-android" / "app" / "src" / "main" / "res"
+ANDROID_FILE_NAME = "strings_i18n.xml"
+ANDROID_INTEGER_PLACEHOLDERS = {"count", "code"}
+
+# Strings, die nur die Android-App braucht (z. B. Texte für Android-eigene
+# Bedienelemente ohne iOS-Gegenstück). Werden für Android exportiert, aber
+# NICHT in die iOS-Bundles - siehe "Sonderfall Android" in schema.md.
+ANDROID_PREFIX = "android."
+
+# Namespaces, die zu anderen Plattformen gehören und nicht in die App-Ressourcen
+# gehören.
+ANDROID_EXCLUDED_PREFIXES = [WEBEXT_PREFIX, NEXTCLOUD_PREFIX, MERLIN_SERVER_PREFIX]
+
+# Einzelne Keys, die Android selbst pflegt: `app_name` steht von Hand in
+# res/values/strings.xml (Launcher-Label, nicht übersetzt) - ein zweiter
+# gleichnamiger Eintrag wäre ein Duplicate-Resource-Fehler beim Build.
+ANDROID_EXCLUDED_KEYS = {"app.name"}
+
+
+def android_resource_name(key: str) -> str:
+    return key.replace(".", "_")
+
+
+def android_placeholder_order(source_value: Any) -> list[str]:
+    texts = list(source_value.values()) if isinstance(source_value, dict) else [source_value]
+    order: list[str] = []
+    for text in texts:
+        for name in re.findall(r"\{(\w+)\}", text):
+            if name not in order:
+                order.append(name)
+    return order
+
+
+def android_escape(value: str, has_placeholders: bool) -> str:
+    """Escaping für einen in "…" stehenden Android-String-Wert."""
+    value = value.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n")
+    value = value.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    if has_placeholders:
+        # In formatierten Strings ist ein einzelnes % ein Formatfehler.
+        value = value.replace("%", "%%")
+    return value
+
+
+def android_convert(value: str, order: list[str]) -> str:
+    escaped = android_escape(value, bool(order))
+
+    def repl(match: "re.Match[str]") -> str:
+        name = match.group(1)
+        if name not in order:
+            return match.group(0)
+        kind = "d" if name in ANDROID_INTEGER_PLACEHOLDERS else "s"
+        return f"%{order.index(name) + 1}${kind}"
+
+    return re.sub(r"\{(\w+)\}", repl, escaped)
+
+
+def build_android_strings_file(flat: dict[str, Any], source_flat: dict[str, Any], lang: str) -> str:
+    lines = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        f"<!-- Automatisch generiert von merlin-translations/export.py --platform android ({lang}). -->",
+        "<!-- Nicht direkt editieren - Änderungen gehen beim nächsten Export verloren. -->",
+        "<resources>",
+    ]
+    for key in sorted(flat.keys()):
+        value = flat[key]
+        name = android_resource_name(key)
+        order = android_placeholder_order(source_flat[key])
+        if isinstance(value, dict):
+            lines.append(f'    <plurals name="{name}">')
+            for category in ("zero", "one", "two", "few", "many", "other"):
+                if category in value:
+                    lines.append(
+                        f'        <item quantity="{category}">"{android_convert(value[category], order)}"</item>'
+                    )
+            lines.append("    </plurals>")
+        else:
+            lines.append(f'    <string name="{name}">"{android_convert(value, order)}"</string>')
+    lines.append("</resources>")
+    return "\n".join(lines) + "\n"
+
+
+def export_android(flat_by_lang: dict[str, dict[str, Any]], dry_run: bool) -> None:
+    filtered = {}
+    for lang, flat in flat_by_lang.items():
+        for prefix in ANDROID_EXCLUDED_PREFIXES:
+            flat = without_prefix(flat, prefix)
+        filtered[lang] = {k: v for k, v in flat.items() if k not in ANDROID_EXCLUDED_KEYS}
+    source_flat = filtered[SOURCE_LANGUAGE]
+    for lang in SUPPORTED_LANGUAGES:
+        folder = "values" if lang == SOURCE_LANGUAGE else f"values-{lang}"
+        path = ANDROID_RES_DIR / folder / ANDROID_FILE_NAME
+        text = build_android_strings_file(filtered[lang], source_flat, lang)
+        if dry_run:
+            print(f"[dry-run] würde schreiben: {path}")
+            continue
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+        print(f"geschrieben: {path}")
+
 
 PLATFORM_EXPORTERS = {
     "ios": export_ios,
+    "android": export_android,
     "webext": export_webext,
     "nextcloud": export_nextcloud,
     "merlin-server": export_merlin_server,
