@@ -10,11 +10,12 @@ Aktuell implementiert:
   - webext (Thunderbird): _locales/<lang>/messages.json für browser.i18n.
     Nur die Keys unter dem `webext.`-Namespace werden hier exportiert; iOS
     überspringt diese umgekehrt (siehe without_prefix in export_ios).
-  - android: app/src/main/res/values(-de)/strings_i18n.xml der
+  - android: app/src/main/res/values(-de|-fa)/strings_i18n.xml der
     merlin-android-App (Englisch = Default-Ordner `values/`, damit jede
     nicht unterstützte Gerätesprache auf Englisch zurückfällt). Exportiert
     alle App-Keys inkl. `android.`-Namespace, ohne webext/nextcloudWeb/
     merlinServer. iOS überspringt umgekehrt den `android.`-Namespace.
+    Persisch (fa) gibt es bisher nur für Android (ANDROID_ONLY_LANGUAGES).
   - nextcloud: l10n/<lang>.json + l10n/<lang>.js für die Vue-Frontend-Strings
     der merlin-nextcloud-App (@nextcloud/l10n translate()/translatePlural()).
     Nur die Keys unter dem `nextcloudWeb.`-Namespace werden hier exportiert -
@@ -41,7 +42,7 @@ Aufruf:
     python3 export.py                          # alle Plattformen (ios + android + webext + nextcloud + merlin-server)
     python3 export.py --platform webext        # nur die WebExtension-_locales
     python3 export.py --platform ios
-    python3 export.py --platform android        # nur merlin-android/res/values(-de)
+    python3 export.py --platform android        # nur merlin-android/res/values(-de|-fa)
     python3 export.py --platform nextcloud     # nur merlin-nextcloud/l10n
     python3 export.py --platform merlin-server  # nur merlin-server/src/I18n/lang
     python3 export.py --check                   # nur Key-Paritätscheck, kein Schreiben
@@ -65,6 +66,12 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 STRINGS_DIR = Path(__file__).resolve().parent
 SOURCE_LANGUAGE = "en"
 SUPPORTED_LANGUAGES = ["en", "de"]
+
+# Sprachen, die (bisher) nur die Android-App übersetzt: <lang>.json enthält
+# genau die Keys, die export_android exportiert, und wird nur dort verwendet.
+# Die übrigen Plattformen (iOS, webext, Nextcloud, merlin-server) bleiben bei
+# SUPPORTED_LANGUAGES. Siehe "Sonderfall Android" in schema.md.
+ANDROID_ONLY_LANGUAGES = ["fa"]
 
 # Platzhalter-Konvention (siehe localization/schema.md):
 # {count}/{code} sind immer Integer -> %lld, alles andere -> %@.
@@ -624,7 +631,8 @@ def android_convert(value: str, order: list[str]) -> str:
 def build_android_strings_file(flat: dict[str, Any], source_flat: dict[str, Any], lang: str) -> str:
     lines = [
         '<?xml version="1.0" encoding="utf-8"?>',
-        f"<!-- Automatisch generiert von merlin-translations/export.py --platform android ({lang}). -->",
+        # Kein "--" im Kommentar: das ist in XML-Kommentaren verboten, aapt2 bricht sonst ab.
+        f"<!-- Automatisch generiert von merlin-translations/export.py, Plattform android ({lang}). -->",
         "<!-- Nicht direkt editieren - Änderungen gehen beim nächsten Export verloren. -->",
         "<resources>",
     ]
@@ -646,14 +654,29 @@ def build_android_strings_file(flat: dict[str, Any], source_flat: dict[str, Any]
     return "\n".join(lines) + "\n"
 
 
+def android_filter(flat: dict[str, Any]) -> dict[str, Any]:
+    for prefix in ANDROID_EXCLUDED_PREFIXES:
+        flat = without_prefix(flat, prefix)
+    return {k: v for k, v in flat.items() if k not in ANDROID_EXCLUDED_KEYS}
+
+
+def load_android_only_languages(flat_by_lang: dict[str, dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Lädt die ANDROID_ONLY_LANGUAGES und prüft ihre Key-Parität gegen die
+    Android-Teilmenge der Quellsprache (bricht bei Abweichungen ab)."""
+    source = android_filter(flat_by_lang[SOURCE_LANGUAGE])
+    loaded = {}
+    for lang in ANDROID_ONLY_LANGUAGES:
+        flat = flatten(load_strings(lang))
+        check_key_parity({SOURCE_LANGUAGE: source, lang: flat})
+        loaded[lang] = flat
+    return loaded
+
+
 def export_android(flat_by_lang: dict[str, dict[str, Any]], dry_run: bool) -> None:
-    filtered = {}
-    for lang, flat in flat_by_lang.items():
-        for prefix in ANDROID_EXCLUDED_PREFIXES:
-            flat = without_prefix(flat, prefix)
-        filtered[lang] = {k: v for k, v in flat.items() if k not in ANDROID_EXCLUDED_KEYS}
+    flat_by_lang = {**flat_by_lang, **load_android_only_languages(flat_by_lang)}
+    filtered = {lang: android_filter(flat) for lang, flat in flat_by_lang.items()}
     source_flat = filtered[SOURCE_LANGUAGE]
-    for lang in SUPPORTED_LANGUAGES:
+    for lang in SUPPORTED_LANGUAGES + ANDROID_ONLY_LANGUAGES:
         folder = "values" if lang == SOURCE_LANGUAGE else f"values-{lang}"
         path = ANDROID_RES_DIR / folder / ANDROID_FILE_NAME
         text = build_android_strings_file(filtered[lang], source_flat, lang)
@@ -693,6 +716,9 @@ def main() -> None:
     flat_by_lang = {lang: flatten(data) for lang, data in raw_by_lang.items()}
     check_key_parity(flat_by_lang)
     print(f"Key-Paritätscheck OK ({len(flat_by_lang[SOURCE_LANGUAGE])} Keys).")
+    android_only = load_android_only_languages(flat_by_lang)
+    for lang, flat in android_only.items():
+        print(f"Key-Paritätscheck Android-Sprache {lang} OK ({len(flat)} Keys).")
 
     if args.check:
         return

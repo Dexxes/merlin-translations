@@ -1,7 +1,7 @@
 # Lokalisierungs-Schema
 
 Source of Truth für alle UI-Strings: `<lang>.json`
-(aktuell `de.json`, `en.json`). `export.py` generiert daraus die
+(aktuell `de.json`, `en.json`, dazu `fa.json` nur für Android). `export.py` generiert daraus die
 nativen Formate je Plattform. Diese Dateien nie direkt in den
 Plattform-Verzeichnissen editieren — Änderungen gehen verloren, sobald das
 Skript erneut läuft.
@@ -163,6 +163,15 @@ Exportiert werden alle App-Keys außer `webext.*`, `nextcloudWeb.*`,
 `merlinServer.*` und `app.name` (steht in Android von Hand in `strings.xml`).
 Texte, die nur die Android-App braucht, liegen unter dem eigenen Namespace
 `android.*`; dieser wird **nicht** in die iOS-Bundles exportiert.
-`android.localeTag` enthält je Sprache ihr Kürzel (`en`/`de`) – die App
+`android.localeTag` enthält je Sprache ihr Kürzel (`en`/`de`/`fa`) – die App
 liest daran ab, welche Sprache Android tatsächlich gewählt hat, und formatiert
 Datumsangaben passend dazu.
+
+Persisch (`fa.json`) gibt es bisher nur für Android (`ANDROID_ONLY_LANGUAGES`
+in `export.py`). `fa.json` enthält genau die Keys, die der Android-Export
+schreibt (alle App-Keys ohne `webext.*`, `nextcloudWeb.*`, `merlinServer.*`
+und `app.name`), und `--check` prüft die Parität gegen diese Teilmenge von
+`en.json`. Die anderen Plattformen ignorieren `fa.json`. Ein neuer
+Android-Key braucht deshalb einen Eintrag in `en.json`, `de.json` **und**
+`fa.json`. Persisch hat die CLDR-Kategorien `one`/`other`; da das Nomen nach
+einer Zahl im Singular steht, sind beide Formen meist gleich.
