@@ -666,7 +666,10 @@
       "sendLink": "Send link to Merlin",
       "savePage": "Save page to Merlin",
       "savePageWithTags": "Save page with tags…",
-      "saveMail": "Send email to Merlin"
+      "saveMail": "Send email to Merlin",
+      "saveMailContent": "Send email content to Merlin",
+      "saveMailContentWithTags": "Save email content with tags…",
+      "saveMailWithTags": "Save email with tags…"
     },
     "notification": {
       "defaultTitle": "Merlin",
@@ -691,7 +694,11 @@
       "httpBlocked": "Your server URL uses unencrypted http://. Please switch to https:// in the settings.",
       "articleAddedTagsFailed": "Article added, but these tags could not be applied: {tags}",
       "timeout": "The server did not respond in time.",
-      "authFailedRetry": "Login rejected by the server. If this happens again, you will be logged out."
+      "authFailedRetry": "Login rejected by the server. If this happens again, you will be logged out.",
+      "mailsSaved": "Emails saved: {count}",
+      "mailsSavedPartial": "{saved} of {total} emails saved",
+      "noMailSelected": "No email selected.",
+      "mailReadFailed": "The email could not be read."
     },
     "options": {
       "httpWarning": "Warning: this URL uses http:// — your app password will be sent unencrypted. Use https:// if possible.",
@@ -749,7 +756,8 @@
       "backendStandalone": "Standalone server",
       "welcomeStandalone": "Welcome! Enter your server URL and click \"Log in\" to get started.",
       "loggedOutWelcomeStandalone": "Logged out. Enter your server URL and click \"Log in\" to get started.",
-      "urlSavedStandalone": "URL saved. Use \"Log in\" to authenticate."
+      "urlSavedStandalone": "URL saved. Use \"Log in\" to authenticate.",
+      "urlChangedLoginAgain": "The URL was changed. Please log in with the new URL first."
     },
     "passphrase": {
       "label": "Encryption passphrase",
@@ -788,7 +796,14 @@
       "noTags": "No tags yet",
       "tagsTimeout": "Timed out while loading tags",
       "authFailedRetry": "Login rejected by the server. If this happens again, you will be logged out.",
-      "noMatchingTags": "No matching tags"
+      "noMatchingTags": "No matching tags",
+      "mailCount": "Emails: {count}"
+    },
+    "messageDisplayAction": {
+      "title": "Send email to Merlin"
+    },
+    "command": {
+      "saveMail": "Send the displayed or selected email to Merlin"
     }
   },
   "nextcloudWeb": {
