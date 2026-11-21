@@ -743,7 +743,12 @@
       "urlHintShort": "The base URL of your Nextcloud instance (no trailing slash needed)",
       "sourceCodeLink": "Source code on GitHub",
       "httpBlocked": "Unencrypted http:// is only allowed for localhost. Please use https://.",
-      "loginInvalidResponse": "The server sent an invalid login response."
+      "loginInvalidResponse": "The server sent an invalid login response.",
+      "backendNextcloud": "Nextcloud",
+      "backendStandalone": "Standalone server",
+      "welcomeStandalone": "Welcome! Enter your server URL and click \"Log in\" to get started.",
+      "loggedOutWelcomeStandalone": "Logged out. Enter your server URL and click \"Log in\" to get started.",
+      "urlSavedStandalone": "URL saved. Use \"Log in\" to authenticate."
     },
     "passphrase": {
       "label": "Encryption passphrase",
