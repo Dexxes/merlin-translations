@@ -687,7 +687,11 @@
       "serverError": "Serverfehler: HTTP {code}",
       "saving": "Wird an Merlin geschickt…",
       "addedToReadingList": "Zur Leseliste hinzugefügt.",
-      "unsupportedSite": "Nicht unterstützt: {domain} liefert keinen lesbaren Artikeltext."
+      "unsupportedSite": "Nicht unterstützt: {domain} liefert keinen lesbaren Artikeltext.",
+      "httpBlocked": "Deine Server-URL nutzt unverschlüsseltes http://. Bitte in den Einstellungen auf https:// umstellen.",
+      "articleAddedTagsFailed": "Artikel hinzugefügt, aber diese Tags konnten nicht gesetzt werden: {tags}",
+      "timeout": "Der Server hat nicht rechtzeitig geantwortet.",
+      "authFailedRetry": "Anmeldung vom Server abgelehnt. Passiert das erneut, wirst du abgemeldet."
     },
     "options": {
       "httpWarning": "Achtung: Diese URL nutzt http:// — dein App-Passwort wird unverschlüsselt übertragen. Nutze wenn möglich https://.",
@@ -737,7 +741,9 @@
       "couldNotSave": "Konnte nicht gespeichert werden: {error}",
       "urlPlaceholderFull": "https://cloud.beispiel.de",
       "urlHintShort": "Die Basis-URL deiner Nextcloud-Instanz (kein abschließender Schrägstrich nötig)",
-      "sourceCodeLink": "Quellcode auf GitHub"
+      "sourceCodeLink": "Quellcode auf GitHub",
+      "httpBlocked": "Unverschlüsseltes http:// ist nur für localhost erlaubt. Bitte https:// verwenden.",
+      "loginInvalidResponse": "Der Server hat eine ungültige Login-Antwort geschickt."
     },
     "passphrase": {
       "label": "Verschlüsselungs-Passphrase",
@@ -774,7 +780,8 @@
       "authFailed": "Anmeldung fehlgeschlagen — bitte erneut einloggen",
       "tagsLoadError": "Tags konnten nicht geladen werden (HTTP {code})",
       "noTags": "Noch keine Tags vorhanden",
-      "tagsTimeout": "Zeitüberschreitung beim Laden der Tags"
+      "tagsTimeout": "Zeitüberschreitung beim Laden der Tags",
+      "authFailedRetry": "Anmeldung vom Server abgelehnt. Passiert das erneut, wirst du abgemeldet."
     }
   },
   "nextcloudWeb": {
