@@ -666,7 +666,10 @@
       "sendLink": "Link an Merlin senden",
       "savePage": "Seite in Merlin speichern",
       "savePageWithTags": "Seite mit Tags speichern…",
-      "saveMail": "Mail an Merlin senden"
+      "saveMail": "Mail an Merlin senden",
+      "saveMailContent": "Mailinhalt an Merlin senden",
+      "saveMailContentWithTags": "Mailinhalt mit Tags speichern…",
+      "saveMailWithTags": "Mail mit Tags speichern…"
     },
     "notification": {
       "defaultTitle": "Merlin",
@@ -691,7 +694,17 @@
       "httpBlocked": "Deine Server-URL nutzt unverschlüsseltes http://. Bitte in den Einstellungen auf https:// umstellen.",
       "articleAddedTagsFailed": "Artikel hinzugefügt, aber diese Tags konnten nicht gesetzt werden: {tags}",
       "timeout": "Der Server hat nicht rechtzeitig geantwortet.",
-      "authFailedRetry": "Anmeldung vom Server abgelehnt. Passiert das erneut, wirst du abgemeldet."
+      "authFailedRetry": "Anmeldung vom Server abgelehnt. Passiert das erneut, wirst du abgemeldet.",
+      "mailsSaved": "Mails gespeichert: {count}",
+      "mailsSavedPartial": "{saved} von {total} Mails gespeichert",
+      "noMailSelected": "Keine Mail ausgewählt.",
+      "mailReadFailed": "Die Mail konnte nicht gelesen werden.",
+      "mailSaved": "Mail gespeichert",
+      "mailSavedWithTags": "Mail gespeichert mit [{tags}]",
+      "mailSavedTagsFailed": "Mail gespeichert, aber diese Tags konnten nicht gesetzt werden: {tags}",
+      "urlSaved": "URL gespeichert",
+      "urlSavedWithTags": "URL gespeichert mit [{tags}]",
+      "urlSavedTagsFailed": "URL gespeichert, aber diese Tags konnten nicht gesetzt werden: {tags}"
     },
     "options": {
       "httpWarning": "Achtung: Diese URL nutzt http:// — dein App-Passwort wird unverschlüsselt übertragen. Nutze wenn möglich https://.",
@@ -717,12 +730,13 @@
       "loginTimeout": "Anmeldung nach 5 Minuten abgelaufen. Bitte erneut versuchen.",
       "loggedInAs": "Angemeldet als {name}. Einstellungen gespeichert.",
       "disconnected": "Verbindung getrennt. Bitte erneut einloggen.",
-      "welcome": "Willkommen! Gib deine Nextcloud-URL ein und klicke auf „Mit Nextcloud anmelden“, um loszulegen.",
-      "loginFirst": "Bitte zuerst mit Nextcloud anmelden.",
+      "welcome": "Willkommen! Gib deine URL ein und klicke auf „Mit Nextcloud anmelden“, um loszulegen.",
+      "loginFirst": "Bitte zuerst anmelden.",
       "testing": "Teste…",
       "connectingShort": "Verbinde…",
       "testSuccess": "Verbindung erfolgreich! Die Merlin-App ist erreichbar.",
       "testAuthFailed": "Authentifizierung fehlgeschlagen. Bitte erneut über „Mit Nextcloud anmelden“ einloggen.",
+      "testAuthFailedStandalone": "Authentifizierung fehlgeschlagen. Bitte erneut über „Anmelden“ einloggen.",
       "testNotFound": "Merlin-App nicht gefunden. Ist sie installiert und die URL korrekt?",
       "testServerError": "Server hat HTTP {code} zurückgegeben.",
       "testTimeout": "Zeitüberschreitung der Verbindung. Prüfe die URL und dein Netzwerk.",
@@ -748,7 +762,8 @@
       "backendStandalone": "Standalone-Server",
       "welcomeStandalone": "Willkommen! Gib deine Server-URL ein und klicke auf „Anmelden“, um loszulegen.",
       "loggedOutWelcomeStandalone": "Abgemeldet. Gib deine Server-URL ein und klicke auf „Anmelden“, um loszulegen.",
-      "urlSavedStandalone": "URL gespeichert. Nutze „Anmelden“, um dich zu authentifizieren."
+      "urlSavedStandalone": "URL gespeichert. Nutze „Anmelden“, um dich zu authentifizieren.",
+      "urlChangedLoginAgain": "Die URL wurde geändert. Bitte erst mit der neuen URL anmelden."
     },
     "passphrase": {
       "label": "Verschlüsselungs-Passphrase",
@@ -787,7 +802,14 @@
       "noTags": "Noch keine Tags vorhanden",
       "tagsTimeout": "Zeitüberschreitung beim Laden der Tags",
       "authFailedRetry": "Anmeldung vom Server abgelehnt. Passiert das erneut, wirst du abgemeldet.",
-      "noMatchingTags": "Keine passenden Tags"
+      "noMatchingTags": "Keine passenden Tags",
+      "mailCount": "Mails: {count}"
+    },
+    "messageDisplayAction": {
+      "title": "Mail an Merlin senden"
+    },
+    "command": {
+      "saveMail": "Angezeigte oder markierte Mail an Merlin senden"
     }
   },
   "nextcloudWeb": {
