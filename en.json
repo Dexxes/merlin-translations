@@ -786,7 +786,8 @@
       "tagsLoadError": "Could not load tags (HTTP {code})",
       "noTags": "No tags yet",
       "tagsTimeout": "Timed out while loading tags",
-      "authFailedRetry": "Login rejected by the server. If this happens again, you will be logged out."
+      "authFailedRetry": "Login rejected by the server. If this happens again, you will be logged out.",
+      "noMatchingTags": "No matching tags"
     }
   },
   "nextcloudWeb": {
