@@ -912,6 +912,7 @@
       "noReportBackendConfigured": "Kein Meldungs-Backend konfiguriert. Lege die URL in den Einstellungen fest.",
       "reported": "Artikel gemeldet",
       "couldNotSendReport": "Meldung konnte nicht gesendet werden — bitte versuche es erneut.",
+      "reportBackendLoginRejected": "Das Meldungs-Backend hat die Anmeldung abgelehnt. Prüfe die URL in den Einstellungen.",
       "minutesShort": "{minutes} Min.",
       "paywallBadge": "Paywall"
     },
@@ -1008,6 +1009,8 @@
       "checking": "Wird geprüft…",
       "reachable": "Erreichbar",
       "notReachable": "Nicht erreichbar",
+      "reportBackendLoginRequired": "Anmeldung erforderlich",
+      "reportBackendLoginHint": "Das Meldungs-Backend verlangt eine Anmeldung (HTTP Basic Auth). Trage die Zugangsdaten in die URL ein, z.B. https://nutzer:passwort@example.com/merlin-reports/",
       "resetAllToDefaults": "Alles auf Standard zurücksetzen",
       "syncFooter": "Einstellungen werden automatisch zwischen deinen Geräten synchronisiert.",
       "themeLight": "Hell",

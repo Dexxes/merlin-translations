@@ -912,6 +912,7 @@
       "noReportBackendConfigured": "No report backend configured. Set the URL in Settings.",
       "reported": "Article reported",
       "couldNotSendReport": "Could not send report — please try again.",
+      "reportBackendLoginRejected": "The report backend rejected the login. Check the URL in Settings.",
       "minutesShort": "{minutes} min",
       "paywallBadge": "Paywall"
     },
@@ -1008,6 +1009,8 @@
       "checking": "Checking…",
       "reachable": "Reachable",
       "notReachable": "Not reachable",
+      "reportBackendLoginRequired": "Login required",
+      "reportBackendLoginHint": "The report backend asks for a login (HTTP Basic Auth). Add the credentials to the URL, e.g. https://user:password@example.com/merlin-reports/",
       "resetAllToDefaults": "Reset all to defaults",
       "syncFooter": "Settings sync automatically across your devices.",
       "themeLight": "Light",
