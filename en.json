@@ -723,6 +723,7 @@
       "connectingShort": "Connecting…",
       "testSuccess": "Connection successful! Merlin app is reachable.",
       "testAuthFailed": "Authentication failed. Please log in again via \"Login with Nextcloud\".",
+      "testAuthFailedStandalone": "Authentication failed. Please log in again via \"Log in\".",
       "testNotFound": "Merlin app not found. Is it installed and the URL correct?",
       "testServerError": "Server returned HTTP {code}.",
       "testTimeout": "Connection timed out. Check the URL and your network.",
