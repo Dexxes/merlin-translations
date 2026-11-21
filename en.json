@@ -698,7 +698,13 @@
       "mailsSaved": "Emails saved: {count}",
       "mailsSavedPartial": "{saved} of {total} emails saved",
       "noMailSelected": "No email selected.",
-      "mailReadFailed": "The email could not be read."
+      "mailReadFailed": "The email could not be read.",
+      "mailSaved": "Email saved",
+      "mailSavedWithTags": "Email saved [{tags}]",
+      "mailSavedTagsFailed": "Email saved, but these tags could not be applied: {tags}",
+      "urlSaved": "URL saved",
+      "urlSavedWithTags": "URL saved [{tags}]",
+      "urlSavedTagsFailed": "URL saved, but these tags could not be applied: {tags}"
     },
     "options": {
       "httpWarning": "Warning: this URL uses http:// — your app password will be sent unencrypted. Use https:// if possible.",

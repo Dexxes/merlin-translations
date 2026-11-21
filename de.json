@@ -698,7 +698,13 @@
       "mailsSaved": "Mails gespeichert: {count}",
       "mailsSavedPartial": "{saved} von {total} Mails gespeichert",
       "noMailSelected": "Keine Mail ausgewählt.",
-      "mailReadFailed": "Die Mail konnte nicht gelesen werden."
+      "mailReadFailed": "Die Mail konnte nicht gelesen werden.",
+      "mailSaved": "Mail gespeichert",
+      "mailSavedWithTags": "Mail gespeichert mit [{tags}]",
+      "mailSavedTagsFailed": "Mail gespeichert, aber diese Tags konnten nicht gesetzt werden: {tags}",
+      "urlSaved": "URL gespeichert",
+      "urlSavedWithTags": "URL gespeichert mit [{tags}]",
+      "urlSavedTagsFailed": "URL gespeichert, aber diese Tags konnten nicht gesetzt werden: {tags}"
     },
     "options": {
       "httpWarning": "Achtung: Diese URL nutzt http:// — dein App-Passwort wird unverschlüsselt übertragen. Nutze wenn möglich https://.",
