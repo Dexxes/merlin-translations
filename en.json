@@ -657,7 +657,7 @@
     }
   },
   "webext": {
-    "extName": "Merlin reading list",
+    "extName": "Merlin",
     "extDescription": "Save any link to your Merlin app with a single right-click.",
     "actionTitle": "Merlin Settings",
     "contextMenu": {
