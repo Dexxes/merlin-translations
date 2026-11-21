@@ -658,6 +658,7 @@
   },
   "webext": {
     "extName": "Merlin",
+    "extNameChromium": "Merlin Leseliste",
     "extDescription": "Speichere jeden Link mit einem einzigen Rechtsklick in deiner Merlin-App.",
     "actionTitle": "Merlin-Einstellungen",
     "contextMenu": {
