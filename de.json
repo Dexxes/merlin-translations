@@ -774,6 +774,7 @@
       "authFailed": "Anmeldung fehlgeschlagen — bitte erneut einloggen",
       "tagsLoadError": "Tags konnten nicht geladen werden (HTTP {code})",
       "noTags": "Noch keine Tags vorhanden",
+      "noMatchingTags": "Keine passenden Tags",
       "tagsTimeout": "Zeitüberschreitung beim Laden der Tags"
     }
   },

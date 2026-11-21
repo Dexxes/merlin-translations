@@ -774,6 +774,7 @@
       "authFailed": "Authentication failed — please log in again",
       "tagsLoadError": "Could not load tags (HTTP {code})",
       "noTags": "No tags yet",
+      "noMatchingTags": "No matching tags",
       "tagsTimeout": "Timed out while loading tags"
     }
   },
