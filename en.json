@@ -1009,6 +1009,7 @@
       "checking": "Checking…",
       "reachable": "Reachable",
       "notReachable": "Not reachable",
+      "reportBackendUnexpected": "Reachable, but no ping response",
       "reportBackendLoginRequired": "Login required",
       "reportBackendLoginHint": "The report backend asks for a login (HTTP Basic Auth). Add the credentials to the URL, e.g. https://user:password@example.com/merlin-reports/",
       "resetAllToDefaults": "Reset all to defaults",

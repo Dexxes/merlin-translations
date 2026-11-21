@@ -1009,6 +1009,7 @@
       "checking": "Wird geprüft…",
       "reachable": "Erreichbar",
       "notReachable": "Nicht erreichbar",
+      "reportBackendUnexpected": "Erreichbar, aber keine Ping-Antwort",
       "reportBackendLoginRequired": "Anmeldung erforderlich",
       "reportBackendLoginHint": "Das Meldungs-Backend verlangt eine Anmeldung (HTTP Basic Auth). Trage die Zugangsdaten in die URL ein, z.B. https://nutzer:passwort@example.com/merlin-reports/",
       "resetAllToDefaults": "Alles auf Standard zurücksetzen",
