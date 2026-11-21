@@ -657,7 +657,7 @@
     }
   },
   "webext": {
-    "extName": "Merlin reading list",
+    "extName": "Merlin",
     "extDescription": "Save any link to your Merlin app with a single right-click.",
     "actionTitle": "Merlin Settings",
     "contextMenu": {
@@ -687,7 +687,11 @@
       "serverError": "Server error: HTTP {code}",
       "saving": "Saving to Merlin…",
       "addedToReadingList": "Added to your reading list.",
-      "unsupportedSite": "Not supported: {domain} doesn't provide readable article text."
+      "unsupportedSite": "Not supported: {domain} doesn't provide readable article text.",
+      "httpBlocked": "Your server URL uses unencrypted http://. Please switch to https:// in the settings.",
+      "articleAddedTagsFailed": "Article added, but these tags could not be applied: {tags}",
+      "timeout": "The server did not respond in time.",
+      "authFailedRetry": "Login rejected by the server. If this happens again, you will be logged out."
     },
     "options": {
       "httpWarning": "Warning: this URL uses http:// — your app password will be sent unencrypted. Use https:// if possible.",
@@ -737,7 +741,14 @@
       "couldNotSave": "Could not save: {error}",
       "urlPlaceholderFull": "https://cloud.example.com",
       "urlHintShort": "The base URL of your Nextcloud instance (no trailing slash needed)",
-      "sourceCodeLink": "Source code on GitHub"
+      "sourceCodeLink": "Source code on GitHub",
+      "httpBlocked": "Unencrypted http:// is only allowed for localhost. Please use https://.",
+      "loginInvalidResponse": "The server sent an invalid login response.",
+      "backendNextcloud": "Nextcloud",
+      "backendStandalone": "Standalone server",
+      "welcomeStandalone": "Welcome! Enter your server URL and click \"Log in\" to get started.",
+      "loggedOutWelcomeStandalone": "Logged out. Enter your server URL and click \"Log in\" to get started.",
+      "urlSavedStandalone": "URL saved. Use \"Log in\" to authenticate."
     },
     "passphrase": {
       "label": "Encryption passphrase",
@@ -774,7 +785,8 @@
       "authFailed": "Authentication failed — please log in again",
       "tagsLoadError": "Could not load tags (HTTP {code})",
       "noTags": "No tags yet",
-      "tagsTimeout": "Timed out while loading tags"
+      "tagsTimeout": "Timed out while loading tags",
+      "authFailedRetry": "Login rejected by the server. If this happens again, you will be logged out."
     }
   },
   "nextcloudWeb": {

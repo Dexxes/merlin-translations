@@ -664,14 +664,14 @@
       "saveLink": "Link speichern",
       "saveLinkWithTags": "Link mit Tags speichern…",
       "sendLink": "Link an Merlin senden",
-      "savePage": "HTML an Merlin senden",
+      "savePage": "Seite in Merlin speichern",
       "savePageWithTags": "Seite mit Tags speichern…",
       "saveMail": "Mail an Merlin senden"
     },
     "notification": {
       "defaultTitle": "Merlin",
-      "savedTitle": "Merlin",
-      "errorTitle": "Fehler",
+      "savedTitle": "Merlin: Gespeichert ✓",
+      "errorTitle": "Merlin: Fehler",
       "loadingTitle": "Merlin…",
       "authFailedTitle": "Merlin: Anmeldung fehlgeschlagen",
       "authFailedMessage": "Merlin: Anmeldung fehlgeschlagen – bitte erneut einloggen",
@@ -687,15 +687,19 @@
       "serverError": "Serverfehler: HTTP {code}",
       "saving": "Wird an Merlin geschickt…",
       "addedToReadingList": "Zur Leseliste hinzugefügt.",
-      "unsupportedSite": "Nicht unterstützt: {domain} liefert keinen lesbaren Artikeltext."
+      "unsupportedSite": "Nicht unterstützt: {domain} liefert keinen lesbaren Artikeltext.",
+      "httpBlocked": "Deine Server-URL nutzt unverschlüsseltes http://. Bitte in den Einstellungen auf https:// umstellen.",
+      "articleAddedTagsFailed": "Artikel hinzugefügt, aber diese Tags konnten nicht gesetzt werden: {tags}",
+      "timeout": "Der Server hat nicht rechtzeitig geantwortet.",
+      "authFailedRetry": "Anmeldung vom Server abgelehnt. Passiert das erneut, wirst du abgemeldet."
     },
     "options": {
       "httpWarning": "Achtung: Diese URL nutzt http:// — dein App-Passwort wird unverschlüsselt übertragen. Nutze wenn möglich https://.",
       "pageTitle": "Merlin",
       "headerSubtitle": "Add-on-Einstellungen",
-      "urlLabel": "Nextcloud-URL",
+      "urlLabel": "URL deiner Merlin-Instanz",
       "urlPlaceholder": "cloud.beispiel.de",
-      "urlHint": "Die Basis-URL deiner Nextcloud-Instanz — HTTPS ist erforderlich und wird automatisch ergänzt (kein abschließender Schrägstrich nötig)",
+      "urlHint": "Die Basis-URL deiner Merlin-Instanz – entweder eine Nextcloud oder ein Standalone-Server",
       "loginButton": "Mit Nextcloud anmelden",
       "loginButtonStandalone": "Anmelden",
       "cancelLogin": "Anmeldung abbrechen…",
@@ -703,12 +707,12 @@
       "logoutButton": "Verbindung trennen",
       "closeTab": "Tab schließen",
       "loginCancelled": "Anmeldung abgebrochen.",
-      "enterUrlFirst": "Bitte zuerst deine Nextcloud-URL eingeben.",
+      "enterUrlFirst": "Bitte zuerst deine URL eingeben.",
       "connecting": "Verbinde mit Nextcloud…",
       "needsPermission": "Merlin braucht die Berechtigung für den Zugriff auf diesen Server, um fortzufahren.",
-      "cannotReach": "Nextcloud nicht erreichbar: {error}",
+      "cannotReach": "Server nicht erreichbar: {error}",
       "cannotOpenLogin": "Anmeldeseite konnte nicht geöffnet werden: {error}",
-      "completeLogin": "Schließe die Nextcloud-Anmeldung im neuen Tab ab…",
+      "completeLogin": "Schließe die Anmeldung im neuen Tab ab…",
       "cannotStartPolling": "Hintergrund-Abfrage konnte nicht gestartet werden: {error}",
       "loginTimeout": "Anmeldung nach 5 Minuten abgelaufen. Bitte erneut versuchen.",
       "loggedInAs": "Angemeldet als {name}. Einstellungen gespeichert.",
@@ -732,12 +736,19 @@
       "securityLink": "Einstellungen → Sicherheit → App-Passwörter",
       "securityEnterUrl": "Gib zuerst deine Nextcloud-URL ein.",
       "saveSettingsButton": "Einstellungen speichern",
-      "enterUrlPlain": "Bitte gib deine Nextcloud-URL ein.",
+      "enterUrlPlain": "Bitte gib deine URL ein.",
       "urlSaved": "URL gespeichert. Nutze „Mit Nextcloud anmelden“, um dich zu authentifizieren.",
       "couldNotSave": "Konnte nicht gespeichert werden: {error}",
       "urlPlaceholderFull": "https://cloud.beispiel.de",
       "urlHintShort": "Die Basis-URL deiner Nextcloud-Instanz (kein abschließender Schrägstrich nötig)",
-      "sourceCodeLink": "Quellcode auf GitHub"
+      "sourceCodeLink": "Quellcode auf GitHub",
+      "httpBlocked": "Unverschlüsseltes http:// ist nur für localhost erlaubt. Bitte https:// verwenden.",
+      "loginInvalidResponse": "Der Server hat eine ungültige Login-Antwort geschickt.",
+      "backendNextcloud": "Nextcloud",
+      "backendStandalone": "Standalone-Server",
+      "welcomeStandalone": "Willkommen! Gib deine Server-URL ein und klicke auf „Anmelden“, um loszulegen.",
+      "loggedOutWelcomeStandalone": "Abgemeldet. Gib deine Server-URL ein und klicke auf „Anmelden“, um loszulegen.",
+      "urlSavedStandalone": "URL gespeichert. Nutze „Anmelden“, um dich zu authentifizieren."
     },
     "passphrase": {
       "label": "Verschlüsselungs-Passphrase",
@@ -774,7 +785,8 @@
       "authFailed": "Anmeldung fehlgeschlagen — bitte erneut einloggen",
       "tagsLoadError": "Tags konnten nicht geladen werden (HTTP {code})",
       "noTags": "Noch keine Tags vorhanden",
-      "tagsTimeout": "Zeitüberschreitung beim Laden der Tags"
+      "tagsTimeout": "Zeitüberschreitung beim Laden der Tags",
+      "authFailedRetry": "Anmeldung vom Server abgelehnt. Passiert das erneut, wirst du abgemeldet."
     }
   },
   "nextcloudWeb": {
