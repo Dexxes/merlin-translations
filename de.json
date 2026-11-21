@@ -786,7 +786,8 @@
       "tagsLoadError": "Tags konnten nicht geladen werden (HTTP {code})",
       "noTags": "Noch keine Tags vorhanden",
       "tagsTimeout": "Zeitüberschreitung beim Laden der Tags",
-      "authFailedRetry": "Anmeldung vom Server abgelehnt. Passiert das erneut, wirst du abgemeldet."
+      "authFailedRetry": "Anmeldung vom Server abgelehnt. Passiert das erneut, wirst du abgemeldet.",
+      "noMatchingTags": "Keine passenden Tags"
     }
   },
   "nextcloudWeb": {
