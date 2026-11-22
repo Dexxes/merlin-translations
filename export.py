@@ -42,7 +42,7 @@ Aufruf:
     python3 export.py --platform webext        # nur die WebExtension-_locales
     python3 export.py --platform ios
     python3 export.py --platform android        # nur merlin-android/res/values(-de)
-    python3 export.py --platform nextcloud     # nur merlin-nextcloud/l10n
+    python3 export.py --platform nextcloud     # nur merlin-nextcloud/nextcloud/l10n
     python3 export.py --platform merlin-server  # nur merlin-server/src/I18n/lang
     python3 export.py --check                   # nur Key-Paritätscheck, kein Schreiben
 
@@ -126,7 +126,12 @@ MERLIN_SERVER_LANG_DIR = REPO_ROOT / "merlin-server" / "src" / "I18n" / "lang"
 NEXTCLOUD_PREFIX = "nextcloudWeb."
 
 # Zielordner für die generierten Nextcloud-Übersetzungsdateien.
-NEXTCLOUD_L10N_DIR = REPO_ROOT / "merlin-nextcloud" / "l10n"
+# Seit dem neuen Repo-Layout liegt die Nextcloud-App in merlin-nextcloud/nextcloud/.
+# Ältere Checkouts (App direkt in merlin-nextcloud/) werden weiter unterstützt.
+_NEXTCLOUD_APP_DIR = REPO_ROOT / "merlin-nextcloud" / "nextcloud"
+if not (_NEXTCLOUD_APP_DIR / "appinfo").is_dir():
+    _NEXTCLOUD_APP_DIR = REPO_ROOT / "merlin-nextcloud"
+NEXTCLOUD_L10N_DIR = _NEXTCLOUD_APP_DIR / "l10n"
 
 # Nextcloud-App-ID (siehe appinfo/info.xml <id>) - erster Arg von
 # OC.L10N.register() in der generierten .js-Datei.

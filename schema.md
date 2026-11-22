@@ -92,7 +92,7 @@ wird clientseitig eingebunden, `l10n/de.json` liest die PHP-seitige
 ### Frontend (Vue) vs. Backend (PHP)
 Beide teilen sich denselben `l10n/<lang>.json`/`.js`-Mechanismus, aber aktuell
 exportiert `export.py --platform nextcloud` nur die Strings unter dem
-`nextcloudWeb.`-Namespace (die Vue-Komponenten in `merlin-nextcloud/src/`).
+`nextcloudWeb.`-Namespace (die Vue-Komponenten in `merlin-nextcloud/frontend/src/`).
 PHP-seitige `$l->t()`-Aufrufe (z. B. in `ArticleSearchProvider.php`) sind
 noch nicht an diese zentrale Quelle angebunden - dafür bräuchte es einen
 eigenen Namespace (z. B. `nextcloudBackend.`) plus Erweiterung von
