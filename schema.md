@@ -126,7 +126,7 @@ liegen unter dem eigenständigen `merlinServer.<template>.<key>`-Namespace
 Namespaces, aus denselben Gründen wie bei `webext.*`/`nextcloudWeb.*`.
 
 `export.py --platform merlin-server` erzeugt daraus
-`merlin-server/src/I18n/lang/<lang>.php` - je eine flache PHP-Array-Datei
+`merlin-nextcloud/standalone/src/I18n/lang/<lang>.php` (ohne diesen Checkout `merlin-server/src/I18n/lang/<lang>.php`) - je eine flache PHP-Array-Datei
 (`return ['<dot-key ohne merlinServer.-Präfix>' => '<Wert>', ...];`) pro
 Sprache, **beide Sprachen inklusive Englisch** (anders als bei Nextcloud gibt
 es keine gettext-Quellsprache ohne eigene Datei - das PHP-Array *ist* der

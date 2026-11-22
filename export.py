@@ -113,8 +113,12 @@ WEBEXT_LOCALES_DIRS = [
 # merlin-server" in schema.md.
 MERLIN_SERVER_PREFIX = "merlinServer."
 
-# Zielordner für die generierten merlin-server-Sprachdateien.
-MERLIN_SERVER_LANG_DIR = REPO_ROOT / "merlin-server" / "src" / "I18n" / "lang"
+# Zielordner für die generierten merlin-server-Sprachdateien. Der Standalone-
+# Server liegt jetzt in merlin-nextcloud/standalone/; ohne diesen Checkout
+# bleibt es beim alten Repo merlin-server/.
+MERLIN_SERVER_LANG_DIR = REPO_ROOT / "merlin-nextcloud" / "standalone" / "src" / "I18n" / "lang"
+if not (REPO_ROOT / "merlin-nextcloud" / "standalone").is_dir():
+    MERLIN_SERVER_LANG_DIR = REPO_ROOT / "merlin-server" / "src" / "I18n" / "lang"
 
 
 # Namespace-Präfix für die Nextcloud-Web-Frontend-Strings (merlin-nextcloud,
