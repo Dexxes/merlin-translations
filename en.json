@@ -629,7 +629,8 @@
       "custom": "Custom color"
     },
     "buttons": {
-      "getStarted": "Get Started"
+      "getStarted": "Get Started",
+      "skip": "Skip Tour"
     },
     "demo": {
       "leftFlyout": {
@@ -654,7 +655,8 @@
         "close": "Close"
       },
       "sampleHighlightPhrase": "deep, intentional reading may be one of the most valuable skills we can cultivate"
-    }
+    },
+    "progress": "Step {current} of {total}"
   },
   "webext": {
     "extName": "Merlin",
@@ -1850,6 +1852,18 @@
       "removeNamed": "Remove “{name}”",
       "renameMenu": "Rename…",
       "renameTitle": "Rename tag"
+    },
+    "onboarding": {
+      "navigationMenu": {
+        "body": "Tap the menu button at the top left to filter articles, browse tags, and open Settings."
+      },
+      "readerMenu": {
+        "body": "While reading, tap the menu button in the bottom bar to share, edit article tags, set reminders, and more."
+      },
+      "undo": {
+        "title": "Undo",
+        "body": "Archived or deleted something by accident? Tap Undo in the notice at the bottom of the screen."
+      }
     }
   }
 }
