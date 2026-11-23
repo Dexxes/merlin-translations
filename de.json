@@ -1058,7 +1058,8 @@
         "sourceCodeLink": "Quellcode auf GitHub",
         "reportBugLink": "Fehler melden",
         "donateLink": "Spenden"
-      }
+      },
+      "excludeHidesSubTags": "Ein ausgeschlossener Tag blendet auch seine Unter-Tags aus."
     },
     "sidebar": {
       "video": "Videos",
@@ -1082,7 +1083,10 @@
       "mediaTypeTabs": "Medienart",
       "account": "Konto",
       "administration": "Verwaltung",
-      "logOut": "Abmelden"
+      "logOut": "Abmelden",
+      "collapseSubTags": "Unter-Tags einklappen",
+      "expandSubTags": "Unter-Tags ausklappen",
+      "moveTo": "Verschieben nach…"
     },
     "contentFilters": {
       "myContentFilters": "Meine Content-Filter",
@@ -1324,6 +1328,25 @@
         "one": "vor %n Stunde",
         "other": "vor %n Stunden"
       }
+    },
+    "tagMove": {
+      "title": "Tag verschieben",
+      "move": "Verschieben",
+      "below": "Unter",
+      "moveBelow": "„{name}“ verschieben unter:",
+      "moveWithSubTagsBelow": "„{name}“ mit seinen Unter-Tags verschieben unter:",
+      "newParent": "Neuer übergeordneter Tag",
+      "topLevel": "Oberste Ebene",
+      "failed": "Tag konnte nicht verschoben werden"
+    },
+    "tagDelete": {
+      "question": "Tag „{name}“ löschen?",
+      "questionWithSubTags": {
+        "one": "Tag „{name}“ und seinen {count} Unter-Tag löschen?",
+        "other": "Tag „{name}“ und seine {count} Unter-Tags löschen?"
+      },
+      "keepArticles": "Die Artikel bleiben erhalten, nur die Tags werden von ihnen entfernt.",
+      "deleteAll": "Alle löschen"
     }
   },
   "merlinServer": {
