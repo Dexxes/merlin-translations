@@ -1058,7 +1058,8 @@
         "sourceCodeLink": "Source code on GitHub",
         "reportBugLink": "Report a bug",
         "donateLink": "Donate"
-      }
+      },
+      "excludeHidesSubTags": "Excluding a tag also hides its sub-tags."
     },
     "sidebar": {
       "video": "Videos",
@@ -1082,7 +1083,10 @@
       "mediaTypeTabs": "Media type",
       "account": "Account",
       "administration": "Administration",
-      "logOut": "Log out"
+      "logOut": "Log out",
+      "collapseSubTags": "Collapse sub-tags",
+      "expandSubTags": "Expand sub-tags",
+      "moveTo": "Move to…"
     },
     "contentFilters": {
       "myContentFilters": "My content filters",
@@ -1324,6 +1328,25 @@
         "one": "%n hour ago",
         "other": "%n hours ago"
       }
+    },
+    "tagMove": {
+      "title": "Move tag",
+      "move": "Move",
+      "below": "Below",
+      "moveBelow": "Move \"{name}\" below:",
+      "moveWithSubTagsBelow": "Move \"{name}\" with its sub-tags below:",
+      "newParent": "New parent tag",
+      "topLevel": "Top level",
+      "failed": "Could not move the tag"
+    },
+    "tagDelete": {
+      "question": "Delete the tag \"{name}\"?",
+      "questionWithSubTags": {
+        "one": "Delete the tag \"{name}\" and its {count} sub-tag?",
+        "other": "Delete the tag \"{name}\" and its {count} sub-tags?"
+      },
+      "keepArticles": "The articles are kept, only the tags are removed from them.",
+      "deleteAll": "Delete all"
     }
   },
   "merlinServer": {
