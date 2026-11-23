@@ -1079,7 +1079,10 @@
       "tabText": "Text",
       "tabVideo": "Video",
       "tabAudio": "Audio",
-      "mediaTypeTabs": "Medienart"
+      "mediaTypeTabs": "Medienart",
+      "account": "Konto",
+      "administration": "Verwaltung",
+      "logOut": "Abmelden"
     },
     "contentFilters": {
       "myContentFilters": "Meine Content-Filter",
@@ -1586,6 +1589,11 @@
     "siteCredentialsApi": {
       "usernamePasswordRequired": "Benutzername und Passwort sind erforderlich.",
       "cipherNotConfigured": "Der Server ist für Abo-Logins noch nicht eingerichtet (credential_cipher_key fehlt in config.php). Bitte den Administrator kontaktieren."
+    },
+    "app": {
+      "adminSettings": "Verwaltung",
+      "notBuilt": "Die Weboberfläche ist noch nicht gebaut. Im Projektordner ausführen:",
+      "personalSettings": "Meine Content-Filter"
     }
   },
   "siteCredentials": {

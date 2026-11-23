@@ -1079,7 +1079,10 @@
       "tabText": "Text",
       "tabVideo": "Video",
       "tabAudio": "Audio",
-      "mediaTypeTabs": "Media type"
+      "mediaTypeTabs": "Media type",
+      "account": "Account",
+      "administration": "Administration",
+      "logOut": "Log out"
     },
     "contentFilters": {
       "myContentFilters": "My content filters",
@@ -1586,6 +1589,11 @@
     "siteCredentialsApi": {
       "usernamePasswordRequired": "Username and password are required.",
       "cipherNotConfigured": "The server is not yet set up for subscription logins (credential_cipher_key is missing in config.php). Please contact the administrator."
+    },
+    "app": {
+      "adminSettings": "Administration",
+      "notBuilt": "The web interface has not been built yet. Run in the project folder:",
+      "personalSettings": "My content filters"
     }
   },
   "siteCredentials": {
