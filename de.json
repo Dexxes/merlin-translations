@@ -629,7 +629,8 @@
       "custom": "Eigene Farbe"
     },
     "buttons": {
-      "getStarted": "Los geht's"
+      "getStarted": "Los geht's",
+      "skip": "Tour überspringen"
     },
     "demo": {
       "leftFlyout": {
@@ -654,7 +655,8 @@
         "close": "Schließen"
       },
       "sampleHighlightPhrase": "tiefes, bewusstes Lesen eine der wertvollsten Fähigkeiten sein könnte, die wir kultivieren können"
-    }
+    },
+    "progress": "Schritt {current} von {total}"
   },
   "webext": {
     "extName": "Merlin",
@@ -1850,6 +1852,18 @@
       "removeNamed": "„{name}“ entfernen",
       "renameMenu": "Umbenennen…",
       "renameTitle": "Tag umbenennen"
+    },
+    "onboarding": {
+      "navigationMenu": {
+        "body": "Tippe oben links auf den Menü-Button, um Artikel zu filtern, Tags zu durchsuchen und die Einstellungen zu öffnen."
+      },
+      "readerMenu": {
+        "body": "Tippe beim Lesen auf den Menü-Button in der unteren Leiste, um zu teilen, Tags zu bearbeiten, Erinnerungen zu setzen und mehr."
+      },
+      "undo": {
+        "title": "Rückgängig",
+        "body": "Versehentlich etwas archiviert oder gelöscht? Tippe in der Meldung unten am Bildschirm auf „Rückgängig“."
+      }
     }
   }
 }

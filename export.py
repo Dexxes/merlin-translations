@@ -633,7 +633,8 @@ def android_convert(value: str, order: list[str]) -> str:
 def build_android_strings_file(flat: dict[str, Any], source_flat: dict[str, Any], lang: str) -> str:
     lines = [
         '<?xml version="1.0" encoding="utf-8"?>',
-        f"<!-- Automatisch generiert von merlin-translations/export.py --platform android ({lang}). -->",
+        # Kein "--" im Kommentar (XML verbietet es, aapt bricht sonst den Build ab).
+        f"<!-- Automatisch generiert von merlin-translations/export.py (Plattform android, {lang}). -->",
         "<!-- Nicht direkt editieren - Änderungen gehen beim nächsten Export verloren. -->",
         "<resources>",
     ]
