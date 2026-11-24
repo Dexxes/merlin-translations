@@ -664,7 +664,11 @@
       },
       "sampleHighlightPhrase": "tiefes, bewusstes Lesen eine der wertvollsten Fähigkeiten sein könnte, die wir kultivieren können"
     },
-    "progress": "Schritt {current} von {total}"
+    "progress": "Schritt {current} von {total}",
+    "bottomBar": {
+      "title": "Untere Leiste",
+      "body": "Unten findest du Zurück, Archivieren und Teilen. Die Schriftrolle startet das Freihand-Lesen: Der Artikel scrollt von selbst, das Tempo stellst du mit dem Regler ein. Im Querformat steckt alles im runden Button unten rechts."
+    }
   },
   "webext": {
     "extName": "Merlin",

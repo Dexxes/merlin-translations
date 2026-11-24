@@ -664,7 +664,11 @@
       },
       "sampleHighlightPhrase": "deep, intentional reading may be one of the most valuable skills we can cultivate"
     },
-    "progress": "Step {current} of {total}"
+    "progress": "Step {current} of {total}",
+    "bottomBar": {
+      "title": "Bottom Bar",
+      "body": "At the bottom you'll find Back, Archive, and Share. The scroll starts hands-free reading: the article scrolls by itself, and the slider sets the speed. In landscape, everything sits in the round button in the bottom-right corner."
+    }
   },
   "webext": {
     "extName": "Merlin",
