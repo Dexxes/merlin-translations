@@ -623,6 +623,14 @@
       "openSettings": "Einstellungen öffnen",
       "gotIt": "Verstanden"
     },
+    "crossPromo": {
+      "title": "Merlin entfaltet sich im Zusammenspiel",
+      "body": "Speichere unterwegs über das Teilen-Menü, am Rechner im Browser und aus E-Mails in Thunderbird. Lies dann auf jedem Gerät weiter, wo du aufgehört hast, mit denselben Markierungen und Schlagworten.",
+      "web": "Im Browser: deine Leseliste auf deinem Server, mit Kommentaren und Freigaben",
+      "webAction": "Öffnen",
+      "thunderbird": "Thunderbird: Links und ganze E-Mails speichern",
+      "shareLink": "Link teilen"
+    },
     "accentColor": {
       "title": "Deine Akzentfarbe",
       "body": "Wähle zum Schluss deine Akzentfarbe für Fortschrittsbalken und Hervorhebungen. Ändern kannst du sie jederzeit im Lesemenü unter Erscheinungsbild.",

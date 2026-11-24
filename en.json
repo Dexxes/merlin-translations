@@ -623,6 +623,14 @@
       "openSettings": "Open Settings",
       "gotIt": "Got it"
     },
+    "crossPromo": {
+      "title": "Merlin is better together",
+      "body": "Save from the share menu on the go, in the browser on your computer and from emails in Thunderbird. Then keep reading on any device where you left off, with the same highlights and tags.",
+      "web": "In the browser: your reading list on your server, with comments and sharing",
+      "webAction": "Open",
+      "thunderbird": "Thunderbird: save links and entire emails",
+      "shareLink": "Share link"
+    },
     "accentColor": {
       "title": "Your Accent Color",
       "body": "Finally, pick your accent color for the progress bar and highlights. You can change it anytime under Appearance in the reader menu.",
