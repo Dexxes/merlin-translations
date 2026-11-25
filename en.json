@@ -553,6 +553,14 @@
       "subtitle": "Rate limited"
     }
   },
+  "readInMerlin": {
+    "menuTitle": "Read in Merlin",
+    "errorNoUrl": "No link was found in this content.",
+    "errorOpenApp": "Merlin could not be opened. Open Merlin and add the link there.",
+    "tapToClose": "Tap to close.",
+    "errorNotLoggedIn": "Please sign in to Merlin first, then try the link again.",
+    "errorSave": "The article could not be saved: {error}"
+  },
   "onboarding": {
     "step1": {
       "title": "Welcome to Merlin!",

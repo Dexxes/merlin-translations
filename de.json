@@ -553,6 +553,14 @@
       "subtitle": "Rate-Limit erreicht"
     }
   },
+  "readInMerlin": {
+    "menuTitle": "Jetzt in Merlin lesen",
+    "errorNoUrl": "In diesem Inhalt wurde kein Link gefunden.",
+    "errorOpenApp": "Merlin konnte nicht geöffnet werden. Öffne Merlin und füge den Link dort hinzu.",
+    "tapToClose": "Tippe, um zu schließen.",
+    "errorNotLoggedIn": "Bitte melde dich zuerst in Merlin an und versuche es dann noch einmal.",
+    "errorSave": "Der Artikel konnte nicht gespeichert werden: {error}"
+  },
   "onboarding": {
     "step1": {
       "title": "Willkommen bei Merlin!",
