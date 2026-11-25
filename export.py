@@ -84,6 +84,11 @@ PLURAL_PLACEHOLDER_NAME = "count"
 IOS_RESOURCE_DIRS = [
     REPO_ROOT / "merlin-ios" / "Sources" / "Merlin" / "Resources",
     REPO_ROOT / "merlin-ios" / "Sources" / "MerlinShare" / "Resources",
+    # "Jetzt in Merlin lesen" (Action-Extension): ebenfalls ein eigenes Bundle.
+    # Ihr Menütitel steht zusätzlich in Sources/MerlinRead/BundleRoot/<lang>.lproj/
+    # InfoPlist.strings (von Hand, Wert = readInMerlin.menuTitle), weil iOS den
+    # Namen im Teilen-Menü nur aus dem Bundle-Root liest.
+    REPO_ROOT / "merlin-ios" / "Sources" / "MerlinRead" / "Resources",
 ]
 
 # Veraltete Artefakte aus der früheren .xcstrings-basierten Pipeline -
